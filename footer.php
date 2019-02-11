@@ -63,7 +63,7 @@
       $ip = $_SERVER['REMOTE_ADDR'];
       $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $secretKey . "&response=" . $captcha . "&remoteip=" . $ip);
       $responseKeys = json_decode($response,true);
-      if($message !== '<h2>Please check the captcha form.</h2>') {
+      if($message !== '<h2>Please check the captcha.</h2>') {
         if(!intval($responseKeys["success"])) {
           $message = 'You didn\'t pass the captcha.';
           $send = false;
@@ -87,7 +87,6 @@
 <script>
 if(!navigator.onLine) {
   $('#feedback').hide();
-  $.post('/practice/sendnotoffline.php', {userAgent: navigator.userAgent});
 }
 </script>
 <div class="w-100 bg-primary text-white px-4 py-2" id="addHomeScreen" style="display: none; position: fixed; bottom: 0; left: 0">
