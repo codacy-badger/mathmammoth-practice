@@ -187,7 +187,19 @@
     }
 
     function isCorrect(answer, number) {
-      answer = answer.replace(/, /, ',').split(',');
+      answer = answer.replace(/ /g, '');
+      if (answer.split('')[0] == ',') {
+        var temp = answer.split('');
+        temp[0] = '';
+        answer = temp.join('');
+      }
+      if (answer.split('')[answer.split('').length - 1] == ',') {
+        var temp = answer.split('');
+        temp[temp.length - 1] = '';
+        answer = temp.join('');
+      }
+      answer = answer.trim(); 
+      answer = answer.split(',');
       var ndanswer = [];
       for (var y = 0; y < answer.length; y++) {
         answer[y] = +answer[y];
@@ -226,7 +238,7 @@
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">Find the Factors Online Practice</h1>
       <p class="mb-4">
-        This script allows you to practice finding all the factors of a given number (grade 4/5 math). You can choose the minimum and maximum numbers and the amount of practice problems.
+        On this page, you can practice finding all the factors of a given number (grade 4/5 math). You can choose the minimum and maximum numbers and the amount of practice problems.
       </p>
       <div class="form-group">
         <label for="numop" style="font-weight: 500">How many practice problems?</label>

@@ -1,7 +1,9 @@
-var CACHE_STATIC_NAME = "static";
-var CACHE_DYNAMIC_NAME = "dynamic";
+var CACHE_VERSION = 15;
+var CACHE_STATIC_NAME = "static-v" + CACHE_VERSION;
+var CACHE_DYNAMIC_NAME = "dynamic-v" + CACHE_VERSION;
 
 self.addEventListener("install", function(event) {
+  self.skipWaiting();
   console.log("[Service Worker] Installing Service Worker ...", event);
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME).then(function(cache) {
@@ -10,6 +12,7 @@ self.addEventListener("install", function(event) {
         "/practice/",
         "/practice/favicon.ico",
         "/practice/index.php",
+        "/practice/practice.css",
         "/practice/multiplication.php",
         "/practice/factorfind.php",
         "/practice/division.php",

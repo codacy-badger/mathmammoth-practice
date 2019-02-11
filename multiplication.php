@@ -31,7 +31,6 @@
       margin: 5px 20px 5px 0;
     }
     .jumbotron {
-      max-width: 75vw;
       margin: auto;
     }
     .timed {
@@ -93,15 +92,13 @@
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">Multiplication Tables Online Practice</h1>
-      <p class="mb-4">
-        This script allows you to practice any combination of the multiplication tables. You can choose timed or untimed practice, the number of practice problems, and
-        which exact times tables you'd like to work on.
-      </p>
+      <p>On this page, you can practice any combination of the multiplication tables &mdash; very helpful for students in 3rd and 4th grades. You can practice any single times table (such as multiplication by 9), or several tables (such as tables of 2 and 5), or all of them.</p>
+      <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact times tables you'd like to work on.</p>
       <label style="font-weight: 500">
         Tables: &nbsp;
         <div class="btn-group btn-group-sm">
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true)">Check All</button>
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false)">Uncheck All</button>
+          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
         </div>
       </label>
       <div id="tables">
@@ -356,7 +353,7 @@
         message.css('color', 'green').text('Correct');
       } else {
         wrong++;
-        message.css('color', 'red').text('Wrong');
+        message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1]);
       }
       $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
       check.text('Continue');

@@ -33,8 +33,10 @@
   <div class="container">
     <div class="jumbotron" style="background-color: #a5eaff">
       <h1 class="text-center">Math Mammoth Online Practice</h1>
-      <p>
-        This area of MathMammoth.com is devoted to providing you online practice of various math topics. Choose a topic from the list below or from the main menu.
+      <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu.</p>
+      <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). If they don't work offline in your browser (except IE / Opera Mini / Blackberry Browser), please tell us in the feedback form at the bottom of the page. <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
+      <p><u><b>Note:</b></u> It seems that sometimes it's necessary to RELOAD the page a few times to make it look right and to work offline. Also, on very few browsers, you may get an error stating that it cannot reach the site. Reloading should fix that, too.</p>
+
         <ul class="list-group">
           <li class="list-group-item">
             <a href="multiplication.php">Multiplication Tables</a>
@@ -52,6 +54,13 @@
       </p>
     </div>
   </div>
+  <script>
+    if('serviceWorker' in navigator && 'caches' in window) {
+      $('#not-supported').hide();
+    } else {
+      $.post('/practice/sendnotoffline.php', {userAgent: navigator.userAgent}, function() { console.log('Success', arguments); });
+    }
+  </script>
   <?php include 'footer.php'; ?>
 </body>
 

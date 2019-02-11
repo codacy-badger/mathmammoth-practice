@@ -26,64 +26,7 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
-  <style>
-    .tc {
-      display: inline-block;
-      margin: 5px 20px 5px 0;
-    }
-    .jumbotron {
-      max-width: 75vw;
-      margin: auto;
-    }
-    .timed {
-      margin-top: 20px;
-    }
-    #numq {
-      font-size: 3em;
-    }
-    #message {
-      font-weight: bold;
-    }
-
-    #questionbox {
-      position: relative;
-    }
-
-    #correctawrong,
-    #questionon {
-      position: absolute;
-    }
-
-    .pp {
-      display: inline-block;
-      height: 30px;
-      width: 20px;
-      border: 1px solid #CCC;
-      background-color: antiquewhite;
-      color: #ff3f3f;
-      border-radius: 4px;
-    }
-
-    #wend,
-    #cend {
-      display: inline-block;
-      float: left;
-    }
-
-    #wend {
-      background-color: red;
-      height: 100%;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-    }
-
-    #cend {
-      background-color: green;
-      height: 100%;
-      border-top-right-radius: 7px;
-      border-bottom-right-radius: 7px;
-    }
-  </style>
+  <link rel="stylesheet" href="practice.css">
   <title>Division With Remainders (Mental Math) &mdash; Online Practice (grades 3-4)</title>
 </head>
 
@@ -91,16 +34,13 @@
   <?php $page = 'division-remainders'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Divison With Remainders (Mental Math) Online Practice</h1>
-      <p class="mb-4">
-        This script allows you to practice division with remainders, using mental math. In other words, the division problems are based on basic division facts (or on multiplication tables), such as 53 &divide; 8 = 6 R5 or 23 &divide; 4 = 5 R3. You can choose timed or untimed practice, the number of practice problems, and
-        the divisors you'd like to include.
-      </p>
+      <h1 class="text-center">Division With Remainders (Mental Math) Online Practice</h1>
+      <p class="mb-4">This script allows you to practice division with remainders, using mental math. In other words, the division problems are based on basic division facts (or on multiplication tables), such as 53 &divide; 8 = 6 R5 or 23 &divide; 4 = 5 R3. You can choose timed or untimed practice, the number of practice problems, and the divisors you'd like to include.</p>
       <label style="font-weight: 500">
         Possible divisors: &nbsp;
         <div class="btn-group btn-group-sm">
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true)">Check All</button>
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false)">Uncheck All</button>
+          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
         </div>
       </label>
       <div id="tables">
@@ -177,7 +117,7 @@
     <div class="jumbotron d-none" id="questionbox" style="background-color: #a5eaff; text-align: center;">
       <div id="correctawrong" style="top: 8px; right: 8px">Correct: <span id="correct">0</span> &nbsp; Wrong: <span id="wrong">0</span></div>
       <div id="questionon" style="top: 8px; left: 8px"><span id="qon">1</span>/<span id="numoq"></span></div>
-      <p>Put in the number like this: 10R2, for example. The quotient, then R, then the remainder.</p>
+      <p>Enter the answer like this: the quotient, space, "R", then the remainder. For example, 10 R2.</p>
       <div id="numq" class="text-center" style="font-weight: bold"></div>
       <br>
       <input type="text" id="response" style="margin: auto; width: 75%" oninput="if(this.value != '') $('#check').prop('disabled', false); else $('#check').prop('disabled', true);" class="form-control">
@@ -354,7 +294,7 @@
         message.css('color', 'green').text('Correct');
       } else {
         wrong++;
-        message.css('color', 'red').text('Wrong');
+        message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1].replace(/R/g, ' R'));
       }
       $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
       check.text('Continue');

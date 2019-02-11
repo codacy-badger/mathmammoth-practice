@@ -10,4 +10,3 @@ window.addEventListener('beforeinstallprompt', function(event) {
   console.log('beforeinstallprompt fired');
   document.querySelector('#addHomeScreen').style.display = 'block';
 });
- 

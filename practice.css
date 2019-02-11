@@ -1,0 +1,59 @@
+#numq {
+  font-size: 3em;
+}
+
+#message {
+  font-weight: bold;
+}
+
+#practicearea, #questionbox {
+  position: relative;
+}
+
+.jumbotron {
+  margin: auto;
+}
+
+.tc {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.timed {
+  margin-top: 20px;
+}
+
+#correctawrong,
+#questionon {
+  position: absolute;
+}
+
+.pp {
+  display: inline-block;
+  height: 30px;
+  width: 20px;
+  border: 1px solid #CCC;
+  background-color: antiquewhite;
+  color: #ff3f3f;
+  border-radius: 4px;
+}
+
+#wend,
+#cend {
+  display: inline-block;
+  float: left;
+}
+
+#wend {
+  background-color: red;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+#cend {
+  background-color: green;
+  height: 100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
