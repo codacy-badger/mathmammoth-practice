@@ -35,7 +35,7 @@
       Your Feedback:<br><br>
       <div class="rating"></div><br>
       <div class="form-group">
-        <label for="email">Email Address (optional): </label>
+        <label for="email">Email Address (optional, but you can put it here if you would like a response): </label>
         <input type="email" name="email" id="email" class="form-control">
       </div>
       <div class="form-group">
