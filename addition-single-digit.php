@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- start copied code --><!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -26,86 +26,48 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Multiplication Tables &mdash; Online Practice (grades 3-4)</title>
+  <title>Single Digit Addition &mdash; Online Practice (grades 1-2)</title>
 </head>
 
 <body>
-  <?php $page = 'multiplication'; include 'header.php'; ?>
+  <?php $page = 'addition-single-digit'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Multiplication Tables Online Practice</h1>
-      <p>On this page, you can practice any combination of the multiplication tables &mdash; very helpful for students in 3rd and 4th grades. You can practice any single times table (such as multiplication by 9), or several tables (such as tables of 2 and 5), or all of them.</p>
-      <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact times tables you'd like to work on.</p>
-      <label style="font-weight: 500">
-        Tables: &nbsp;
-        <div class="btn-group btn-group-sm">
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
-          <button class="btn btn-info" onclick="$('.tc.in12 input').prop('checked', true); $('#submit').prop('disabled', false);">Check Tables 1-12</button>
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
-        </div>
-      </label>
-      <div id="tables">
-        <div class="tc in12">
-          <input type="checkbox" id="m1">
-          &nbsp;<label for="m1">Table of 1</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m2">
-          &nbsp;<label for="m2">Table of 2</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m3">
-          &nbsp;<label for="m3">Table of 3</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m4">
-          &nbsp;<label for="m4">Table of 4</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m5">
-          &nbsp;<label for="m5">Table of 5</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m6">
-          &nbsp;<label for="m6">Table of 6</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m7">
-          &nbsp;<label for="m7">Table of 7</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m8">
-          &nbsp;<label for="m8">Table of 8</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m9">
-          &nbsp;<label for="m9">Table of 9</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m10">
-          &nbsp;<label for="m10">Table of 10</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m11">
-          &nbsp;<label for="m11">Table of 11</label>
-        </div>
-        <div class="tc in12">
-          <input type="checkbox" id="m12">
-          &nbsp;<label for="m12">Table of 12</label>
-        </div>
-        <div class="tc">
-          <input type="checkbox" id="m13">
-          &nbsp;<label for="m12">Table of 13</label>
-        </div>
-        <div class="tc">
-          <input type="checkbox" id="m14">
-          &nbsp;<label for="m12">Table of 14</label>
-        </div>
-        <div class="tc">
-          <input type="checkbox" id="m15">
-          &nbsp;<label for="m12">Table of 15</label>
-        </div>
+      <h1 class="text-center">Single Digit Addition Online Practice</h1>
+      <p>On this page, you can practice the basic addition and subtraction facts &mdash; with single-digit addends. Options include adding with zero, doubles, doubles plus one, nine trick (or adding with 9), the eight-trick (or adding with 8), and missing addend problems (missing number additions).</p>
+      <p>Choose to practice additions where the sum is 10 or less for 1st grade or where the sum is 20 or less for 2nd grade.</p>
+      <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
+      <!-- end copied code --><div id="tenOrEighteen">
+        <input type="radio" name="1018" id="10less"> 
+        <label for="10less">Sums 10 or less (1st grade)</label><br>
+        <input type="radio" name="1018" checked id="18less"> 
+        <label for="18less">Sums 20 or less (2nd grade)</label>
       </div><br>
+      Problem types:<br><br><div id="problemTypes">
+        <input type="checkbox" id="withZero"> 
+        <label for="withZero">With Zero (e.g. 0+4, 7+0)</label><br>
+
+        <input type="checkbox" id="doubles"> 
+        <label for="doubles">Doubles</label><br>
+
+        <input type="checkbox" id="doublesPlus1"> 
+        <label for="doublesPlus1">Doubles + 1 (e.g. 8 + 9, 6 + 5, 3 + 4)</label><br>
+
+        <input type="checkbox" id="9trick"> 
+        <label for="9trick">9 Trick (or add to 9, e.g. 9 + 2, 3 + 9, 9 + 6)</label><br>
+
+        <input type="checkbox" id="8trick"> 
+        <label for="8trick">8 Trick (or add to 8)</label><br>
+
+        <input type="checkbox" id="general" checked> 
+        <label for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
+
+        <input type="checkbox" id="missingAddend"> 
+        <label for="missingAddend">Missing Addend (e.g. 2 + ___ = 8)</label><br>
+
+        <input type="checkbox" id="subtraction"> 
+        <label for="subtraction">Subtraction (e.g. 8 - 6)</label>
+      </div><br><!-- start copied code -->
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
           <input type="radio" name="timed" id="ty" data-val="yes"> <label for="ty">Timed practice (5 sec per answer)</label><br>
@@ -129,7 +91,7 @@
       <div class="pfst switch" style="display: inline-block; opacity: 0.6; cursor: default; transition: opacity .3s" onclick="$('#checkbox').prop('checked', true); $('.tonanoq').css('opacity', 0.6); $('.tonanoq').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         Practice for a set time: <input type="number" value="5" style="width: 80px; display: inline-block" id="settime" class="form-control"> min
       </div><br>
-      <button class="btn btn-primary" onclick="onSubmit()" id="submit" disabled>Go!</button>
+      <button class="btn btn-primary" onclick="onSubmit()" id="submit">Go!</button>
     </div>
     <!-- start copied code -->
     <div class="jumbotron d-none" id="questionbox" style="background-color: #a5eaff; text-align: center;">
@@ -160,7 +122,7 @@
       <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button><br><br>
       <input type="email" class="form-control" id="teacherEmail" oninput="changedEmail()" placeholder="Enter your teacher's email..."><br>
       <div style="text-align: left; margin-right: auto"><button class="btn btn-primary mr-auto" id="sendResults" onclick="sendResultsToTeacher()">Send Results to Teacher</button></div>
-    </div><!-- end copied code -->
+    </div>
   </div>
   <?php include 'footer.php'; ?>
   <script>
@@ -174,6 +136,142 @@
     var interval;
     var started = false;
     var questionsAnswered = [];
+
+    // end copied code
+    function randomNumberGeneral() {
+        var rnd = Math.floor(Math.random() * (window.withZero.prop('checked') ? 10 : 9)) + (window.withZero.prop('checked') ? 0 : 1);
+        return rnd;
+    }
+    function rndsGen10less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        while((rnd1 + rnd2) > 10) {
+            console.log('redo', rnd1, rnd2);
+            rnd1 = randomNumberGeneral();
+            rnd2 = randomNumberGeneral();
+        }
+        var way = Math.round(Math.random());
+        return `${way ? rnd1 : rnd2} + ${way ? rnd2 : rnd1}`;
+    }
+    function rndsDoubles18less() {
+        var rnd = randomNumberGeneral();
+        return `${rnd} + ${rnd}`;
+    }
+    function rndsDoubles118less() {
+        var rnd = randomNumberGeneral();
+        var way = Math.round(Math.random());
+        return `${way ? rnd : (rnd+1)} + ${way ? (rnd+1) : rnd}`;
+    }
+    function trick918less() {
+        var rnd = randomNumberGeneral();
+        var way = Math.round(Math.random());
+        return `${way ? 9 : rnd} + ${way ? rnd : 9}`;
+    }
+    function trick818less() {
+        var rnd = randomNumberGeneral();
+        var way = Math.round(Math.random());
+        return `${way ? 8 : rnd} + ${way ? rnd : 8}`;
+    }
+    function missingAddend18less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        var way1 = Math.round(Math.random());
+        if(way1) {
+          var temp = rnd1;
+          rnd1 = rnd2;
+          rnd2 = temp;
+        }
+        var way = Math.round(Math.random());
+        return `${way ? rnd1 : "___"} + ${way ? "___" : rnd2} = ${rnd1 + rnd2}`;
+    }
+    function subtraction18less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        var way1 = Math.round(Math.random());
+        if(way1) {
+          var temp = rnd1;
+          rnd1 = rnd2;
+          rnd2 = temp;
+        }
+        var way = Math.round(Math.random());
+        return `${rnd1 + rnd2} - ${way ? rnd1 : rnd2}`;
+    }
+    function rndsGen18less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        var way = Math.round(Math.random());
+        return `${way ? rnd1 : rnd2} + ${way ? rnd2 : rnd1}`;
+    }
+    function rndsDoubles10less() {
+        var rnd = randomNumberGeneral();
+        while((rnd + rnd) > 10) {
+            console.log('redo', rnd);
+            rnd = randomNumberGeneral();
+        }
+        return `${rnd} + ${rnd}`;
+    }
+    function rndsDoubles110less() {
+        var rnd = randomNumberGeneral();
+        while((rnd + (rnd + 1)) > 10) {
+            console.log('redo', rnd);
+            rnd = randomNumberGeneral();
+        }
+        var way = Math.round(Math.random());
+        return `${way ? rnd : (rnd+1)} + ${way ? (rnd+1) : rnd}`;
+    }
+    function trick910less() {
+        var rnd = randomNumberGeneral();
+        while((rnd + 9) > 10) {
+            console.log('redo', rnd);
+            rnd = randomNumberGeneral();
+        }
+        var way = Math.round(Math.random());
+        return `${way ? 9 : rnd} + ${way ? rnd : 9}`;
+    }
+    function trick810less() {
+        var rnd = randomNumberGeneral();
+        while((rnd + 8) > 10) {
+            console.log('redo', rnd);
+            rnd = randomNumberGeneral();
+        }
+        var way = Math.round(Math.random());
+        return `${way ? 8 : rnd} + ${way ? rnd : 8}`;
+    }
+    function missingAddend10less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        while((rnd1 + rnd2) > 10) {
+            console.log('redo', rnd1, rnd2);
+            rnd1 = randomNumberGeneral();
+            rnd2 = randomNumberGeneral();
+        }
+        var way1 = Math.round(Math.random());
+        if(way1) {
+          var temp = rnd1;
+          rnd1 = rnd2;
+          rnd2 = temp;
+        }
+        var way = Math.round(Math.random());
+        return `${way ? rnd1 : "___"} + ${way ? "___" : rnd2} = ${rnd1 + rnd2}`;
+    }
+    function subtraction10less() {
+        var rnd1 = randomNumberGeneral();
+        var rnd2 = randomNumberGeneral();
+        while((rnd1 + rnd2) > 10) {
+            console.log('redo', rnd1, rnd2);
+            rnd1 = randomNumberGeneral();
+            rnd2 = randomNumberGeneral();
+        }
+        var way1 = Math.round(Math.random());
+        if(way1) {
+          var temp = rnd1;
+          rnd1 = rnd2;
+          rnd2 = temp;
+        }
+        var way = Math.round(Math.random());
+        return `${rnd1 + rnd2} - ${way ? rnd1 : rnd2}`;
+    } // 30 lines
+    // start copied code
 
     function changedEmail() {
       if($('#teacherEmail').val() == '') {
@@ -189,16 +287,11 @@
         email: $('#teacherEmail').val(),
         date: new Date().getFullYear() + '/' + (((parseInt(new Date().getMonth()) + 1) < 10) ? ('0' + (parseInt(new Date().getMonth()) + 1)) : (parseInt(new Date().getMonth()) + 1)) + '/' + (new Date().getDate() < 10 ? '0' + new Date().getDate() : new Date().getDate()),
         results: JSON.stringify(questionsAnswered),
-        page: 'Multiplication'
+        page: 'Single Digit Addition'
       }).always(function() {
         $('#sendResults').text('Click to resend');
         $('#sendResults').prop('disabled', false);
       });
-    }
-
-    function changeValidity(isValid) {
-      valid = isValid;
-      $('#submit').attr('disabled', !valid);
     }
 
     function time(seconds) {
@@ -214,8 +307,17 @@
 
     function onSubmit() {
       started = true;
-      window.tables = [];
+      window.withZero = $('#withZero'); // not copied line
       window.mode = $('.switch:eq(0)').prop('style').opacity == '0.6' ? 'settime' : 'timeq';
+      var anyChecked = false;
+      /* end copied code */ for (var key in problemTypes) {
+        if(problemTypes[key].prop('checked')) {
+          anyChecked = true;
+        }
+      }
+      if(!anyChecked) {
+        problemTypes.general.prop('checked', true);
+      } /* start copied code */
       if (mode == 'timeq') {
         for (var i = 0; i < parseInt(questions.val()); i++) {
           $('<div>').addClass('pp').appendTo(progressbar);
@@ -236,11 +338,6 @@
           end();
         }, $('#settime').val() * 60000);
       }
-      $('.tc input[type="checkbox"]').each(function(key, el) {
-        if (el.checked) {
-          tables.push(+el.id.replace(/m/, ''));
-        }
-      });
       timed.each(function(key, el) {
         if (el.checked) {
           isTimed = $(el).data('val') == 'yes';
@@ -250,10 +347,69 @@
       newQuestion();
     }
 
-    function questionGenerator(tables) {
-      var num1 = tables[Math.floor(Math.random() * tables.length)];
-      var num2 = Math.floor(Math.random() * 12) + 1;
-      return [(Math.floor(Math.random() * 2) + 1) > 1 ? num1 + ' &times; ' + num2 : num2 + ' &times; ' + num1, num1 * num2];
+    function questionGenerator() {
+      var possibleProblems = [];
+      for (var key in problemTypes) {
+        var quest;
+        console.log(problemTypes, key, problemTypes[key]);
+        if($('#10less').prop('checked') && problemTypes[key].prop('checked')) {
+          switch(key) {
+            case 'doubles':
+              quest = rndsDoubles10less();
+              break;
+            case 'doubles1':
+              quest = rndsDoubles110less();
+              break;
+            case 'general':
+              quest = rndsGen10less();
+              break;
+            case 'missingAddend':
+              quest = missingAddend10less();
+              break;
+            case 'subtraction':
+              quest = subtraction10less();
+              break;
+            case 'trick9':
+              quest = trick910less();
+              break;
+            case 'trick8':
+              quest = trick810less();
+              break;
+          }
+        }
+        if($('#18less').prop('checked') && problemTypes[key].prop('checked')) {
+          switch(key) {
+            case 'doubles':
+              quest = rndsDoubles18less();
+              break;
+            case 'doubles1':
+              quest = rndsDoubles118less();
+              break;
+            case 'general':
+              quest = rndsGen18less();
+              break;
+            case 'missingAddend':
+              quest = missingAddend18less();
+              break;
+            case 'subtraction':
+              quest = subtraction18less();
+              break;
+            case 'trick9':
+              quest = trick918less();
+              break;
+            case 'trick8':
+              quest = trick818less();
+              break;
+          }
+        }
+        if(quest) possibleProblems.push(quest);
+      }
+      var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)];
+      console.log(quest);
+      if(quest.indexOf('___') == -1) eval('var answer = ' + quest + ';');
+      else if(quest.indexOf(' + ___') != -1) eval('var answer = ' + quest.replace(' + ___ =', '').split(' ').reverse().join(' - ') + ';');
+      else eval('var answer = ' + quest.replace('___ + ', '').split(' = ').reverse().join(' - ') + ';');
+      return [quest, answer];
     }
 
     function questionMode() {
@@ -316,7 +472,7 @@
       questionOn++;
       $('#check').text('Check');
       $('#qon').text(questionOn);
-      window.question = questionGenerator(tables);
+      window.question = questionGenerator();
       $('#numq').html(question[0]);
     }
 
@@ -339,7 +495,7 @@
       questionsAnswered.push({
         studentAnswered: parseInt(response.val()),
         correctAnswer: question[1],
-        question: question[0].replace(/\&times;/g, 'x'),
+        question: question[0],
         isCorrect: isCorrect
       });
       $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
@@ -355,6 +511,15 @@
       window.check = $('#check');
       window.message = $('#message');
       window.isTimed = false;
+      /* end copied code */ window.problemTypes = {
+        doubles: $('#doubles'),
+        doubles1: $('#doublesPlus1'),
+        trick9: $('#9trick'),
+        trick8: $('#8trick'),
+        general: $('#general'),
+        missingAddend: $('#missingAddend'),
+        subtraction: $('#subtraction')
+      }; // start copied code
       $(document).on('keydown', function(event) {
         if (event.keyCode == 13 && !check.prop('disabled') && started) {
           event.preventDefault();
@@ -364,13 +529,6 @@
       check.click(function() {
         if (check.text() == 'Check') checkAns();
         else newQuestion();
-      });
-      $('.tc [type="checkbox"]').click(function() {
-        var anyChecked = false;
-        $('.tc [type="checkbox"]').each(function(key, el) {
-          if (el.checked) anyChecked = true;
-        });
-        changeValidity(anyChecked);
       });
     });
 

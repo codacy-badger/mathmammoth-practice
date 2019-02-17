@@ -50,6 +50,9 @@
           <li class="list-group-item">
             <a href="factorfind.php">Find the Factors</a>
           </li>
+          <li class="list-group-item">
+            <a href="addition-single-digit.php">Single Digit Addition</a>
+          </li>
         </ul>
       </p>
     </div>

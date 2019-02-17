@@ -140,7 +140,9 @@
         <div id="wend"></div>
         <div id="cend"></div>
       </div><br>
-      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button>
+      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button><br><br>
+      <input type="email" class="form-control" id="teacherEmail" oninput="changedEmail()" placeholder="Enter your teacher's email..."><br>
+      <div style="text-align: left; margin-right: auto"><button class="btn btn-primary mr-auto" id="sendResults" onclick="sendResultsToTeacher()">Send Results to Teacher</button></div>
     </div>
   </div>
   <?php include 'footer.php'; ?>
@@ -154,6 +156,28 @@
     var timerSeconds;
     var interval;
     var started = false;
+    var questionsAnswered = [];
+
+    function changedEmail() {
+      if($('#teacherEmail').val() == '') {
+        $('#sendResults').prop('disabled', true);
+      } else {
+        $('#sendResults').prop('disabled', false);
+      }
+    }
+
+    function sendResultsToTeacher() {
+      $('#sendResults').prop('disabled', true).text('Sending...');
+      $.post('/practice/sendresultstoteacher.php', {
+        email: $('#teacherEmail').val(),
+        date: new Date().getFullYear() + '/' + (((parseInt(new Date().getMonth()) + 1) < 10) ? ('0' + (parseInt(new Date().getMonth()) + 1)) : (parseInt(new Date().getMonth()) + 1)) + '/' + (new Date().getDate() < 10 ? '0' + new Date().getDate() : new Date().getDate()),
+        results: JSON.stringify(questionsAnswered),
+        page: 'Division With Remainders (Mental Math)'
+      }).always(function() {
+        $('#sendResults').text('Click to resend');
+        $('#sendResults').prop('disabled', false);
+      });
+    }
 
     function changeValidity(isValid) {
       valid = isValid;
@@ -161,8 +185,8 @@
     }
 
     function time(seconds) {
-      let minutes = Math.floor(seconds / 60);
-      let secs = seconds % 60;
+      var minutes = Math.floor(seconds / 60);
+      var secs = seconds % 60;
       if(secs < 10) secs = '0' + secs;
       return minutes + ':' + secs;
     }
@@ -296,6 +320,13 @@
         wrong++;
         message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1].replace(/R/g, ' R'));
       }
+      $('input').blur();
+      questionsAnswered.push({
+        studentAnswered: response.val(),
+        correctAnswer: question[1],
+        question: question[0].replace(/\&divide;/g, '/'),
+        isCorrect: isCorrect
+      });
       $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
       check.text('Continue');
       $('#correct').text(correct);

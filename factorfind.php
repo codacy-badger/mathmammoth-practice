@@ -25,60 +25,14 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
-  <style>
-    .container {
-      margin-top: 10px;
-    }
-
-    #message {
-      font-weight: bold;
-    }
-
-    #practicearea {
-      position: relative;
-    }
-
-    #correctawrong,
-    #questionon {
-      position: absolute;
-    }
-
-    .pp {
-      display: inline-block;
-      height: 30px;
-      width: 20px;
-      border: 1px solid #CCC;
-      background-color: antiquewhite;
-      color: #ff3f3f;
-      border-radius: 4px;
-    }
-
-    #wend,
-    #cend {
-      display: inline-block;
-      float: left;
-    }
-
-    #wend {
-      background-color: red;
-      height: 100%;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-    }
-
-    #cend {
-      background-color: green;
-      height: 100%;
-      border-top-right-radius: 7px;
-      border-bottom-right-radius: 7px;
-    }
-  </style>
+  <link rel="stylesheet" href="practice.css">
   <script>
     if(!Array.prototype.includes) {
       Array.prototype.includes = function(key) {
         return this.indexOf(key) > -1;
       };
     }
+    var questionsAnswered = [];
     var everything = function () {
       $('#go').click(function () {
         var questions = [];
@@ -134,6 +88,13 @@
               wrong++;
               $('#wrong').text(wrong);
             }
+            $('input').blur();
+            questionsAnswered.push({
+              studentAnswered: $('#factors').val(),
+              correctAnswer: getFactors(questions[questionon]).join(', '),
+              question: questions[questionon],
+              isCorrect: isCorrect($('#factors').val(), questions[questionon])
+            });
             $('#factors').attr('disabled', true);
             $('#numq').css('color', '#888686');
           }
@@ -198,7 +159,7 @@
         temp[temp.length - 1] = '';
         answer = temp.join('');
       }
-      answer = answer.trim(); 
+      answer = answer.trim();
       answer = answer.split(',');
       var ndanswer = [];
       for (var y = 0; y < answer.length; y++) {
@@ -228,11 +189,32 @@
         $('#wend').css('border-bottom-right-radius', '7px');
       }
     }
+
+    function changedEmail() {
+      if($('#teacherEmail').val() == '') {
+        $('#sendResults').prop('disabled', true);
+      } else {
+        $('#sendResults').prop('disabled', false);
+      }
+    }
+
+    function sendResultsToTeacher() {
+      $('#sendResults').prop('disabled', true).text('Sending...');
+      $.post('/practice/sendresultstoteacher.php', {
+        email: $('#teacherEmail').val(),
+        date: new Date().getFullYear() + '/' + (((parseInt(new Date().getMonth()) + 1) < 10) ? ('0' + (parseInt(new Date().getMonth()) + 1)) : (parseInt(new Date().getMonth()) + 1)) + '/' + (new Date().getDate() < 10 ? '0' + new Date().getDate() : new Date().getDate()),
+        results: JSON.stringify(questionsAnswered),
+        page: 'Find the Factors'
+      }).always(function() {
+        $('#sendResults').text('Click to resend');
+        $('#sendResults').prop('disabled', false);
+      });
+    }
   </script>
   <title>Find the Factors &mdash; Online Practice (grades 4-6)</title>
 </head>
 
-<body onkeydown="if(event.keyCode == 13 && !$('#practicearea').hasClass('d-none') && !$('#check').attr('disabled')) $('#check').click();">
+<body onkeydown="if(event.keyCode == 13 && !$('#practicearea').hasClass('d-none') && !$('#check').attr('disabled')) { $('#check').click(); }">
   <?php $page = 'findfactors'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
@@ -288,8 +270,10 @@
       <div id="pb" style="width: 75%; display: inline-block; margin: auto; height: 20px">
         <div id="wend"></div>
         <div id="cend"></div>
-      </div><br>
-      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button>
+      </div><br><br>
+      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button><br><br>
+      <input type="email" class="form-control" id="teacherEmail" oninput="changedEmail()" placeholder="Enter your teacher's email..."><br>
+      <div style="text-align: left!important; margin-right: auto!important"><button class="btn btn-primary mr-auto" id="sendResults" onclick="sendResultsToTeacher()">Send Results to Teacher</button></div>
     </div>
   </div>
   <?php include 'footer.php'; ?>

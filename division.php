@@ -26,63 +26,7 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
-  <style>
-    .tc {
-      display: inline-block;
-      margin: 5px 20px 5px 0;
-    }
-    .jumbotron {
-      margin: auto;
-    }
-    .timed {
-      margin-top: 20px;
-    }
-    #numq {
-      font-size: 3em;
-    }
-    #message {
-      font-weight: bold;
-    }
-
-    #questionbox {
-      position: relative;
-    }
-
-    #correctawrong,
-    #questionon {
-      position: absolute;
-    }
-
-    .pp {
-      display: inline-block;
-      height: 30px;
-      width: 20px;
-      border: 1px solid #CCC;
-      background-color: antiquewhite;
-      color: #ff3f3f;
-      border-radius: 4px;
-    }
-
-    #wend,
-    #cend {
-      display: inline-block;
-      float: left;
-    }
-
-    #wend {
-      background-color: red;
-      height: 100%;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-    }
-
-    #cend {
-      background-color: green;
-      height: 100%;
-      border-top-right-radius: 7px;
-      border-bottom-right-radius: 7px;
-    }
-  </style>
+  <link rel="stylesheet" href="practice.css">
   <title>Basic Division Facts &mdash; Online Practice (grades 3-4)</title>
 </head>
 
@@ -199,8 +143,10 @@
       <div id="pb" style="width: 75%; display: inline-block; margin: auto; height: 20px">
         <div id="wend"></div>
         <div id="cend"></div>
-      </div><br>
-      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button>
+      </div><br><br>
+      <button class="btn btn-primary" onclick="window.location.reload()">Practice Again</button><br><br>
+      <input type="email" class="form-control" id="teacherEmail" oninput="changedEmail()" placeholder="Enter your teacher's email..."><br>
+      <div style="text-align: left; margin-right: auto"><button class="btn btn-primary mr-auto" id="sendResults" onclick="sendResultsToTeacher()">Send Results to Teacher</button></div>
     </div>
   </div>
   <?php include 'footer.php'; ?>
@@ -214,6 +160,28 @@
     var timerSeconds;
     var interval;
     var started = false;
+    var questionsAnswered = [];
+
+    function changedEmail() {
+      if($('#teacherEmail').val() == '') {
+        $('#sendResults').prop('disabled', true);
+      } else {
+        $('#sendResults').prop('disabled', false);
+      }
+    }
+
+    function sendResultsToTeacher() {
+      $('#sendResults').prop('disabled', true).text('Sending...');
+      $.post('/practice/sendresultstoteacher.php', {
+        email: $('#teacherEmail').val(),
+        date: new Date().getFullYear() + '/' + (((parseInt(new Date().getMonth()) + 1) < 10) ? ('0' + (parseInt(new Date().getMonth()) + 1)) : (parseInt(new Date().getMonth()) + 1)) + '/' + (new Date().getDate() < 10 ? '0' + new Date().getDate() : new Date().getDate()),
+        results: JSON.stringify(questionsAnswered),
+        page: 'Division'
+      }).always(function() {
+        $('#sendResults').text('Click to resend');
+        $('#sendResults').prop('disabled', false);
+      });
+    }
 
     function changeValidity(isValid) {
       valid = isValid;
@@ -221,8 +189,8 @@
     }
 
     function time(seconds) {
-      let minutes = Math.floor(seconds / 60);
-      let secs = seconds % 60;
+      var minutes = Math.floor(seconds / 60);
+      var secs = seconds % 60;
       if(secs < 10) secs = '0' + secs;
       return minutes + ':' + secs;
     }
@@ -355,6 +323,13 @@
         wrong++;
         message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1]);
       }
+      $('input').blur();
+      questionsAnswered.push({
+        studentAnswered: response.val(),
+        correctAnswer: question[1],
+        question: question[0].replace(/\&divide;/g, '/'),
+        isCorrect: isCorrect
+      });
       $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
       check.text('Continue');
       $('#correct').text(correct);
@@ -368,6 +343,7 @@
       window.check = $('#check');
       window.message = $('#message');
       window.isTimed = false;
+      changedEmail();
       $(document).on('keydown', function(event) {
         if (event.keyCode == 13 && !check.prop('disabled') && started) {
           event.preventDefault();

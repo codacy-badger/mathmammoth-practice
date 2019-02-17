@@ -26,6 +26,46 @@
       <li class="nav-item">
         <a class="nav-link<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="factorfind.php">Find Factors</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>" href="addition-single-digit.php">Single Digit Addition</a>
+      </li>
     </ul>
   </div>
 </nav>
+<?php
+if(isset($_GET['rating'])) {
+  $email = $_GET['email'];
+  $rating = $_GET['rating'];
+  $feedback = $_GET['feedback'];
+  $send = true;
+  if(isset($_GET['g-recaptcha-response'])){
+    $captcha = $_GET['g-recaptcha-response'];
+  }
+  $message = '';
+  if(!$captcha){
+    $message = '<h2>Please check the captcha form.</h2>';
+    $send = false;
+  }
+  $secretKey = "6LfiqI8UAAAAANT180ToHnW0VhyuB2gTMAnf7zmR";
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $secretKey . "&response=" . $captcha . "&remoteip=" . $ip);
+  $responseKeys = json_decode($response,true);
+  if($message !== '<h2>Please check the captcha.</h2>') {
+    if(!intval($responseKeys["success"])) {
+      $message = 'You didn\'t pass the captcha.';
+      $send = false;
+    } else {
+      $message = 'Thanks for posting your feedback.';
+    }
+  }
+  $a = "
+  Page: $page
+  Rating: $rating
+  Feedback: $feedback
+
+  IP: $ip
+  ";
+  if ($send) mail('maria_miller@mathmammoth.com', 'Math Mammoth Practice Feedback - Rating: ' . $rating, $a,'From: ' . (trim($email) ? 'maria_miller@mathmammoth.com' : trim($email)));
+  echo '<br><div class="container"><div class="jumbotron text-black" style="background-color: #8cfc88">' . $message . '</div></div><br>';
+}
+?>
