@@ -26,24 +26,43 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Single Digit Addition &mdash; Online Practice (grades 1-2)</title>
+  <title>Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</title>
 </head>
 
 <body>
   <?php $page = 'addition-single-digit'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Single Digit Addition Online Practice</h1>
-      <p>On this page, you can practice the basic addition and subtraction facts &mdash; with single-digit addends. Options include adding with zero, doubles, doubles plus one, nine trick (or adding with 9), the eight-trick (or adding with 8), and missing addend problems (missing number additions).</p>
-      <p>Choose to practice additions where the sum is 10 or less for 1st grade or where the sum is 20 or less for 2nd grade.</p>
-      <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
-      <!-- end copied code --><div id="tenOrEighteen">
+      <h1 class="text-center">Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</h1>
+      <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
+      
+         <p>Choose sums where the sum is 10 or less for 1st grade, and sums where the sum is 20 or less for 2nd grade. You can practice addition, subtraction, and missing addend problems (missing number additions). Choose timed or untimed practice and the number of practice problems.</p>
+      
+       <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p>
+<br>
+
+      <!-- end copied code -->
+      
+      <div id="tenOrEighteen">
         <input type="radio" name="1018" id="10less"> 
-        <label for="10less">Sums 10 or less (1st grade)</label><br>
+        <label for="10less">Basic facts within 10 &mdash; 1st grade (the biggest number is 10 or less)</label><br>
         <input type="radio" name="1018" checked id="18less"> 
-        <label for="18less">Sums 20 or less (2nd grade)</label>
+        <label for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
       </div><br>
-      Problem types:<br><br><div id="problemTypes">
+      
+        <input type="checkbox" id="addition">
+        <label for="addition">Addition</label>
+        
+        <br>
+        <input type="checkbox" id="missingAddend"> 
+        <label for="missingAddend">Missing addend (e.g. 2 + ___ = 8)</label><br>
+
+        <input type="checkbox" id="subtraction"> 
+        <label for="subtraction">Subtraction (e.g. 8 &minus; 6)</label>
+      <br><br>
+      
+      Further options for <i>addition only</i>:<br><br>
+      <div id="problemTypes">
         <input type="checkbox" id="withZero"> 
         <label for="withZero">With Zero (e.g. 0+4, 7+0)</label><br>
 
@@ -62,11 +81,6 @@
         <input type="checkbox" id="general" checked> 
         <label for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
 
-        <input type="checkbox" id="missingAddend"> 
-        <label for="missingAddend">Missing Addend (e.g. 2 + ___ = 8)</label><br>
-
-        <input type="checkbox" id="subtraction"> 
-        <label for="subtraction">Subtraction (e.g. 8 - 6)</label>
       </div><br><!-- start copied code -->
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
