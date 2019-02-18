@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="bootstrap.min.css" />
   <script src="jquery-3.3.1.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mm.css" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <meta name="apple-mobile-web-app-title" content="MM Practice">
@@ -36,7 +37,9 @@
       <h1 class="text-center">Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</h1>
       <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
       
-         <p>Choose sums where the sum is 10 or less for 1st grade, and sums where the sum is 20 or less for 2nd grade. You can practice addition, subtraction, and missing addend problems (missing number additions). Choose timed or untimed practice and the number of practice problems.</p>
+      <p>You can practice addition facts, subtraction facts, and missing addend problems (missing number additions).</p>
+      
+         <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less.  Additionally you can select timed or untimed practice and the number of practice problems.</p>
       
        <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p>
 <br>
@@ -50,21 +53,16 @@
         <label for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
       </div><br>
       
-        <input type="checkbox" id="addition">
-        <label for="addition">Addition</label>
-        
-        <br>
-        <input type="checkbox" id="missingAddend"> 
-        <label for="missingAddend">Missing addend (e.g. 2 + ___ = 8)</label><br>
 
-        <input type="checkbox" id="subtraction"> 
-        <label for="subtraction">Subtraction (e.g. 8 &minus; 6)</label>
-      <br><br>
       
-      Further options for <i>addition only</i>:<br><br>
+      Choose the types of <i>addition</i> problems:<br><br>
       <div id="problemTypes">
+      
+        <input type="checkbox" id="general" checked> 
+        <label for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
+        
         <input type="checkbox" id="withZero"> 
-        <label for="withZero">With Zero (e.g. 0+4, 7+0)</label><br>
+        <label for="withZero">With zero (e.g. 0 + 4, 7 + 0)</label><br>
 
         <input type="checkbox" id="doubles"> 
         <label for="doubles">Doubles</label><br>
@@ -76,10 +74,19 @@
         <label for="9trick">9 Trick (or add to 9, e.g. 9 + 2, 3 + 9, 9 + 6)</label><br>
 
         <input type="checkbox" id="8trick"> 
-        <label for="8trick">8 Trick (or add to 8)</label><br>
+        <label for="8trick">8 Trick (or add to 8, e.g. 8 + 7, 1 + 8, 8 + 3)</label><br>
+        <br>
 
-        <input type="checkbox" id="general" checked> 
-        <label for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
+Instead of addition, or in addition to it &#x1F601;, you can also choose to have missing addend and/or subtraction problems:
+        
+        <br><br>
+        <input type="checkbox" id="missingAddend"> 
+        <label for="missingAddend">Missing addend (e.g. 2 + ___ = 8)</label><br>
+
+        <input type="checkbox" id="subtraction"> 
+        <label for="subtraction">Subtraction (e.g. 8 &minus; 6)</label>
+      <br>
+      
 
       </div><br><!-- start copied code -->
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">

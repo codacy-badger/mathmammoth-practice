@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="bootstrap.min.css" />
   <script src="jquery-3.3.1.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mm.css" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <meta name="apple-mobile-web-app-title" content="MM Practice">

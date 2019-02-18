@@ -8,6 +8,7 @@
   <link rel="manifest" href="manifest.json">
   <script src="app.js"></script>
   <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="mm.css" />
   <script src="jquery-3.3.1.min.js"></script>
   <script src="bootstrap.min.js"></script>
   <meta name="apple-mobile-web-app-capable" content="yes">
