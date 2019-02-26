@@ -1,6 +1,7 @@
-var CACHE_VERSION = 36;
+var CACHE_VERSION = 37; 
 var CACHE_STATIC_NAME = "static-v" + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = "dynamic-v" + CACHE_VERSION;
+
 
 self.addEventListener("install", function(event) {
   self.skipWaiting();
