@@ -36,63 +36,67 @@
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</h1>
       <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
-      
       <p>You can practice addition facts, subtraction facts, and missing addend problems (missing number additions).</p>
-      
-         <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less.  Additionally you can select timed or untimed practice and the number of practice problems.</p>
-      
-       <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p>
-<br>
-
+      <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less. Additionally you can select timed or untimed practice and the number of practice problems.</p>
+      <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p><br>
       <!-- end copied code -->
-      
       <div id="tenOrEighteen">
-        <input type="radio" name="1018" id="10less"> 
-        <label for="10less">Basic facts within 10 &mdash; 1st grade (the biggest number is 10 or less)</label><br>
-        <input type="radio" name="1018" checked id="18less"> 
-        <label for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
-      </div><br>
-      
-
-      
+        <div class="custom-control custom-radio">
+          <input class="custom-control-input" type="radio" name="1018" id="10less">
+          <label class="custom-control-label" for="10less">Basic facts within 10 &mdash; 1st grade (the biggest number is 10 or less)</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input class="custom-control-input" type="radio" name="1018" checked id="18less">
+          <label class="custom-control-label" for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
+        </div>
+      </div><br> <!-- 7 lines -->
       Choose the types of <i>addition</i> problems:<br><br>
       <div id="problemTypes">
-      
-        <input type="checkbox" id="general" checked> 
-        <label for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
-        
-        <input type="checkbox" id="withZero"> 
-        <label for="withZero">With zero (e.g. 0 + 4, 7 + 0)</label><br>
-
-        <input type="checkbox" id="doubles"> 
-        <label for="doubles">Doubles</label><br>
-
-        <input type="checkbox" id="doublesPlus1"> 
-        <label for="doublesPlus1">Doubles + 1 (e.g. 8 + 9, 6 + 5, 3 + 4)</label><br>
-
-        <input type="checkbox" id="9trick"> 
-        <label for="9trick">9 Trick (or add to 9, e.g. 9 + 2, 3 + 9, 9 + 6)</label><br>
-
-        <input type="checkbox" id="8trick"> 
-        <label for="8trick">8 Trick (or add to 8, e.g. 8 + 7, 1 + 8, 8 + 3)</label><br>
-        <br>
-
-Instead of addition, or in addition to it &#x1F601;, you can also choose to have missing addend and/or subtraction problems:
-        
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="general" checked>
+          <label class="custom-control-label" for="general">General (any, e.g. 2 + 7, 5 + 3)</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="withZero">
+          <label class="custom-control-label" for="withZero">With zero (e.g. 0 + 4, 7 + 0)</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="doubles">
+          <label class="custom-control-label" for="doubles">Doubles</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="doublesPlus1">
+          <label class="custom-control-label" for="doublesPlus1">Doubles + 1 (e.g. 8 + 9, 6 + 5, 3 + 4)</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="9trick">
+          <label class="custom-control-label" for="9trick">9 Trick (or add to 9, e.g. 9 + 2, 3 + 9, 9 + 6)</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="8trick">
+          <label class="custom-control-label" for="8trick">8 Trick (or add to 8, e.g. 8 + 7, 1 + 8, 8 + 3)</label><br>
+        </div> <!-- 7 lines -->
+        <br>Instead of addition, or in addition to it &#x1F601;, you can also choose to have missing addend and/or subtraction problems:
         <br><br>
-        <input type="checkbox" id="missingAddend"> 
-        <label for="missingAddend">Missing addend (e.g. 2 + ___ = 8)</label><br>
-
-        <input type="checkbox" id="subtraction"> 
-        <label for="subtraction">Subtraction (e.g. 8 &minus; 6)</label>
-      <br>
-      
-
-      </div><br><!-- start copied code -->
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="missingAddend">
+          <label class="custom-control-label" for="missingAddend">Missing addend (e.g. 2 + ___ = 8)</label><br>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" id="subtraction">
+          <label class="custom-control-label" for="subtraction">Subtraction (e.g. 8 &minus; 6)</label>
+        </div><br>
+      </div><br><!-- 7 lines --><!-- start copied code -->
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
-          <input type="radio" name="timed" id="ty" data-val="yes"> <label for="ty">Timed practice (5 sec per answer)</label><br>
-          <input name="timed" type="radio" checked id="tn" data-val="no"> <label for="tn">Not timed</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" name="timed" id="ty" data-val="yes" class="custom-control-input">
+            <label for="ty" class="custom-control-label">Timed practice (5 sec per answer)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input name="timed" type="radio" checked id="tn" data-val="no" class="custom-control-input">
+            <label for="tn" class="custom-control-label">Not timed</label>
+          </div>
         </div>
         <br>
         <div class="form-group">
@@ -371,8 +375,8 @@ Instead of addition, or in addition to it &#x1F601;, you can also choose to have
     function questionGenerator() {
       var possibleProblems = [];
       for (var key in problemTypes) {
+        // end copied code
         var quest;
-        console.log(problemTypes, key, problemTypes[key]);
         if($('#10less').prop('checked') && problemTypes[key].prop('checked')) {
           switch(key) {
             case 'doubles':
@@ -425,12 +429,11 @@ Instead of addition, or in addition to it &#x1F601;, you can also choose to have
         }
         if(quest) possibleProblems.push(quest);
       }
-      var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)];
-      console.log(quest);
+      var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)]
       if(quest.indexOf('___') == -1) eval('var answer = ' + quest + ';');
       else if(quest.indexOf(' + ___') != -1) eval('var answer = ' + quest.replace(' + ___ =', '').split(' ').reverse().join(' - ') + ';');
       else eval('var answer = ' + quest.replace('___ + ', '').split(' = ').reverse().join(' - ') + ';');
-      return [quest, answer];
+      return [quest, answer]; // end copied code
     }
 
     function questionMode() {

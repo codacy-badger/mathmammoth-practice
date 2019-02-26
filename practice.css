@@ -23,9 +23,21 @@
   margin-top: 20px;
 }
 
+#addHomeScreen {
+  z-index: 1000;
+}
+
+.custom-control-label::before {
+  background-color:#FFF;
+}
+
 #correctawrong,
 #questionon {
   position: absolute;
+}
+
+.tc label {
+	padding-bottom: 10px;
 }
 
 .pp {

@@ -26,8 +26,12 @@
       <li class="nav-item">
         <a class="nav-link<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="factorfind.php">Find Factors</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>" href="addition-single-digit.php">Single Digit Addition</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' ? ' active' : ''; ?>" href="javascript:void(0);">Add & Subtract</a>
+        <div class="dropdown-menu" style="margin-top: -1px">
+          <a href="addition-single-digit.php" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single Digit Addition</a>
+          <a href="fact-families.php" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
+        </div>
       </li>
     </ul>
   </div>

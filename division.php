@@ -41,64 +41,70 @@
       <label style="font-weight: 500">
         Basic Division Facts: &nbsp;
         <div class="btn-group btn-group-sm">
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
-          <button class="btn btn-info" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
+          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
         </div>
       </label>
       <div id="tables">
-        <div class="tc">
-          <input type="checkbox" id="m1">
-          &nbsp;<label for="m1">Divide by 1</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m1">
+          &nbsp;<label class="custom-control-label" for="m1">Divide by 1</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m2">
-          &nbsp;<label for="m2">Divide by 2</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m2">
+          &nbsp;<label class="custom-control-label" for="m2">Divide by 2</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m3">
-          &nbsp;<label for="m3">Divide by 3</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m3">
+          &nbsp;<label class="custom-control-label" for="m3">Divide by 3</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m4">
-          &nbsp;<label for="m4">Divide by 4</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m4">
+          &nbsp;<label class="custom-control-label" for="m4">Divide by 4</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m5">
-          &nbsp;<label for="m5">Divide by 5</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m5">
+          &nbsp;<label class="custom-control-label" for="m5">Divide by 5</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m6">
-          &nbsp;<label for="m6">Divide by 6</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m6">
+          &nbsp;<label class="custom-control-label" for="m6">Divide by 6</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m7">
-          &nbsp;<label for="m7">Divide by 7</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m7">
+          &nbsp;<label class="custom-control-label" for="m7">Divide by 7</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m8">
-          &nbsp;<label for="m8">Divide by 8</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m8">
+          &nbsp;<label class="custom-control-label" for="m8">Divide by 8</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m9">
-          &nbsp;<label for="m9">Divide by 9</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m9">
+          &nbsp;<label class="custom-control-label" for="m9">Divide by 9</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m10">
-          &nbsp;<label for="m10">Divide by 10</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m10">
+          &nbsp;<label class="custom-control-label" for="m10">Divide by 10</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m11">
-          &nbsp;<label for="m11">Divide by 11</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m11">
+          &nbsp;<label class="custom-control-label" for="m11">Divide by 11</label>
         </div>
-        <div class="tc">
-          <input type="checkbox" id="m12">
-          &nbsp;<label for="m12">Divide by 12</label>
+        <div class="tc custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="m12">
+          &nbsp;<label class="custom-control-label" for="m12">Divide by 12</label>
         </div>
       </div><br>
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
-          <input type="radio" name="timed" id="ty" data-val="yes"> <label for="ty">Timed practice (5 sec per answer)</label><br>
-          <input name="timed" type="radio" checked id="tn" data-val="no"> <label for="tn">Not timed</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" name="timed" id="ty" data-val="yes" class="custom-control-input">
+            <label for="ty" class="custom-control-label">Timed practice (5 sec per answer)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input name="timed" type="radio" checked id="tn" data-val="no" class="custom-control-input">
+            <label for="tn" class="custom-control-label">Not timed</label>
+          </div>
         </div>
         <br>
         <div class="form-group">
