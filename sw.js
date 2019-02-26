@@ -60,6 +60,15 @@ self.addEventListener("fetch", function(event) {
           })
           .catch(function(err) {});
       }
+    }).catch(err => {
+      return fetch(event.request)
+        .then(function(res) {
+          caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
+            cache.put(event.request, res.clone());
+            return res;
+          });
+        })
+        .catch(function(err) {});
     })
   );
 });
