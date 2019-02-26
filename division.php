@@ -40,11 +40,11 @@
       <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact division tables you'd like to work on.</p>
       <label style="font-weight: 500">
         Basic Division Facts: &nbsp;
-        <div class="btn-group btn-group-sm">
-          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
-          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
-        </div>
       </label>
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
+      </div>
       <div id="tables">
         <div class="tc custom-control custom-checkbox custom-control-inline">
           <input type="checkbox" class="custom-control-input" id="m1">

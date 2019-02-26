@@ -39,11 +39,11 @@
       <p class="mb-4">This script allows you to practice division with remainders, using mental math. In other words, the division problems are based on basic division facts (or on multiplication tables), such as 53 &divide; 8 = 6 R5 or 23 &divide; 4 = 5 R3. You can choose timed or untimed practice, the number of practice problems, and the divisors you'd like to include.</p>
       <label style="font-weight: 500">
         Possible divisors: &nbsp;
-        <div class="btn-group btn-group-sm">
-          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
-          <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
-        </div>
       </label>
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
+      </div>
       <div id="tables">
         <div class="tc custom-control custom-checkbox custom-control-inline">
           <input type="checkbox" class="custom-control-input" id="m2">
