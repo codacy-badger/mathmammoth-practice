@@ -6,7 +6,8 @@
   font-weight: bold;
 }
 
-#practicearea, #questionbox {
+#practicearea,
+#questionbox {
   position: relative;
 }
 
@@ -28,7 +29,11 @@
 }
 
 .custom-control-label::before {
-  background-color:#FFF;
+  background-color: #fff;
+}
+
+.custom-control.custom-checkbox {
+  margin-bottom: 7px;
 }
 
 #correctawrong,
@@ -37,14 +42,14 @@
 }
 
 .tc label {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .pp {
   display: inline-block;
   height: 30px;
   width: 20px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   background-color: antiquewhite;
   color: #ff3f3f;
   border-radius: 4px;
@@ -53,7 +58,6 @@
 #wend,
 #cend {
   display: inline-block;
-  float: left;
 }
 
 #wend {
