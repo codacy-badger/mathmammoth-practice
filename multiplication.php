@@ -188,7 +188,7 @@
     var questionsAnswered = [];
 
     function changedEmail() {
-      if($('#teacherEmail').val() == '') {
+      if ($('#teacherEmail').val() == '') {
         $('#sendResults').prop('disabled', true);
       } else {
         $('#sendResults').prop('disabled', false);
