@@ -70,10 +70,10 @@ self.addEventListener('fetch', function(event) {
                 return res;
               });
             })
-            .catch(function(err) {});
+            .catch(function() {});
         }
       })
-      .catch(err => {
+      .catch(() => {
         return fetch(event.request)
           .then(function(res) {
             caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
@@ -81,7 +81,7 @@ self.addEventListener('fetch', function(event) {
               return res;
             });
           })
-          .catch(function(err) {});
+          .catch(function() {});
       })
   );
 });
