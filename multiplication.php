@@ -216,7 +216,7 @@
     function time(seconds) {
       var minutes = Math.floor(seconds / 60);
       var secs = seconds % 60;
-      if(secs < 10) secs = '0' + secs;
+      if (secs < 10) secs = '0' + secs;
       return minutes + ':' + secs;
     }
 
@@ -238,7 +238,7 @@
         timerSeconds = minsToSecs($('#settime').val());
         $('#time').text(time(timerSeconds));
         timerInt = setInterval(function() {
-          if(timerSeconds <= 0) clearInterval(timerInt);
+          if (timerSeconds <= 0) clearInterval(timerInt);
           else timerSeconds--;
           $('#time').text(time(timerSeconds));
         }, 1000);
