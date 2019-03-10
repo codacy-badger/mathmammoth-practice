@@ -140,7 +140,6 @@
       </div><br>
       <button class="btn btn-primary" onclick="onSubmit()" id="submit">Go!</button>
     </div>
-    <!-- start copied code -->
     <div class="jumbotron d-none" id="questionbox" style="background-color: #a5eaff; text-align: center;">
       <div id="correctawrong" style="top: 8px; right: 8px">Correct: <span id="correct">0</span> &nbsp; Wrong: <span id="wrong">0</span></div>
       <div id="questionon" style="top: 8px; left: 8px"><span id="qon">1</span>/<span id="numoq"></span></div>
