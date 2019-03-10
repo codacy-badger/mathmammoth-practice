@@ -28,11 +28,11 @@
       </li>
       <li class="nav-item dropdown">
         <a 
-          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-multiple-digit' ? ' active' : ''; ?>" 
+          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' ? ' active' : ''; ?>" 
           href="javascript:void(0);">Add & Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="addition-single-digit.php" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single Digit Addition</a>
-          <a href="addition-multiple-digit.php" class="dropdown-item<?php echo $page == 'addition-multiple-digit' ? ' active' : ''; ?>">Multiple Digit Addition</a>
+          <a href="addition-two-digit.php" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit Addition</a>
           <a href="fact-families.php" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
         </div>
       </li>

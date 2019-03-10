@@ -27,11 +27,11 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Multiple Digit Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</title>
+  <title>Two-Digit Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</title>
 </head>
 
 <body>
-  <?php $page = 'addition-multiple-digit'; include 'header.php'; ?>
+  <?php $page = 'addition-two-digit'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</h1>
@@ -85,7 +85,7 @@
       <div class="custom-control custom-checkbox">
         <input type="checkbox" id="100m2d" class="custom-control-input">
         <label for="100m2d" class="custom-control-label">100 &minus; 2-digit</label>
-      </div>
+      </div><!-- 13 lines -->
       <!-- start copied code -->
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
@@ -103,7 +103,7 @@
           <label for="noq" style="font-weight: 500">Number of questions:</label>
           <select class="custom-select" id="noq">
             <option value="5">5</option>
-            <option value="10">10</option>
+            <option value="10" selected>10</option>
             <option value="15">15</option>
             <option value="20">20</option>
             <option value="25">25</option>
@@ -218,8 +218,16 @@
     }
 
     function onSubmit() {
+      /* end copied code */ var anyChecked = false;
+      for (var key in options) {
+        if (options[key].prop('checked')) anyChecked = true;
+      } 
+      if (!anyChecked) {
+        alert('Please select some options.');
+        return;
+      }
+      // 5 lines - start copied code
       started = true;
-      window.withZero = $('#withZero'); // not copied line
       window.mode = $('.switch:eq(0)').prop('style').opacity == '0.6' ? 'settime' : 'timeq';
       if (mode == 'timeq') {
         for (var i = 0; i < parseInt(questions.val()); i++) {
@@ -269,6 +277,24 @@
       }
       return regrouping;
     }
+    function hasRegroupingSub(num1, num2) {
+      var num1digits = num1.toString().split('');
+      var num2digits = num2.toString().split('');
+      var regrouping = false;
+      if(num1digits.length == 1) {
+        num1digits = ['0', num1digits[0]];
+      }
+      if(num2digits.length == 1) {
+        num2digits = ['0', num2digits[0]];
+      }
+      if (parseInt(num1digits[1]) - parseInt(num2digits[1]) < 0) {
+        regrouping = true;
+      }
+      if(parseInt(num1digits[0]) - parseInt(num2digits[0]) < 0) {
+        regrouping = true;
+      }
+      return regrouping;
+    } // 2 lines
     function random(min, max) {
       return Math.floor(Math.random() * (max - (min - 1))) + min;
     } // start copied code
@@ -326,8 +352,57 @@
         var way = Math.round(Math.random());
         possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
       } // 15 lines
+      if(options['2m1dnr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(1, 9);
+        while(hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
+          num1 = random(10, 99);
+          num2 = random(1, 9);
+        }
+        possibleProblems.push(num1 + ' &minus; ' + num2);
+      } // 3 lines
+      if(options['2m1dwr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(1, 9);
+        while(!hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
+          num1 = random(10, 99);
+          num2 = random(1, 9);
+        }
+        possibleProblems.push(num1 + ' &minus; ' + num2);
+      } // 0 lines
+      if(options['2dmmo10'].prop('checked')) {
+        var num1 = random(10, 89);
+        var num2 = random(1, 9) * 10;
+        var way = Math.round(Math.random());
+        while(num1 - num2 < 0) {
+          num1 = random(10, 99);
+          num2 = random(1, 9) * 10;
+        }
+        possibleProblems.push(num1 + ' &minus; ' + num2);
+      } // 1 line
+      if(options['2m2dnr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(10, 99);
+        while(hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
+          num1 = random(10, 99);
+          num2 = random(10, 99);
+        }
+        possibleProblems.push(num1 + ' &minus; ' + num2);
+      } // 1 line
+      if(options['2m2dwr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(10, 99);
+        while(!hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
+          num1 = random(10, 99);
+          num2 = random(10, 99);
+        }
+        possibleProblems.push(num1 + ' &minus; ' + num2);
+      } // 0 lines
+      if(options['100m2d'].prop('checked')) {
+        possibleProblems.push('100 &minus; ' + random(10, 100));
+      } // 0 lines
       var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)];
-      eval('var answer = ' + quest + ';');
+      eval('var answer = ' + quest.replace('&minus;', '-') + ';');
       // start copied code
       return [quest, answer];
     }
@@ -443,7 +518,7 @@
         '2m2dnr': $('#2m2dnr'),
         '2m2dwr': $('#2m2dwr'),
         '100m2d': $('#100m2d')
-      }; // start copied code
+      }; // 5 lines - start copied code
       $(document).on('keydown', function(event) {
         if (event.keyCode == 13 && !check.prop('disabled') && started) {
           event.preventDefault();
