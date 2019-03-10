@@ -144,7 +144,12 @@
       <div id="questionon" style="top: 8px; left: 8px"><span id="qon">1</span>/<span id="numoq"></span></div>
       <div id="numq" class="text-center" style="font-weight: bold"></div>
       <br>
-      <input type="number" id="response" style="margin: auto; width: 75%" oninput="if(this.value != '') $('#check').prop('disabled', false); else $('#check').prop('disabled', true);" class="form-control">
+      <input 
+        type="number" 
+        id="response" 
+        style="margin: auto; width: 75%" 
+        oninput="if (this.value != '') $('#check').prop('disabled', false); else $('#check').prop('disabled', true);" 
+        class="form-control">
       <br>
       <button class="btn btn-primary" id="check" disabled>Check</button>
       <br>
