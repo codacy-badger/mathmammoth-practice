@@ -26,7 +26,7 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
-  <title>Home &mdash; Online Practice</title>
+  <title>Ad-free Online Practice for Math Topics (grades 1-5)</title>
 </head>
 
 <body>
@@ -35,28 +35,31 @@
     <div class="jumbotron" style="background-color: #a5eaff">
       <h1 class="text-center">Math Mammoth Online Practice</h1>
       <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu.</p>
-      <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). If they don't work offline in your browser (except IE / Opera Mini / Blackberry Browser), please tell us in the feedback form at the bottom of the page. <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
-      <p><u><b>Note:</b></u> It seems that sometimes it's necessary to RELOAD the page a few times to make it look right and to work offline. Also, on very few browsers, you may get an error stating that it cannot reach the site. Reloading should fix that, too.</p>
+      <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
+      <p><u><b>Note:</b></u> It seems that sometimes it's necessary to RELOAD (refresh) the page a few times to make it look right and to work offline. Also, you may get an error stating that it cannot reach the site. Reloading should fix that, too.</p>
 
         <ul class="list-group">
-          <li class="list-group-item">
-            <a href="multiplication.php">Multiplication Tables</a>
-          </li>
-          <li class="list-group-item">
-            <a href="division.php">Basic Division Facts</a>
-          </li>
-          <li class="list-group-item">
-            <a href="division-remainder.php">Division With Remainders (Mental Math)</a>
-          </li>
-          <li class="list-group-item">
-            <a href="factorfind.php">Find the Factors</a>
-          </li>
-          <li class="list-group-item">
-            <a href="addition-single-digit.php">Single Digit Addition</a>
-          </li>
-          <li class="list-group-item">
-            <a href="fact-families.php">Addition &amp; Subtraction Fact Families</a>
-          </li>
+          <a class="list-group-item list-group-item-action" href="multiplication.php">
+            Multiplication Tables
+          </a>
+          <a class="list-group-item list-group-item-action" href="division.php">
+            Basic Division Facts
+          </a>
+          <a class="list-group-item list-group-item-action" href="division-remainder.php">
+            Division With Remainders (Mental Math)
+          </a>
+          <a class="list-group-item list-group-item-action" href="factorfind.php">
+            Find the Factors
+          </a>
+          <a class="list-group-item list-group-item-action" href="addition-single-digit.php">
+            Single-Digit Addition & Subtraction
+          </a>
+          <a class="list-group-item list-group-item-action" href="addition-subtraction-two-digit.php">
+            Two-Digit Addition & Subtraction (Mental Math)
+          </a>
+          <a class="list-group-item list-group-item-action" href="fact-families.php">
+            Addition &amp; Subtraction Fact Families
+          </a>
         </ul>
       </p>
     </div>
