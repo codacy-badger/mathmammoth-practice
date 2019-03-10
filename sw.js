@@ -19,6 +19,7 @@ self.addEventListener('install', function(event) {
         '/practice/multiplication.php',
         '/practice/fact-families.php',
         '/practice/addition-single-digit.php',
+        '/practice/addition-subtraction-two-digit.php',
         '/practice/factorfind.php',
         '/practice/division.php',
         '/practice/division-remainder.php',
