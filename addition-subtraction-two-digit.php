@@ -35,19 +35,13 @@
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">Two-Digit Addition &amp; Subtraction with Mental Math &mdash; Online Practice (grades 1-3)</h1>
-      
       <p>Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 &minus; 4, 100 &minus; 28, etc.).</p>
-      
       <p>Here are some grade-level suggestions:</p>
-      
       <ul class="mb-3">
         <li class="mb-2">First graders should practice &mdash; and MASTER &mdash; adding a two-digit number and a single-digit number without regrouping (e.g. 24 + 5, 67 + 2), AND adding/subtracting two-digit numbers and multiples of ten (e.g. 45 + 30, 67 &minus; 50).</li>
-        
         <li class="mb-2">For second grade, I suggest practicing adding a two-digit number and a single-digit number <i>with</i> regrouping (e.g. 47 + 8, 77 + 5), and similarly, subtracting a two digit number and a single-digit number with regrouping (e.g. 82 &minus; 4, 64 &minus; 8). Second graders should  also add and subtract two-digit numbers without regrouping, and subtract a two-digit number from 100. They can also try adding and subtracting two-digit numbers with regrouping.</li>
-        
         <li class="mb-2">Finally, children in third grade can practice with all the options listed below. <img src="../newsletter/images/smiley-s.png" width=20 height=20 alt=":)"></li>
       </ul>
-      
       <br>
       <!-- end copied code -->
       <!-- addition opts -->
