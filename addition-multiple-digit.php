@@ -279,7 +279,7 @@
       if(options['2p1dnr'].prop('checked')) {
         var num1 = random(10, 99);
         var num2 = random(1, 9);
-        while(hasRegrouping(num1, num2)) {
+        while(hasRegrouping(num1, num2) || num1 + num2 >= 100) {
           num1 = random(10, 99);
           num2 = random(1, 9);
         }
@@ -289,13 +289,43 @@
       if(options['2p1dwr'].prop('checked')) {
         var num1 = random(10, 99);
         var num2 = random(1, 9);
-        while(!hasRegrouping(num1, num2)) {
+        while(!hasRegrouping(num1, num2) || num1 + num2 >= 100) {
           num1 = random(10, 99);
           num2 = random(1, 9);
         }
         var way = Math.round(Math.random());
         possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
       }
+      if(options['2dpmo10'].prop('checked')) {
+        var num1 = random(10, 89);
+        var num2 = random(1, 9) * 10;
+        var way = Math.round(Math.random());
+        while(num1 + num2 >= 100) {
+          num1 = random(10, 99);
+          num2 = random(1, 9) * 10;
+        }
+        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      }
+      if(options['2p2dnr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(10, 99);
+        while(hasRegrouping(num1, num2) || num1 + num2 >= 100) {
+          num1 = random(10, 99);
+          num2 = random(10, 99);
+        }
+        var way = Math.round(Math.random());
+        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      }
+      if(options['2p2dwr'].prop('checked')) {
+        var num1 = random(10, 99);
+        var num2 = random(10, 99);
+        while(!hasRegrouping(num1, num2) || num1 + num2 >= 100) {
+          num1 = random(10, 99);
+          num2 = random(10, 99);
+        }
+        var way = Math.round(Math.random());
+        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      } // 15 lines
       var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)];
       eval('var answer = ' + quest + ';');
       // start copied code
