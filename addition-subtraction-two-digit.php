@@ -48,7 +48,7 @@
         <li class="mb-2">Finally, children in third grade can practice with all the options listed below. <img src="../newsletter/images/smiley-s.png" width=20 height=20 alt=":)"></li>
       </ul>
       
-<br>
+      <br>
       <!-- end copied code -->
       <!-- addition opts -->
       <div class="custom-control custom-checkbox">
