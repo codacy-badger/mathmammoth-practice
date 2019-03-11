@@ -27,6 +27,19 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <title>Ad-free Online Practice for Math Topics (grades 1-5)</title>
+  <style>
+    @media screen and (max-width: 750px) {
+      .testimonial-img {
+        float: initial!important;
+        width: 70%!important;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .test-text {
+        width: 100%!important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -61,6 +74,31 @@
             Addition &amp; Subtraction Fact Families
           </a>
         </ul>
+        <div class="card mt-3" style="margin: auto">
+          <div class="card-body">
+            <p class="card-text">
+              Dear Mrs. Miller,
+              <p>
+                My daughter loves the new online practice site. Using mom's computer is always a fun treat, 
+                so she was thrilled to get to practice math facts on it. Please give our thanks to your son! 
+                My daughter says, &ldquo;Thank you so much!&rdquo;
+              </p>
+              <img src="../images/children/girl_online_practice.jpg" style="width: 25%" class="testimonial-img rounded float-right" alt="A girl practicing math problems online">
+              <div class="float-left test-text" style="width: 70%">
+                We have loved Math Mammoth for the past 6 years. 
+                I've taught high school math since before I had children, using Foerster's and Jacobs' 
+                books in both private schools and homeschool co-ops. When parents with younger children 
+                ask what I recommend, I tell them about the great experiences my children have had and how 
+                well my oldest was prepared for Algebra. I've even recommended it for remediation for 
+                students I tutor who never grasped integers or percents. <br>
+                Thank you for such a great program!
+                <br><br>
+                In Christ,<br>
+                Jennifer Drury
+              </div>
+            </p>
+          </div>
+        </div>
       </p>
     </div>
   </div>
