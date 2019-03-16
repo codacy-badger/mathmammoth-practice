@@ -27,7 +27,7 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Multiplication Tables &mdash; Online Practice (grades 3-4)</title>
+  <title>Multiply by Whole 10s, 100s, 1000s, and 10000s | Online Practice</title>
 </head>
 
 <body>
@@ -114,7 +114,7 @@
   </div>
   <?php include 'footer.php'; ?>
   <script>
-    var title = "Multiply Whole 10s, 100s, 1000s, and 10000s"; // replace title here too
+    var title = "Multiply by Whole 10s, 100s, 1000s, and 10000s";
     var valid = false;
     var wrong = 0;
     var correct = 0;
