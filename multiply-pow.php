@@ -114,6 +114,7 @@
   </div>
   <?php include 'footer.php'; ?>
   <script>
+    var title = "Multiply Whole 10s, 100s, 1000s, and 10000s"; // replace title here too
     var valid = false;
     var wrong = 0;
     var correct = 0;
@@ -139,7 +140,7 @@
         email: $('#teacherEmail').val(),
         date: new Date().getFullYear() + '/' + (((parseInt(new Date().getMonth()) + 1) < 10) ? ('0' + (parseInt(new Date().getMonth()) + 1)) : (parseInt(new Date().getMonth()) + 1)) + '/' + (new Date().getDate() < 10 ? '0' + new Date().getDate() : new Date().getDate()),
         results: JSON.stringify(questionsAnswered),
-        page: 'Multiply Whole 10s, 100s, 1000s, and 10000s'
+        page: title
       }).always(function() {
         $('#sendResults').text('Click to resend');
         $('#sendResults').prop('disabled', false);
