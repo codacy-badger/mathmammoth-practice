@@ -74,17 +74,17 @@
             Addition &amp; Subtraction Fact Families
           </a>
         </ul>
-        <div class="card mt-3" style="margin: auto">
+        <div class="card mt-3" style="margin: auto; background-color: #FFFF78">
           <div class="card-body">
-            <p class="card-text">
+            <p class="card-text font-italic">
               Dear Mrs. Miller,
-              <p>
+              <p class="font-italic">
                 My daughter loves the new online practice site. Using mom's computer is always a fun treat, 
                 so she was thrilled to get to practice math facts on it. Please give our thanks to your son! 
                 My daughter says, &ldquo;Thank you so much!&rdquo;
               </p>
               <img src="../images/children/girl_online_practice.jpg" style="width: 25%" class="testimonial-img rounded float-right" alt="A girl practicing math problems online">
-              <div class="float-left test-text" style="width: 70%">
+              <div class="float-left test-text font-italic" style="width: 70%">
                 We have loved Math Mammoth for the past 6 years. 
                 I've taught high school math since before I had children, using Foerster's and Jacobs' 
                 books in both private schools and homeschool co-ops. When parents with younger children 
