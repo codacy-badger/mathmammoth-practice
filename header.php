@@ -13,8 +13,12 @@
       <li class="nav-item">
         <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="index.php">Practice Center</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'multiplication' ? ' active' : ''; ?>" href="multiplication.php">Multiplication</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
+        <div class="dropdown-menu" style="margin-top: -1px">
+          <a href="multiplication.php" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
+          <a href="multiply-with-zeros.php" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle<?php echo $page == 'division' || $page == 'division-remainders' ? ' active' : ''; ?>" href="javascript:void(0);">Division</a>
