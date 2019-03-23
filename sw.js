@@ -17,6 +17,7 @@ self.addEventListener('install', function(event) {
         '/practice/index.php',
         '/practice/practice.css',
         '/practice/multiply-with-zeros.php',
+        '/practice/divide-with-zeros.php',
         '/practice/multiplication.php',
         '/practice/fact-families.php',
         '/practice/addition-single-digit.php',
