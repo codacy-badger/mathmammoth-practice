@@ -27,26 +27,35 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Divide Whole Numbers With Zeros &mdash; Online Practice (grades 4-6)</title>
+  <title>Divide Whole Numbers Ending in Zeros &mdash; Online Practice (grades 4-6)</title>
 </head>
 
 <body>
-  <?php $page = 'divide-with-zeros'; include 'header.php'; ?>
+  <?php $page = 'divide-numbers-ending-in-zeros'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Divide Whole Numbers With Zeros &mdash; Online Practice</h1>
-      <p>On this page, you can practice dividing numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
+      <h1 class="text-center">
+        Divide Whole Numbers Ending in Zeros<br>
+        <span style="font-size: 1.5rem">Online Practice for grades 4-6</span>
+      </h1>
+      <p>Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350&nbsp;&divide;&nbsp;5, 2,400&nbsp;&divide;&nbsp;60, or 540,000&nbsp;&divide;&nbsp;6,000.</p>
+
+      <p>Students usually start learning this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
       
-      <p> The principle for solving such multiplication problems is this: divide the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
-      <p>For example, to solve 20&nbsp;&times;&nbsp;300, first divide 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
+      <p>The main principle for solving these division problems is this. Each division is actually built from a simple division fact, such as 54&nbsp;&divide;&nbsp;6 or 18&nbsp;&divide;&nbsp;3. You will need to solve that problem. </p>
+      <p>Then think how may zeros must be tagged onto the answer, based on multiplication.</p>
+
+      <p>For example, to solve 2,400&nbsp;&divide;&nbsp;30, first divide 24&nbsp;&divide;&nbsp;3 = 8. Then, think whether the answer would be 8, 80, or 800, based on multiplying each of the 8&nbsp;&times;&nbsp;30, 80&nbsp;&times;&nbsp;300, and 800&nbsp;&times;&nbsp;30, and checking which one will give you the dividend, 2,400.</p>
+      
+      <p>Another principle that helps in solving these is that you can cancel out the same amount of zeros in each of the dividend and divisor in order to get a new, simpler problem with the same answer as the original.</p>
       
       <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
       <!-- end copied code -->
       <label for="level">Level:</label>
       <select id="level" class="custom-select">
-        <option value="1">1 (the factors have a maximum of four zeros in total)</option>
-        <option value="2" selected>2 (the factors have a maximum of eight zeros in total)</option>
-        <option value="3">3 (the factors have a maximum of 12 zeros in total)</option>
+        <option value="1" selected>1 (easy)</option>
+        <option value="2">2 (medium)</option>
+        <option value="3">3 (challenge)</option>
       </select>
       <!-- start copied code -->
       <br>
@@ -118,7 +127,7 @@
   </div>
   <?php include 'footer.php'; ?>
   <script>
-    var title = "Divide Whole Numbers With Zeros";
+    var title = "Divide Whole Numbers Ending in Zeros";
     var valid = false;
     var wrong = 0;
     var correct = 0;

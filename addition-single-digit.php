@@ -34,7 +34,10 @@
   <?php $page = 'addition-single-digit'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</h1>
+      <h1 class="text-center">
+        Basic Addition &amp; Subtraction Facts<br>
+        <span style="font-size: 1.5rem">Online practice for grades 1-2</span>
+      </h1>
       <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
       <p>You can practice addition facts, subtraction facts, and missing addend problems (missing number additions).</p>
       <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less. Additionally you can select timed or untimed practice and the number of practice problems.</p>

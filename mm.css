@@ -1,3 +1,13 @@
 h1.text-center {
   font-size: 1.85em;
 } 
+
+.nav-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dropdown-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

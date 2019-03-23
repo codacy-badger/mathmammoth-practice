@@ -34,10 +34,13 @@
   <?php $page = 'multiply-with-zeros'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Multiply Whole Numbers With Zeros &mdash; Online Practice</h1>
+      <h1 class="text-center">
+        Multiply Whole Numbers With Zeros<br>
+        <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
+      </h1>
       <p>On this page, you can practice multiplying numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
       
-      <p> The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
+      <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
       <p>For example, to solve 20&nbsp;&times;&nbsp;300, first multiply 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
       
       <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>

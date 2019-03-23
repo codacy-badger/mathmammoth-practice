@@ -21,10 +21,11 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page == 'division' || $page == 'division-remainders' ? ' active' : ''; ?>" href="javascript:void(0);">Division</a>
+        <a class="nav-link dropdown-toggle<?php echo $page == 'division' || $page == 'division-remainders' || $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>" href="javascript:void(0);">Division</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="division.php" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
           <a href="division-remainder.php" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
+          <a href="divide-numbers-ending-in-zeros.php" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
         </div>
       </li>
       <li class="nav-item">

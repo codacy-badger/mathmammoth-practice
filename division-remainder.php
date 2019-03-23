@@ -35,7 +35,10 @@
   <?php $page = 'division-remainders'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
-      <h1 class="text-center">Division With Remainders (Mental Math) Online Practice</h1>
+      <h1 class="text-center">
+        Division With Remainders (Mental Math)<br>
+        <span style="font-size: 1.5rem">Online practice for grades 3-4</span>
+      </h1>
       <p class="mb-4">This script allows you to practice division with remainders, using mental math. In other words, the division problems are based on basic division facts (or on multiplication tables), such as 53 &divide; 8 = 6 R5 or 23 &divide; 4 = 5 R3. You can choose timed or untimed practice, the number of practice problems, and the divisors you'd like to include.</p>
       <label style="font-weight: 500">
         Possible divisors: &nbsp;
