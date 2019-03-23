@@ -253,7 +253,7 @@
             exp2 = rand(1, 3);
             expsum += exp1;
             expsum += exp2;   
-          } while (expsum > 4);
+          } while (expsum > 4 || expsum < 3);
           var number1 = digit1 * Math.pow(10, exp1);
           var number2 = digit2 * Math.pow(10, exp2);
           var answer = number1 * number2;
@@ -270,11 +270,11 @@
           var expsum, exp1, exp2;
           do {
             expsum = sumexp;
-            exp1 = rand((digit1 == 1 ? 1 : 0), 6);
-            exp2 = rand(1, 6);
+            exp1 = rand((digit1 == 1 ? 1 : 0), 5);
+            exp2 = rand(1, 5);
             expsum += exp1;
             expsum += exp2;   
-          } while (expsum > 9);
+          } while (expsum > 6 || expsum < 4);
           number1 = digit1 * Math.pow(10, exp1);
           number2 = digit2 * Math.pow(10, exp2);
           answer = number1 * number2;
