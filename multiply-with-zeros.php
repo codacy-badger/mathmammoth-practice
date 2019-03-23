@@ -43,6 +43,8 @@
       <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
       <p>For example, to solve 20&nbsp;&times;&nbsp;300, first multiply 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
       
+      <p>You can also practice the opposite operation, <a href="divide-numbers-ending-in-zeros.php">division of numbers ending in zeros here</a>.</p>
+      
       <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
       <!-- end copied code -->
       <label for="level">Level:</label>
