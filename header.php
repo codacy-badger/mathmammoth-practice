@@ -14,10 +14,11 @@
         <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="index.php">Practice Center</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
+        <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' || $page == 'exponents' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="multiplication.php" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
           <a href="multiply-with-zeros.php" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
+          <a href="exponents.php" class="dropdown-item<?php echo $page == 'exponents' ? ' active' : ''; ?>">Exponents</a>
         </div>
       </li>
       <li class="nav-item dropdown">

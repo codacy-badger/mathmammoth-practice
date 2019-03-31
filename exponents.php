@@ -27,7 +27,7 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
-  <title>Multiply Whole Numbers With Zeros &mdash; Online Practice (grades 4-6)</title>
+  <title>Exponents and Powers of Ten &mdash; Online Practice (grades 5-7)</title>
 </head>
 
 <body>
@@ -35,24 +35,30 @@
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
-        Multiply Whole Numbers With Zeros<br>
-        <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
+        Exponents and Powers of Ten<br>
+        <span style="font-size: 1.5rem">Online practice for grades 5-7</span>
       </h1>
-      <p>On this page, you can practice multiplying numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
+      <p>On this page, you can practice with exponents and powers, such as 5<sup>2</sup> or 10<sup>6</sup>. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.</p>
 
-      <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
-      <p>For example, to solve 20&nbsp;&times;&nbsp;300, first multiply 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
+      <p>An exponent is the little number in this expression: 2<sup>4</sup>. It indicates how many times the <i>base number</i> (in our case 2) is multiplied by itself. So, 2<sup>4</sup> means 2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2 = 16.</p>
+      
+      <p>You can choose to practice either simple expressions with exponents, or expressions where we multiply a power of ten by some factor, or both.</p>
 
-      <p>You can also practice the opposite operation, <a href="divide-numbers-ending-in-zeros.php">division of numbers ending in zeros here</a>.</p>
-
-      <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
+      <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
 
       <label for="mode">Mode:</label>
-      <select id="mode" class="custom-select">
-        <option value="reg" selected>Use regular exponents (e.g. 4 to the 5th power)</option> <!-- <sup> tags don't work in options -->
-        <option value="10te">Use n &times; 10 to the nth power (e.g. 5 * 10 to the 4th power)</option>
-        <option value="both">Both</option>
-      </select>
+      <div class="custom-control custom-radio">
+        <input type="radio" checked name="mode" id="modeReg" value="reg" class="custom-control-input">
+        <label for="modeReg" class="custom-control-label">Evaluate powers (e.g. 2<sup>3</sup> or 6<sup>2</sup>)</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" name="mode" id="mode10te" value="10te" class="custom-control-input">
+        <label for="mode10te" class="custom-control-label">Powers of ten multiplied by some factor (e.g. 5 &times; 10<sup>4</sup>)</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" name="mode" id="modeBoth" value="both" class="custom-control-input">
+        <label for="modeBoth" class="custom-control-label">Both</label>
+      </div>
       <br>
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
@@ -122,7 +128,7 @@
   </div>
   <?php include 'footer.php';?>
   <script>
-    var title = "Exponents";
+    var title = "Exponents and Powers of Ten";
     var valid = false;
     var wrong = 0;
     var correct = 0;
@@ -218,7 +224,13 @@
       function rand(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
-      var mode = $('#mode').val() == 'reg' ? 0 : $('#mode').val() == '10te' ? 1 : rand(0, 1);
+      var modeval;
+      $('[name=mode]').each(function(index, el) {
+        if (el.checked) {
+          modeval = el.value;
+        }
+      });
+      var mode = modeval == 'reg' ? 0 : modeval == '10te' ? 1 : rand(0, 1);
       var question, answer;
       if (mode == 0) {
         var pos_nums = [0, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10, 100, 100];
