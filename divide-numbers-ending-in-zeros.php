@@ -391,7 +391,7 @@
         question: question[0].replace(/\&times;/g, 'x'),
         isCorrect: isCorrect
       });
-      $('.pp').eq(questionOn - 1).css('background-color', message.css('color'));
+      $('.pp').eq(questionOn - 1).css('background-color', isCorrect ? 'green' : 'salmon');
       check.text('Continue');
       $('#correct').text(correct);
       $('#wrong').text(wrong);

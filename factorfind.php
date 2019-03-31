@@ -84,7 +84,7 @@
             }
             else {
               $('#check').text('Continue');
-              $('.pp').eq(questionon).css('background-color', '#ff3f3f');
+              $('.pp').eq(questionon).css('background-color', 'salmon');
               $('#message').html('Sorry, that is not correct. <span style="color: black">The factors of ' + questions[questionon] + ' are: ' + getFactors(questions[questionon]).join(', ') + '</span>').css('color', 'red');
               wrong++;
               $('#wrong').text(wrong);
