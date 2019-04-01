@@ -114,8 +114,6 @@
   <script>
     if('serviceWorker' in navigator && 'caches' in window) {
       $('#not-supported').hide();
-    } else {
-      $.post('/practice/sendnotoffline.php', {userAgent: navigator.userAgent}, function() { console.log('Success', arguments); });
     }
   </script>
   <?php include 'footer.php'; ?>
