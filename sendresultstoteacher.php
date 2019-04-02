@@ -7,6 +7,12 @@ $resultsFormatted = '';
 $correct = 0;
 $wrong = 0;
 
+if (str_replace("kmranfeldhsp@gmail.com", "", $email) != $email) {
+  echo 'Email blocked';
+  http_response_code(403);
+  exit();
+}
+
 foreach ($results as $result) {
   $result->isCorrect ? $correct++ : $wrong++;
   $correctAns = $result->correctAnswer;
