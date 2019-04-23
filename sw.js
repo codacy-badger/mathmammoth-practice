@@ -1,4 +1,4 @@
-var CACHE_VERSION = 48;
+var CACHE_VERSION = 49;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 
@@ -68,7 +68,7 @@ self.addEventListener('fetch', function(event) {
         } else {
           return fetch(event.request)
             .then(function(res) {
-              caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
+              return caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
                 cache.put(event.request, res.clone());
                 return res;
               });
@@ -79,7 +79,7 @@ self.addEventListener('fetch', function(event) {
       .catch(() => {
         return fetch(event.request)
           .then(function(res) {
-            caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
+            return caches.open(CACHE_DYNAMIC_NAME).then(function(cache) {
               cache.put(event.request, res.clone());
               return res;
             });

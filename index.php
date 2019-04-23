@@ -49,7 +49,6 @@
       <h1 class="text-center">Math Mammoth Online Practice</h1>
       <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu.</p>
       <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
-      <p><u><b>Note:</b></u> It seems that sometimes it's necessary to RELOAD (refresh) the page a few times to make it look right and to work offline. Also, you may get an error stating that it cannot reach the site. Reloading should fix that, too.</p>
 
         <ul class="list-group">
           <a class="list-group-item list-group-item-action" href="multiplication.php">
