@@ -11,3 +11,7 @@ h1.text-center {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.custom-select {
+  -webkit-appearance: none;
+}

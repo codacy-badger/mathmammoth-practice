@@ -1,4 +1,4 @@
-var CACHE_VERSION = 50;
+var CACHE_VERSION = 52;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 
@@ -29,7 +29,8 @@ self.addEventListener('install', function(event) {
         '/practice/app.js',
         '/practice/bootstrap.min.css',
         '/practice/bootstrap.min.js',
-        '/practice/jquery-3.3.1.min.js'
+        '/practice/jquery-3.3.1.min.js',
+        '/practice/mm.css'
       ]);
     })
   );
