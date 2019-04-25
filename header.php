@@ -5,7 +5,7 @@
 </style>
 <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
   <a class="navbar-brand" href="https://www.mathmammoth.com"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">Math Mammoth</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbar">
