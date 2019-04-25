@@ -40,7 +40,7 @@
       }
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js"></script>
+  <script src="lazyload.min.js"></script>
 </head>
 
 <body>
