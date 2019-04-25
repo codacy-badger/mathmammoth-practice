@@ -26,6 +26,7 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
+  <meta name="description" content="This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu. Topics include Mulitplication Tables, Exponents, Basic Division Facts, and much more.">
   <title>Ad-free Online Practice for Math Topics (grades 1-5)</title>
   <style>
     @media screen and (max-width: 750px) {
