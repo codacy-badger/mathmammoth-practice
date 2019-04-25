@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="https://www.mathmammoth.com/practice/manifest.json">
   <script src="app.js"></script>
   <link rel="stylesheet" href="bootstrap.min.css" />
   <link rel="stylesheet" href="mm.css" />
