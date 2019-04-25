@@ -35,7 +35,7 @@
     <h1 class="text-center">404 Not Found</h1>
     <p>This page could not be found. <a href="index.php">Back to Practice Center</a></p>
   </div>
-  <?php include 'footer.php'; ?>
+  <?php include 'footer.php?nofeed=1'; ?>
 </body>
 
 </html>

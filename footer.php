@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="jquery.rateyo.min.css">
 
 <br><br>
+<?php if ($page != '404') { ?>
 <div class="container" id="feedback">
   <?php if(!isset($_GET['rating'])) { ?>
   <div class="jumbotron text-black" style="background-color: #8cfc88">
@@ -53,6 +54,7 @@ if(!navigator.onLine) {
   $('#feedback').hide();
 }
 </script>
+<?php } ?>
 <div class="w-100 bg-primary text-white px-4 py-2" id="addHomeScreen" style="display: none; position: fixed; bottom: 0; left: 0">
   Add "Math Mammoth Practice" to home screen? <button class="btn btn-success" title='Add "Math Mammoth Practice" to home screen?' onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Add to home screen</button>
 </div>
