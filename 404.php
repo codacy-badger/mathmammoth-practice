@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-wi2.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="icons/180x180.dth, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="manifest" href="https://www.mathmammoth.com/practice/manifest.json">
   <script src="app.js"></script>
@@ -21,8 +22,7 @@
   <link rel="apple-touch-icon" href="icons/114x114.png" sizes="114x114">
   <link rel="apple-touch-icon" href="icons/120x120.png" sizes="120x120">
   <link rel="apple-touch-icon" href="icons/144x144.png" sizes="144x144">
-  <link rel="apple-touch-icon" href="icons/152x152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="icons/180x180.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="icons/152x15png" sizes="180x180">
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
@@ -35,7 +35,7 @@
     <h1 class="text-center">404 Not Found</h1>
     <p>This page could not be found. <a href="index.php">Back to Practice Center</a></p>
   </div>
-  <?php include 'footer.php?nofeed=1'; ?>
+  <?php include 'footer.php'; ?>
 </body>
 
 </html>
