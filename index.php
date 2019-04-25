@@ -52,34 +52,34 @@
       <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
 
         <ul class="list-group">
-          <a class="list-group-item list-group-item-action" href="multiplication.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="multiplication.php">
             Multiplication Tables
           </a>
-          <a class="list-group-item list-group-item-action" href="multiply-with-zeros.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="multiply-with-zeros.php">
             Multiply with Zeros
           </a>
-          <a class="list-group-item list-group-item-action" href="exponents.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="exponents.php">
             Exponents
           </a>
-          <a class="list-group-item list-group-item-action" href="divide-numbers-ending-in-zeros.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="divide-numbers-ending-in-zeros.php">
             Divide Numbers Ending in Zeros
           </a>
-          <a class="list-group-item list-group-item-action" href="division.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="division.php">
             Basic Division Facts
           </a>
-          <a class="list-group-item list-group-item-action" href="division-remainder.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="division-remainder.php">
             Division With Remainders (Mental Math)
           </a>
-          <a class="list-group-item list-group-item-action" href="factorfind.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="factorfind.php">
             Find the Factors
           </a>
-          <a class="list-group-item list-group-item-action" href="addition-single-digit.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="addition-single-digit.php">
             Single-Digit Addition & Subtraction
           </a>
-          <a class="list-group-item list-group-item-action" href="addition-subtraction-two-digit.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="addition-subtraction-two-digit.php">
             Two-Digit Addition & Subtraction (Mental Math)
           </a>
-          <a class="list-group-item list-group-item-action" href="fact-families.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="fact-families.php">
             Addition &amp; Subtraction Fact Families
           </a>
         </ul>
