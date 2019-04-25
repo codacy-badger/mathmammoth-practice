@@ -40,6 +40,7 @@
       }
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js"></script>
 </head>
 
 <body>
@@ -82,7 +83,7 @@
             Addition &amp; Subtraction Fact Families
           </a>
         </ul>
-        <div class="card mt-3" style="margin: auto; background-color: #FFFF78">
+        <div class="card mt-3 clearfix" style="margin: auto; background-color: #FFFF78; border-radius: 5px; padding: 30px">
           <div class="card-body">
             <p class="card-text font-italic">
               Dear Mrs. Miller,
@@ -91,7 +92,13 @@
                 so she was thrilled to get to practice math facts on it. Please give our thanks to your son! 
                 My daughter says, &ldquo;Thank you so much!&rdquo;
               </p>
-              <img src="../images/children/girl_online_practice.jpg" style="width: 25%" class="testimonial-img rounded float-right" alt="A girl practicing math problems online">
+              <img 
+                data-src="girl_online_practice.jpg" 
+                style="width: 25%" 
+                class="testimonial-img rounded float-right" 
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                onload="lzld(this)"
+                alt="A girl practicing math problems online">
               <div class="float-left test-text font-italic" style="width: 70%">
                 We have loved Math Mammoth for the past 6 years. 
                 I've taught high school math since before I had children, using Foerster's and Jacobs' 
@@ -114,6 +121,7 @@
     if('serviceWorker' in navigator && 'caches' in window) {
       $('#not-supported').hide();
     }
+    lazyload();
   </script>
   <?php include 'footer.php'; ?>
 </body>
