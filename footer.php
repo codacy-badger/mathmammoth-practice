@@ -41,7 +41,7 @@
       </div>
       <div class="form-group">
         <label for="feedback">Feedback:</label>
-        <textarea name="feedback" id="feedback" class="form-control" rows="8" cols="80"></textarea>
+        <textarea name="feedback" id="feedback" class="form-control" rows="8" cols="80" required></textarea>
       </div>
       <div class="g-recaptcha" data-sitekey="6LfiqI8UAAAAAOA-oUXaN7mozlXJIAfXQNfSYaYw"></div><br>
       <button type="submit" class="btn btn-primary">Submit</button>
