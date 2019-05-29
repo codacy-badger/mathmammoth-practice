@@ -27,6 +27,8 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>Multiplication Tables &mdash; Online Practice (grades 3-5)</title>
 </head>
 

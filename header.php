@@ -11,22 +11,22 @@
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="index.php">Practice Center</a>
+        <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="/practice/">Practice Center</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' || $page == 'exponents' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="multiplication.php" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
-          <a href="multiply-with-zeros.php" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
-          <a href="exponents.php" class="dropdown-item<?php echo $page == 'exponents' ? ' active' : ''; ?>">Exponents</a>
+          <a href="/practice/multiplication" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
+          <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
+          <a href="/practice/exponents" class="dropdown-item<?php echo $page == 'exponents' ? ' active' : ''; ?>">Exponents</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle<?php echo $page == 'division' || $page == 'division-remainders' || $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>" href="javascript:void(0);">Division</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="division.php" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
-          <a href="division-remainder.php" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
-          <a href="divide-numbers-ending-in-zeros.php" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
+          <a href="/practice/division" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
+          <a href="/practice/division-remainder" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
+          <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
         </div>
       </li>
       <li class="nav-item">
@@ -37,9 +37,9 @@
           class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' ? ' active' : ''; ?>"
           href="javascript:void(0);">Add & Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="addition-single-digit.php" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
-          <a href="addition-subtraction-two-digit.php" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
-          <a href="fact-families.php" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
+          <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
+          <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
+          <a href="/practice/fact-families" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
         </div>
       </li>
     </ul>

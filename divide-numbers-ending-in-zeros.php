@@ -27,6 +27,8 @@
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
   <link rel="stylesheet" href="practice.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>Divide Whole Numbers Ending in Zeros &mdash; Online Practice (grades 4-6)</title>
 </head>
 
@@ -48,7 +50,7 @@
       <p>For example, to solve 2,400&nbsp;&divide;&nbsp;30, first divide 24&nbsp;&divide;&nbsp;3 = 8. Then, think whether the answer would be 8, 80, or 800, based on multiplying each of the 8&nbsp;&times;&nbsp;30, 80&nbsp;&times;&nbsp;300, and 800&nbsp;&times;&nbsp;30, and checking which one will give you the dividend, 2,400.</p>
       
       <p>Another principle that helps in solving these is that you can cancel out the same amount of zeros in each of the dividend and divisor in order to get a new, simpler problem with the same answer as the original.</p>
-      <p>You can also practice the opposite operation, <a href="multiply-with-zeros.php">multiplication with zeros here</a>.</p>
+      <p>You can also practice the opposite operation, <a href="/practice/multiply-with-zeros">multiplication with zeros here</a>.</p>
       
       <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
       <!-- end copied code -->

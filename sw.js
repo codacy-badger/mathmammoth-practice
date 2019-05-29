@@ -1,4 +1,4 @@
-var CACHE_VERSION = 64;
+var CACHE_VERSION = 66;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 
@@ -14,8 +14,19 @@ self.addEventListener('install', function(event) {
       cache.addAll([
         '/practice/',
         '/practice/favicon.ico',
-        '/practice/index.php',
+        '/practice/index',
         '/practice/practice.css',
+        '/practice/multiply-with-zeros',
+        '/practice/exponents',
+        '/practice/divide-numbers-ending-in-zeros',
+        '/practice/multiplication',
+        '/practice/fact-families',
+        '/practice/addition-single-digit',
+        '/practice/addition-subtraction-two-digit',
+        '/practice/factorfind',
+        '/practice/division',
+        '/practice/division-remainder',
+        '/practice/index.php',
         '/practice/multiply-with-zeros.php',
         '/practice/exponents.php',
         '/practice/divide-numbers-ending-in-zeros.php',

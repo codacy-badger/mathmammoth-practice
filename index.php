@@ -41,6 +41,8 @@
       }
     }
   </style>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <script src="lazyload.min.js"></script>
 </head>
 
@@ -50,37 +52,37 @@
     <div class="jumbotron" style="background-color: #a5eaff">
       <h1 class="text-center">Math Mammoth Online Practice</h1>
       <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu.</p>
-      <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). <span id="not-supported"><span style="color:red; font-weight:bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
+      <p>These scripts or programs should also work <u>offline</u> (except in IE / Opera Mini / Blackberry Browser). <span id="not-supported"><span style="color: red; font-weight: bold">Note:</span> Your browser does not have the capability for using these programs offline. Use a different browser to get the offline capability.</span></p>
 
         <ul class="list-group">
-          <a class="list-group-item list-group-item-action" role="listitem" href="multiplication.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/multiplication">
             Multiplication Tables
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="multiply-with-zeros.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/multiply-with-zeros">
             Multiply with Zeros
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="exponents.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/exponents">
             Exponents
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="divide-numbers-ending-in-zeros.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/divide-numbers-ending-in-zeros">
             Divide Numbers Ending in Zeros
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="division.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/division">
             Basic Division Facts
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="division-remainder.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/division-remainder">
             Division With Remainders (Mental Math)
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="factorfind.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/factorfind">
             Find the Factors
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="addition-single-digit.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/addition-single-digit">
             Single-Digit Addition & Subtraction
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="addition-subtraction-two-digit.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/addition-subtraction-two-digit">
             Two-Digit Addition & Subtraction (Mental Math)
           </a>
-          <a class="list-group-item list-group-item-action" role="listitem" href="fact-families.php">
+          <a class="list-group-item list-group-item-action" role="listitem" href="/practice/fact-families">
             Addition &amp; Subtraction Fact Families
           </a>
         </ul>

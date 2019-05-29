@@ -26,6 +26,8 @@
   <meta name="msapplication-TileImage" content="icons/144x144.png">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#5db0f9">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="practice.css">
   <script>
     if(!Array.prototype.includes) {
