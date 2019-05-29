@@ -5,3 +5,8 @@ RewriteRule ^(.*)$ $1.php
 
 ErrorDocument 404 /practice/404.php
 
+Options +FollowSymLinks 
+RewriteEngine on
+RewriteCond %{SERVER_PORT} !=443 [OR]
+RewriteCond %{HTTP_HOST} !^www\. 
+RewriteRule ^(.*)$ https://www.mathmammoth.com/$1 [R=301,L]
