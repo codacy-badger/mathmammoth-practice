@@ -2,33 +2,8 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="manifest" href="manifest.json">
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="bootstrap.min.css" />
-  <script src="jquery-3.3.1.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <link rel="stylesheet" href="mm.css" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-  <meta name="apple-mobile-web-app-title" content="MM Practice">
-  <link rel="apple-touch-icon" href="icons/57x57.png" sizes="57x57">
-  <link rel="apple-touch-icon" href="icons/60x60.png" sizes="60x60">
-  <link rel="apple-touch-icon" href="icons/72x72.png" sizes="72x72">
-  <link rel="apple-touch-icon" href="icons/76x76.png" sizes="76x76">
-  <link rel="apple-touch-icon" href="icons/114x114.png" sizes="114x114">
-  <link rel="apple-touch-icon" href="icons/120x120.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="icons/144x144.png" sizes="144x144">
-  <link rel="apple-touch-icon" href="icons/152x152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="icons/180x180.png" sizes="180x180">
-  <meta name="msapplication-TileImage" content="icons/144x144.png">
-  <meta name="msapplication-TileColor" content="#fff">
-  <meta name="theme-color" content="#5db0f9">
+  <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
-  <link rel="icon" href="favicon.ico" />
-  <link rel="shortcut icon" href="favicon.ico" />
   <title>Divide Whole Numbers Ending in Zeros &mdash; Online Practice (grades 4-6)</title>
 </head>
 
@@ -43,15 +18,15 @@
       <p>Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350&nbsp;&divide;&nbsp;5, 2,400&nbsp;&divide;&nbsp;60, or 540,000&nbsp;&divide;&nbsp;6,000.</p>
 
       <p>Students usually start learning this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
-      
+
       <p>The main principle for solving these division problems is this. Each division is actually built from a simple division fact, such as 54&nbsp;&divide;&nbsp;6 or 18&nbsp;&divide;&nbsp;3. You will need to solve that problem. </p>
       <p>Then think how may zeros must be tagged onto the answer, based on multiplication.</p>
 
       <p>For example, to solve 2,400&nbsp;&divide;&nbsp;30, first divide 24&nbsp;&divide;&nbsp;3 = 8. Then, think whether the answer would be 8, 80, or 800, based on multiplying each of the 8&nbsp;&times;&nbsp;30, 80&nbsp;&times;&nbsp;300, and 800&nbsp;&times;&nbsp;30, and checking which one will give you the dividend, 2,400.</p>
-      
+
       <p>Another principle that helps in solving these is that you can cancel out the same amount of zeros in each of the dividend and divisor in order to get a new, simpler problem with the same answer as the original.</p>
       <p>You can also practice the opposite operation, <a href="/practice/multiply-with-zeros">multiplication with zeros here</a>.</p>
-      
+
       <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
       <!-- end copied code -->
       <label for="level">Level:</label>
@@ -98,11 +73,11 @@
       <div id="questionon" style="top: 8px; left: 8px"><span id="qon">1</span>/<span id="numoq"></span></div>
       <div id="numq" class="text-center" style="font-weight: bold"></div>
       <br>
-      <input 
-        type="text" 
-        id="response" 
-        style="margin: auto; width: 75%" 
-        oninput="if (this.value != '') $('#check').prop('disabled', false); else $('#check').prop('disabled', true);" 
+      <input
+        type="text"
+        id="response"
+        style="margin: auto; width: 75%"
+        oninput="if (this.value != '') $('#check').prop('disabled', false); else $('#check').prop('disabled', true);"
         class="form-control">
       <br>
       <button class="btn btn-primary" id="check" disabled>Check</button>
@@ -245,14 +220,14 @@
             expsum += exp1;
             expsum += exp2;
           } while (expsum > 3);
-        
+
           var number1 = digit1 * Math.pow(10, exp1);
           var number2 = digit2 * Math.pow(10, exp2);
-          answer = number1 * number2; 
+          answer = number1 * number2;
           if (rand(0, 1)) problemdisplay = number1 + " &times; " + number2;
           else problemdisplay = number2 + " &times; " + number1;
         break;
-        
+
         case 2:
           var digit1 = rand(1, 9);
           var digit2 = rand(1, 9);
@@ -264,7 +239,7 @@
             exp1 = rand((digit1 == 1 ? 1 : 0), 3);
             exp2 = rand(1, 3);
             expsum += exp1;
-            expsum += exp2;   
+            expsum += exp2;
           } while (expsum > 4 || expsum < 3);
           var number1 = digit1 * Math.pow(10, exp1);
           var number2 = digit2 * Math.pow(10, exp2);
@@ -272,7 +247,7 @@
           if (rand(0, 1)) problemdisplay = number1 + " &times; " + number2;
           else problemdisplay = number2 + " &times; " + number1;
 
-        break;  
+        break;
         case 3:
           var d = rand(1, 4);
           var digit1 = rand(1, 9);
@@ -285,14 +260,14 @@
             exp1 = rand((digit1 == 1 ? 1 : 0), 5);
             exp2 = rand(1, 5);
             expsum += exp1;
-            expsum += exp2;   
+            expsum += exp2;
           } while (expsum > 6 || expsum < 4);
           number1 = digit1 * Math.pow(10, exp1);
           number2 = digit2 * Math.pow(10, exp2);
           answer = number1 * number2;
           if (rand(0, 1)) problemdisplay = number1 + " &times; " + number2;
           else problemdisplay = number2 + " &times; " + number1;
-        break;  
+        break;
       }
       answer = putCommasInNumber(answer);
       problemdisplay = problemdisplay.split(' &times; ').map(function(num) {

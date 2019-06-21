@@ -2,6 +2,10 @@
   font-size: 3em;
 }
 
+.rounding-page #numq {
+  font-size: 1.1em;
+}
+
 #message {
   font-weight: bold;
 }
@@ -72,4 +76,10 @@
   height: 100%;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+
+.my-select {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 3px;
 }

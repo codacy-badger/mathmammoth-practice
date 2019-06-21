@@ -22,43 +22,53 @@
   ga('send', 'pageview');
 
 </script>
+
 <!-- Google Analytics ends -->
 
 <link rel="stylesheet" href="jquery.rateyo.min.css">
 
 <br><br>
 <?php if ($page != '404') { ?>
-<div class="container" id="feedback">
-  <?php if(!isset($_GET['rating'])) { ?>
-  <div class="jumbotron text-black" style="background-color: #8cfc88">
-    <form method="GET" id="form" class="container">
-      <input type="hidden" name="rating" value="not-rated">
-      Your Feedback:<br><br>
-      <div class="rating"></div><br>
-      <div class="form-group">
-        <label for="email">Email Address (optional, but you can put it here if you would like a response): </label>
-        <input type="email" name="email" id="email" class="form-control">
+  <div class="container" id="feedback">
+    <?php if (!isset($_GET['rating'])) { ?>
+      <div class="jumbotron text-black" style="background-color: #8cfc88">
+        <form method="GET" id="form" class="container">
+          <input type="hidden" name="rating" value="not-rated">
+          Your Feedback:<br><br>
+          <div class="rating"></div><br>
+          <div class="form-group">
+            <label for="email">Email Address (optional, but you can put it here if you would like a response): </label>
+            <input type="email" name="email" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea name="feedback" id="feedback" class="form-control" rows="8" cols="80" required></textarea>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LfiqI8UAAAAAOA-oUXaN7mozlXJIAfXQNfSYaYw"></div><br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="feedback">Feedback:</label>
-        <textarea name="feedback" id="feedback" class="form-control" rows="8" cols="80" required></textarea>
-      </div>
-      <div class="g-recaptcha" data-sitekey="6LfiqI8UAAAAAOA-oUXaN7mozlXJIAfXQNfSYaYw"></div><br>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <?php } ?>
   </div>
-<?php } ?>
-</div>
-<script>
-if(!navigator.onLine) {
-  $('#feedback').hide();
-}
-</script>
+  <script>
+    if (!navigator.onLine) {
+      $('#feedback').hide();
+    }
+    if (navigator.connection) {
+      navigator.connection.onchange = function() {
+        if (navigator.onLine) {
+          $('#feedback').show();
+        } else {
+          $('#feedback').hide();
+        }
+      };
+    }
+  </script>
 <?php } ?>
 <div class="w-100 bg-primary text-white px-4 py-2" id="addHomeScreen" style="display: none; position: fixed; bottom: 0; left: 0">
   Add "Math Mammoth Practice" to home screen? <button class="btn btn-success" title='Add "Math Mammoth Practice" to home screen?' onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Add to home screen</button>
 </div>
-<div class="container-fluid bg-primary text-center text-white mt-3 p-3">
+<div class="container-fluid bg-primary text-center text-white mt-3 p-3 footer">
   Copyright &copy; <?php echo date('Y'); ?> <a href="https://www.mathmammoth.com" class="footerlink">MathMammoth.com</a>
 </div>
 <style>

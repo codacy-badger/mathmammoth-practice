@@ -3,7 +3,7 @@
     display: block;
   }
 </style>
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <a class="navbar-brand" href="https://www.mathmammoth.com"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">Math Mammoth</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,22 +30,33 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="factorfind.php">Find Factors</a>
+        <a class="nav-link<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="/practice/factorfind">Find Factors</a>
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' ? ' active' : ''; ?>"
-          href="javascript:void(0);">Add & Subtract</a>
+          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' || $page == 'place-value' || $page == 'mystery-picture' ? ' active' : ''; ?>"
+          href="javascript:void(0);">Add &amp; Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
           <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
           <a href="/practice/fact-families" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
+          <a href="/practice/place-value" class="dropdown-item<?php echo $page == 'place-value' ? ' active' : ''; ?>">Place Value</a>
+          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page == 'mystery-picture' ? ' active' : ''; ?>">Hidden Picture Game</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a href="/practice/rounding" class="nav-link<?php echo $page == 'rounding' ? ' active' : ''; ?>">Rounding</a>
       </li>
     </ul>
   </div>
 </nav>
 <div style="margin-top: 100px"></div>
+<noscript>
+  We're sorry, but our website requires JavaScript to run.
+</noscript>
+<!--[if lte IE 9 ]>
+  <p class="text-center">We're sorry, but we don't support IE versions 9 or lower. Please either upgrade your browser, or <a href="https://www.google.com/chrome/">get a new one</a>.</p>
+<![endif]-->
 <?php
 if (isset($_GET['rating'])) {
   $email = $_GET['email'];

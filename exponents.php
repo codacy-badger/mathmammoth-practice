@@ -2,33 +2,8 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="manifest" href="manifest.json">
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="bootstrap.min.css" />
-  <script src="jquery-3.3.1.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <link rel="stylesheet" href="mm.css" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-  <meta name="apple-mobile-web-app-title" content="MM Practice">
-  <link rel="apple-touch-icon" href="icons/57x57.png" sizes="57x57">
-  <link rel="apple-touch-icon" href="icons/60x60.png" sizes="60x60">
-  <link rel="apple-touch-icon" href="icons/72x72.png" sizes="72x72">
-  <link rel="apple-touch-icon" href="icons/76x76.png" sizes="76x76">
-  <link rel="apple-touch-icon" href="icons/114x114.png" sizes="114x114">
-  <link rel="apple-touch-icon" href="icons/120x120.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="icons/144x144.png" sizes="144x144">
-  <link rel="apple-touch-icon" href="icons/152x152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="icons/180x180.png" sizes="180x180">
-  <meta name="msapplication-TileImage" content="icons/144x144.png">
-  <meta name="msapplication-TileColor" content="#fff">
-  <meta name="theme-color" content="#5db0f9">
+  <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
-  <link rel="icon" href="favicon.ico" />
-  <link rel="shortcut icon" href="favicon.ico" />
   <title>Exponents and Powers of Ten &mdash; Online Practice (grades 5-7)</title>
 </head>
 
@@ -43,7 +18,7 @@
       <p>On this page, you can practice with exponents and powers, such as 5<sup>2</sup> or 10<sup>6</sup>. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.</p>
 
       <p>An exponent is the little number in this expression: 2<sup>4</sup>. It indicates how many times the <i>base number</i> (in our case 2) is multiplied by itself. So, 2<sup>4</sup> means 2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2 = 16.</p>
-      
+
       <p>You can choose to practice either simple expressions with exponents, or expressions where we multiply a power of ten by some factor, or both.</p>
 
       <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
