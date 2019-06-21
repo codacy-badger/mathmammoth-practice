@@ -543,6 +543,9 @@
       }, true);
     });
 
+    if (location.hash.replace('#', '').length >= 1) {
+      $('#submit').click();
+    }
   </script>
 </body>
 

@@ -325,6 +325,9 @@
         audio.currentTime = 0;
         audio.play();
       }
+      if (location.hash.replace('#', '').length >= 1) {
+        $('.go-btn').click();
+      }
     </script>
   </body>
 </html>
