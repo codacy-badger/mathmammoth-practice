@@ -8,7 +8,7 @@
   <button class="btn btn-primary" title="Install app?" onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Install</button> 
   <button onclick="document.getElementById('addHomeScreen').style.display = 'none'" class="btn btn-danger">Not right now</a>
 </div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position: sticky; top: 0; left: 0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position: sticky; top: 0; left: 0; z-index: 1000">
   <a class="navbar-brand" href="https://www.mathmammoth.com"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">Math Mammoth</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
