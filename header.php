@@ -3,7 +3,12 @@
     display: block;
   }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<div class="w-100 bg-info text-white px-4 py-2" id="addHomeScreen" style="display: none">
+  With our free app you can do practices offline, and open this page with a click of a button. 
+  <button class="btn btn-primary" title="Install app?" onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Install</button> 
+  <button onclick="document.getElementById('addHomeScreen').style.display = 'none'" class="btn btn-danger">Not right now</a>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position: sticky; top: 0; left: 0">
   <a class="navbar-brand" href="https://www.mathmammoth.com"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">Math Mammoth</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

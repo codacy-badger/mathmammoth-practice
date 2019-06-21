@@ -65,9 +65,6 @@
     }
   </script>
 <?php } ?>
-<div class="w-100 bg-primary text-white px-4 py-2" id="addHomeScreen" style="display: none; position: fixed; bottom: 0; left: 0">
-  Add "Math Mammoth Practice" to home screen? <button class="btn btn-success" title='Add "Math Mammoth Practice" to home screen?' onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Add to home screen</button>
-</div>
 <div class="container-fluid bg-primary text-center text-white mt-3 p-3 footer">
   Copyright &copy; <?php echo date('Y'); ?> <a href="https://www.mathmammoth.com" class="footerlink">MathMammoth.com</a>
 </div>
