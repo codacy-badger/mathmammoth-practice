@@ -90,6 +90,13 @@
         background-color: #0fc80f !important;
       }
     </style>
+    <meta property="og:title" content="Addition Hidden Picture Game">
+    <meta property="og:description" content="Solve simple addition problems while uncovering a hidden picture in this fun game that children really like!">
+    <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture.jpg">
+    <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture">
+    <meta property="og:site_name" content="Math Mammoth Practice">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Screenshot of someone doing a round">
   </head>
 
   <body>
@@ -184,7 +191,7 @@
           </p>
         </section>
         <section class="done" style="display: none; text-align: center; margin: auto">
-          <button class="btn btn-primary done-btn" onclick="location.reload();">Play Again</button>
+          <button class="btn btn-primary done-btn" onclick="location.assign('/practice/mystery-picture');">Play Again</button>
         </section>
       </div>
     </div>

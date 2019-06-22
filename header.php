@@ -4,7 +4,7 @@
   }
 </style>
 <div class="w-100 bg-info text-white px-4 py-2" id="addHomeScreen" style="display: none">
-  With our free app you can do practices offline, and open this page with a click of a button. 
+  With our free app you can do the math practice offline, and open this page with a click of a button. 
   <button class="btn btn-primary" title="Install app?" onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Install</button> 
   <button onclick="document.getElementById('addHomeScreen').style.display = 'none'" class="btn btn-danger">Not right now</a>
 </div>
