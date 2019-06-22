@@ -15,6 +15,7 @@
         Place Value<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-4</span>
       </h1>
+      <div class="sharethis-inline-share-buttons"></div>
       <p>This script makes simple math problems that help students practice place value concepts.</p>
       <p>In the first mode, students need to find the missing part of a number, such as 2,594 = 500 + ______ + 4 + 2,000.</p>
       <p>In the second mode, students are given a number in expanded form and they need to write the number. For example, 500 + 30 + 7,000 + 2 makes the number 7,532.</p>

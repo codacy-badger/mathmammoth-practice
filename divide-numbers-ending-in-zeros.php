@@ -15,6 +15,7 @@
         Divide Whole Numbers Ending in Zeros<br>
         <span style="font-size: 1.5rem">Online Practice for grades 4-6</span>
       </h1>
+      <div class="sharethis-inline-share-buttons"></div>
       <p>Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350&nbsp;&divide;&nbsp;5, 2,400&nbsp;&divide;&nbsp;60, or 540,000&nbsp;&divide;&nbsp;6,000.</p>
 
       <p>Students usually start learning this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>

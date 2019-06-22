@@ -93,10 +93,16 @@
     <meta property="og:title" content="Addition Hidden Picture Game">
     <meta property="og:description" content="Solve simple addition problems while uncovering a hidden picture in this fun game that children really like!">
     <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture.jpg">
+    <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1026" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Addition Mystery Picture Game" />
     <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture">
     <meta property="og:site_name" content="Math Mammoth Practice">
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Screenshot of someone doing a round">
+    <meta name="twitter:image:alt" content="Addition Mystery Picture Game">
   </head>
 
   <body>
@@ -108,6 +114,7 @@
             Addition Hidden Picture Game<br>
             <span style="font-size: 1.5rem">Online practice for 1st-4th grade</span>
           </h1>
+          <div class="sharethis-inline-share-buttons"></div>
           <div class="row">
             <div class="col-md-6">
               <p class="mb-3 text-center">

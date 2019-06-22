@@ -15,6 +15,7 @@
         Rounding Whole Numbers &amp; Decimals<br>
         <span style="font-size: 1.5rem">Online practice for grades 3-5</span>
       </h1>
+      <div class="sharethis-inline-share-buttons"></div>
       <p>On this page, you can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6). </p>
 
       <p>This free, online practice program can also be installed offline as an app in your phone or tablet, depending on your browser and operating system. To install it, click on the "Add to home screen" button at the bottom of the page. On Android Chrome, click on the three dots, and then "Add to home screen". If you don't see the button or the "Add to home screen" option, then you probably cannot install this app in your browser.</p>

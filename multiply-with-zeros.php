@@ -15,6 +15,7 @@
         Multiply Whole Numbers With Zeros<br>
         <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
       </h1>
+      <div class="sharethis-inline-share-buttons"></div>
       <p>On this page, you can practice multiplying numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
 
       <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>

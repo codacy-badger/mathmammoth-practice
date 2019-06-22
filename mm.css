@@ -15,3 +15,8 @@ h1.text-center {
 .custom-select {
   -webkit-appearance: none;
 }
+
+.sharethis-inline-share-buttons {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

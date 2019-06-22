@@ -200,6 +200,7 @@
         Find the Factors<br>
         <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
       </h1>
+      <div class="sharethis-inline-share-buttons"></div>
       <p class="mb-4">
         On this page, you can practice finding all the factors of a given number. This is usually introduced in grade 4 (but could also be in grade 5 in some places). You can choose the minimum and maximum numbers and the amount of practice problems.
       </p>
