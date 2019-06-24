@@ -129,10 +129,10 @@
                 You can even use this game with middle school students to practice  integer addition: simply choose a number range that involves negative numbers, such as from -10 to 10.
               </p>
               <p>Here are some quick links to get you started with a particular grade:</p>
-              <p><a href="javascript:location.href='/practice/mystery-picture-sub#min=0&max=11';location.reload();">1st grade (Min: 0, Max: 11)</a></p>
-              <p><a href="javascript:location.href='/practice/mystery-picture-sub#min=2';location.reload();">2nd grade (Min: 2, Max: 20)</a></p>
-              <p><a href="javascript:location.href='/practice/mystery-picture-sub#min=2&max=100';location.reload();">3rd grade (Min: 2, Max: 100)</a></p>
-              <p><a href="javascript:location.href='/practice/mystery-picture-sub#min=2&max=200';location.reload();">4th grade (Min: 2, Max: 200)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-subtraction#min=0&max=11';location.reload();">1st grade (Min: 0, Max: 11)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-subtraction#min=2';location.reload();">2nd grade (Min: 2, Max: 20)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-subtraction#min=2&max=100';location.reload();">3rd grade (Min: 2, Max: 100)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-subtraction#min=2&max=200';location.reload();">4th grade (Min: 2, Max: 200)</a></p>
             </div>
             <div class="col-md-6">
               <p>
@@ -201,7 +201,7 @@
           </p>
         </section>
         <section class="done" style="display: none; text-align: center; margin: auto">
-          <button class="btn btn-primary done-btn" onclick="location.assign('/practice/mystery-picture-sub');">Play Again</button>
+          <button class="btn btn-primary done-btn" onclick="location.assign('/practice/mystery-picture-subtraction');">Play Again</button>
         </section>
       </div>
     </div>

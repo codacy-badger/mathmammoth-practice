@@ -16,42 +16,102 @@
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="/practice/">Practice Center</a>
+        <a class="nav-link<?php echo $page == 'home'
+          ? ' active'
+          : ''; ?>" href="/practice/">Practice Center</a>
       </li> 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' || $page == 'exponents' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
+        <a class="nav-link dropdown-toggle<?php echo $page ==
+          'multiplication' ||
+        $page == 'multiply-with-zeros' ||
+        $page == 'exponents'
+          ? ' active'
+          : ''; ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/multiplication" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
-          <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
-          <a href="/practice/exponents" class="dropdown-item<?php echo $page == 'exponents' ? ' active' : ''; ?>">Exponents</a>
+          <a href="/practice/multiplication" class="dropdown-item<?php echo $page ==
+          'multiplication'
+            ? ' active'
+            : ''; ?>">Multiplication Tables</a>
+          <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page ==
+          'multiply-with-zeros'
+            ? ' active'
+            : ''; ?>">With Zeros</a>
+          <a href="/practice/exponents" class="dropdown-item<?php echo $page ==
+          'exponents'
+            ? ' active'
+            : ''; ?>">Exponents</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page == 'division' || $page == 'division-remainders' || $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>" href="javascript:void(0);">Division</a>
+        <a class="nav-link dropdown-toggle<?php echo $page == 'division' ||
+        $page == 'division-remainders' ||
+        $page == 'divide-numbers-ending-in-zeros'
+          ? ' active'
+          : ''; ?>" href="javascript:void(0);">Division</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/division" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
-          <a href="/practice/division-remainder" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
-          <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
+          <a href="/practice/division" class="dropdown-item<?php echo $page ==
+          'division'
+            ? ' active'
+            : ''; ?>">Division Facts</a>
+          <a href="/practice/division-remainder" class="dropdown-item<?php echo $page ==
+          'division-remainders'
+            ? ' active'
+            : ''; ?>">With Remainders</a>
+          <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page ==
+          'divide-numbers-ending-in-zeros'
+            ? ' active'
+            : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="/practice/factorfind">Find Factors</a>
+        <a class="nav-link<?php echo $page == 'findfactors'
+          ? ' active'
+          : ''; ?>" href="/practice/factorfind">Find Factors</a>
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' || $page == 'place-value' || $page == 'mystery-picture' || $page == 'mystery-picture-sub' ? ' active' : ''; ?>"
+          class="nav-link dropdown-toggle<?php echo $page ==
+            'addition-single-digit' ||
+          $page == 'factfam-addsub' ||
+          $page == 'addition-two-digit' ||
+          $page == 'place-value' ||
+          $page == 'mystery-picture' ||
+          $page == 'mystery-picture-sub'
+            ? ' active'
+            : ''; ?>"
           href="javascript:void(0);">Add &amp; Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
-          <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
-          <a href="/practice/fact-families" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
-          <a href="/practice/place-value" class="dropdown-item<?php echo $page == 'place-value' ? ' active' : ''; ?>">Place Value</a>
-          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page == 'mystery-picture' ? ' active' : ''; ?>">Addition Hidden Picture Game</a>
-          <a href="/practice/mystery-picture-sub" class="dropdown-item<?php echo $page == 'mystery-picture-sub' ? ' active' : ''; ?>">Subtraction Hidden Picture Game</a>
+          <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page ==
+          'addition-single-digit'
+            ? ' active'
+            : ''; ?>">Single-Digit</a>
+          <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page ==
+          'addition-two-digit'
+            ? ' active'
+            : ''; ?>">Two-Digit (Mental Math)</a>
+          <a href="/practice/fact-families" class="dropdown-item<?php echo $page ==
+          'factfam-addsub'
+            ? ' active'
+            : ''; ?>">Fact Families</a>
+          <a href="/practice/place-value" class="dropdown-item<?php echo $page ==
+          'place-value'
+            ? ' active'
+            : ''; ?>">Place Value</a>
+          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page ==
+          'mystery-picture'
+            ? ' active'
+            : ''; ?>">Addition Hidden Picture Game</a>
+          <a href="/practice/mystery-picture-subtraction" class="dropdown-item<?php echo $page ==
+          'mystery-picture-sub'
+            ? ' active'
+            : ''; ?>">Subtraction Hidden Picture Game</a>
         </div>
       </li>
       <li class="nav-item">
-        <a href="/practice/rounding" class="nav-link<?php echo $page == 'rounding' ? ' active' : ''; ?>">Rounding</a>
+        <a href="/practice/rounding" class="nav-link<?php echo $page ==
+        'rounding'
+          ? ' active'
+          : ''; ?>">Rounding</a>
       </li>
     </ul>
   </div>
@@ -63,8 +123,7 @@
 <!--[if lte IE 9 ]>
   <p class="text-center">We're sorry, but we don't support IE versions 9 or lower. Please either upgrade your browser, or <a href="https://www.google.com/chrome/">get a new one</a>.</p>
 <![endif]-->
-<?php
-if (isset($_GET['rating'])) {
+<?php if (isset($_GET['rating'])) {
   $email = $_GET['email'];
   $rating = $_GET['rating'];
   $feedback = $_GET['feedback'];
@@ -77,12 +136,19 @@ if (isset($_GET['rating'])) {
     $message = '<h2>Please check the captcha form.</h2>';
     $send = false;
   }
-  $secretKey = "6LfiqI8UAAAAANT180ToHnW0VhyuB2gTMAnf7zmR";
+  $secretKey = '6LfiqI8UAAAAANT180ToHnW0VhyuB2gTMAnf7zmR';
   $ip = $_SERVER['REMOTE_ADDR'];
-  $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $secretKey . "&response=" . $captcha . "&remoteip=" . $ip);
+  $response = file_get_contents(
+    'https://www.google.com/recaptcha/api/siteverify?secret=' .
+      $secretKey .
+      '&response=' .
+      $captcha .
+      '&remoteip=' .
+      $ip
+  );
   $responseKeys = json_decode($response, true);
   if ($message !== '<h2>Please check the captcha.</h2>') {
-    if (!intval($responseKeys["success"])) {
+    if (!intval($responseKeys['success'])) {
       $message = 'You didn\'t pass the captcha.';
       $send = false;
     } else {
@@ -97,9 +163,16 @@ if (isset($_GET['rating'])) {
   IP: $ip
   ";
   if ($send) {
-    mail('maria_miller@mathmammoth.com', 'Math Mammoth Practice Feedback - Rating: ' . $rating, $a, 'From: ' . (trim($email) ? 'maria_miller@mathmammoth.com' : trim($email)));
+    mail(
+      'maria_miller@mathmammoth.com',
+      'Math Mammoth Practice Feedback - Rating: ' . $rating,
+      $a,
+      'From: ' . (trim($email) ? 'maria_miller@mathmammoth.com' : trim($email))
+    );
   }
 
-  echo '<br><div class="container"><div class="jumbotron text-black" style="background-color: #8cfc88">' . $message . '</div></div><br>';
+  echo '<br><div class="container"><div class="jumbotron text-black" style="background-color: #8cfc88">' .
+    $message .
+    '</div></div><br>';
 }
 ?>

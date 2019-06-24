@@ -22,7 +22,10 @@
 </head>
 
 <body>
-  <?php $page = 'home'; include 'header.php'; ?>
+  <?php
+  $page = 'home';
+  include 'header.php';
+  ?>
   <div class="container">
     <div class="jumbotron" style="background-color: #a5eaff">
       <h1 class="text-center">Math Mammoth Online Practice</h1>
@@ -73,6 +76,9 @@
         </a>
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/mystery-picture">
           Addition Hidden Picture Game
+        </a>
+        <a class="list-group-item list-group-item-action" role="listitem" href="/practice/mystery-picture-subtraction">
+          Subtraction Hidden Picture Game
         </a>
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/rounding">
           Rounding
