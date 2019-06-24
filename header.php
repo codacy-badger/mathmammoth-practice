@@ -17,7 +17,7 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link<?php echo $page == 'home' ? ' active' : ''; ?>" href="/practice/">Practice Center</a>
-      </li>
+      </li> 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle<?php echo $page == 'multiplication' || $page == 'multiply-with-zeros' || $page == 'exponents' ? ' active' : ''; ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
@@ -39,14 +39,15 @@
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' || $page == 'place-value' || $page == 'mystery-picture' ? ' active' : ''; ?>"
+          class="nav-link dropdown-toggle<?php echo $page == 'addition-single-digit' || $page == 'factfam-addsub' || $page == 'addition-two-digit' || $page == 'place-value' || $page == 'mystery-picture' || $page == 'mystery-picture-sub' ? ' active' : ''; ?>"
           href="javascript:void(0);">Add &amp; Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
           <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
           <a href="/practice/fact-families" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
           <a href="/practice/place-value" class="dropdown-item<?php echo $page == 'place-value' ? ' active' : ''; ?>">Place Value</a>
-          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page == 'mystery-picture' ? ' active' : ''; ?>">Hidden Picture Game</a>
+          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page == 'mystery-picture' ? ' active' : ''; ?>">Addition Hidden Picture Game</a>
+          <a href="/practice/mystery-picture-sub" class="dropdown-item<?php echo $page == 'mystery-picture-sub' ? ' active' : ''; ?>">Subtraction Hidden Picture Game</a>
         </div>
       </li>
       <li class="nav-item">
