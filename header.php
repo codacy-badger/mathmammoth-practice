@@ -76,7 +76,8 @@
           $page == 'addition-two-digit' ||
           $page == 'place-value' ||
           $page == 'mystery-picture' ||
-          $page == 'mystery-picture-sub'
+          $page == 'mystery-picture-sub' ||
+          $page == 'mystery-picture-integers'
             ? ' active'
             : ''; ?>"
           href="javascript:void(0);">Add &amp; Subtract</a>
@@ -105,6 +106,10 @@
           'mystery-picture-sub'
             ? ' active'
             : ''; ?>">Subtraction Hidden Picture Game</a>
+          <a href="/practice/mystery-picture-integers" class="dropdown-item<?php echo $page ==
+          'mystery-picture-integers'
+            ? ' active'
+            : ''; ?>">Integers Hidden Picture Game</a>
         </div>
       </li>
       <li class="nav-item">

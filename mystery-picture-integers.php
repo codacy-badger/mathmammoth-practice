@@ -4,7 +4,7 @@
     <?php include 'header-head.php'; ?>
     <script src="sweetalert.min.js"></script>
     <link rel="stylesheet" href="practice.css" />
-    <title>Integers Hidden Picture Game &mdash; Online Practice (6th, 7th, 8th, and 9th grade)</title>
+    <title>Integer addition &amp; subtraction mystery picture game &mdash; Online Practice (6th, 7th, 8th, and 9th grade)</title>
     <style>
       .flex-container {
         width: 800px;
@@ -90,46 +90,45 @@
         background-color: #0fc80f !important;
       }
     </style>
-    <meta property="og:title" content="Integers Hidden Picture Game">
-    <meta property="og:description" content="Solve simple integers problems while uncovering a hidden picture in this fun game that children really like!">
-    <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture.jpg">
-    <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture.jpg" />
+    <meta property="og:title" content="Integer addition & subtraction mystery picture game">
+    <meta property="og:description" content="Solve integer addition and subtraction problems while uncovering a hidden picture in this fun game for middle school math!">
+    <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture-integers.jpg">
+    <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture-integers.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1026" />
     <meta property="og:image:height" content="720" />
-    <meta property="og:image:alt" content="Integers Mystery Picture Game" />
+    <meta property="og:image:alt" content="Integer addition & subtraction mystery picture game" />
     <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture-integers">
     <meta property="og:site_name" content="Math Mammoth Practice">
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Integers Mystery Picture Game">
+    <meta name="twitter:image:alt" content="Integer addition & subtraction mystery picture game">
   </head>
 
   <body>
-    <?php $page = 'mystery-picture'; include 'header.php'; ?>
+    <?php $page = 'mystery-picture-integers'; include 'header.php'; ?>
     <div class="container">
       <div class="jumbotron" id="form" style="background-color: #a5eaff">
         <div class="titledesc text-center">
           <h1 class="text-center">
-            Integers Hidden Picture Game<br>
+            Integer addition &amp; subtraction mystery picture game<br>
             <span style="font-size: 1.5rem">Online practice for 6th-9th grade</span>
           </h1>
           <div class="sharethis-inline-share-buttons"></div>
           <div class="row">
             <div class="col-md-6">
-              <p class="mb-3 text-center">
-                Solve simple addition problems while uncovering a hidden picture in this fun game that children really like!
-              </p>
-              <p>
-                You can choose the range of numbers to be used in the addition problems, which means
-                the game can fit many grade levels. For first graders, you might choose the range 0-11. For second grade, try 0-20 or 0-30. For third grade, choose 0-50 for example.
-                You can even use this game with middle school students to practice integer addition: simply choose a number range that involves negative numbers, such as from -10 to 10.
-              </p>
+              <p class="mb-3 text-center">Solve integer addition and subtraction problems while uncovering a hidden picture in this fun game for middle school math!</p>
+              <p class="mb-3 text-center">You can choose the range of numbers to be used in the addition and subtraction problems, which means you can make the practice easy or difficult according to your need and grade level.</p>
+              <p class="mb-3 text-center">For example, choose a range from −10 to 10 for students that have just recently learned about integer addition and subtraction (6th and 7th grades). For a little more advanced practice, use −20 to 20, and for advanced level, −50 to 50.</p>
+              <p class="mb-3 text-center">Here are some quick links to get you started with a particular grade:</p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-integers#min=-10&max=10';location.reload();">Easy (Min: -10, Max: 10)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-integers#min=-20&max=20';location.reload();">Medium (Min: -20, Max: 20)</a></p>
+              <p><a href="javascript:location.href='/practice/mystery-picture-integers#min=-50&max=50';location.reload();">Challenge (Min: -50, Max: 50)</a></p>
             </div>
             <div class="col-md-6">
               <p>
                 Screenshot:<br />
-                <img src="mystery-picture.jpg" class="shadow-lg rounded-lg" alt="Screenshot of someone doing a round" style="width: 700px; max-width: 100%">
+                <img src="mystery-picture-integers.jpg" class="shadow-lg rounded-lg" alt="Screenshot of someone doing a round" style="width: 700px; max-width: 100%">
               </p>
             </div>
           </div>
@@ -199,6 +198,15 @@
     </div>
     <?php include 'footer.php'; ?>
     <script>
+      // <quick-links>
+      var params = new URLSearchParams(location.hash.replace('#', ''));
+      if (Number.isInteger(parseInt(params.get('min')))) {
+        $('#min').val(params.get('min'));
+      }
+      if (Number.isInteger(parseInt(params.get('max')))) {
+        $('#max').val(params.get('max'));
+      }
+      // </quick-links>
       var numImages = 44;
       var questioni;
       var indexes;
@@ -327,6 +335,9 @@
         if (!otherAudio.paused) otherAudio.pause();
         audio.currentTime = 0;
         audio.play();
+      }
+      if (location.hash.replace('#', '').length >= 1) {
+        $('.go-btn').click();
       }
     </script>
   </body>

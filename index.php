@@ -8,13 +8,13 @@
   <style>
     @media screen and (max-width: 750px) {
       .testimonial-img {
-        float: initial!important;
-        width: 70%!important;
+        float: initial !important;
+        width: 70% !important;
         margin-top: 5px;
         margin-bottom: 10px;
       }
       .test-text {
-        width: 100%!important;
+        width: 100% !important;
       }
     }
   </style>
@@ -79,6 +79,9 @@
         </a>
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/mystery-picture-subtraction">
           Subtraction Hidden Picture Game
+        </a>
+        <a class="list-group-item list-group-item-action" role="listitem" href="/practice/mystery-picture-integers">
+          Integers Hidden Picture Game
         </a>
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/rounding">
           Rounding
