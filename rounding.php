@@ -4,7 +4,7 @@
 <head>
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
-  <title>Rounding Whole Numbers &amp; Decimals &mdash; Online Practice (grades 3-5)</title>
+  <title>Rounding Whole Numbers &amp; Decimals &mdash; Online Practice (grades 1-6)</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
         Rounding Whole Numbers &amp; Decimals<br>
-        <span style="font-size: 1.5rem">Online practice for grades 3-5</span>
+        <span style="font-size: 1.5rem">Online practice for grades 1-6</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
       <p>On this page, you can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6). </p>
