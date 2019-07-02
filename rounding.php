@@ -542,11 +542,10 @@
         }
         $('.round-to-container').slideUp(300);
       }, true);
+      if (location.hash.replace('#', '').length >= 1) {
+        $('#submit').click();
+      }
     });
-
-    if (location.hash.replace('#', '').length >= 1) {
-      $('#submit').click();
-    }
   </script>
 </body>
 
