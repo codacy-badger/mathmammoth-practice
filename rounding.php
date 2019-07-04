@@ -382,16 +382,14 @@
             var box = nearestBoxes[i];
             if (box.checked) {
               var name = box.getAttribute('data-val') ? box.getAttribute('data-val').replace('nearest-', '') : 'any-place';
-              var maxZeros;
               switch (name) {
-                case 'ten': maxZeros = 1; break;
-                case 'hundred': maxZeros = 2; break;
-                case 'thousand': maxZeros = 3; break;
-                case 'ten-thousand': maxZeros = 4; break;
-                case 'hundred-thousand': maxZeros = 5; break;
-                case 'million': maxZeros = 6; break;
+                case 'ten': zeros = 1; break;
+                case 'hundred': zeros = 2; break;
+                case 'thousand': zeros = 3; break;
+                case 'ten-thousand': zeros = 4; break;
+                case 'hundred-thousand': zeros = 5; break;
+                case 'million': zeros = 6; break;
               }
-              zeros = random(1, maxZeros);
             }
           }
           unit = putCommasInNumber(parseInt('1' + '0'.repeat(zeros)));
