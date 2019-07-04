@@ -27,7 +27,7 @@
   include 'header.php';
   ?>
   <div class="container">
-    <div class="jumbotron" style="background-color: #a5eaff">
+    <div class="jumbotron" style="background-color: #60cfff">
       <h1 class="text-center">Math Mammoth Online Practice</h1>
       <div class="sharethis-inline-share-buttons"></div>
       <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu.</p>
