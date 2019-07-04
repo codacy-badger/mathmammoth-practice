@@ -1,7 +1,7 @@
 var deferredPrompt;
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/practice/sw.js');
+  navigator.serviceWorker.register('./sw.js');
 }
 
 window.addEventListener('beforeinstallprompt', function(event) {

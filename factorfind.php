@@ -5,7 +5,7 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <script>
-    if(!Array.prototype.includes) {
+    if (!Array.prototype.includes) {
       Array.prototype.includes = function(key) {
         return this.indexOf(key) > -1;
       };
@@ -190,6 +190,19 @@
     }
   </script>
   <title>Find the Factors &mdash; Online Practice (grades 4-6)</title>
+  <meta property="og:title" content="Find the Factors">
+  <meta property="og:description" content="You can practice finding all the factors of a given number.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/find-factors.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/find-factors.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="853" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Find the Factors" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/factorfind">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Find the Factors">
 </head>
 
 <body onkeydown="if(event.keyCode == 13 && !$('#practicearea').hasClass('d-none') && !$('#check').attr('disabled')) { $('#check').click(); }">
@@ -201,31 +214,41 @@
         <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p class="mb-4">
-        On this page, you can practice finding all the factors of a given number. This is usually introduced in grade 4 (but could also be in grade 5 in some places). You can choose the minimum and maximum numbers and the amount of practice problems.
-      </p>
-      <div class="form-group">
-        <label for="numop" style="font-weight: 500">How many practice problems?</label>
-        <select class="custom-select" id="numop">
-          <option value="5" selected>5</option>
-          <option value="10">10</option>
-          <option value="15">15</option>
-          <option value="20">20</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="min" style="font-weight: 500">Minimum number:</label>
-        <input type="number" value="5" id="min" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="max" style="font-weight: 500">Maximum number:</label>
-        <select class="custom-select" id="max">
-          <option value="50">50</option>
-          <option value="100" selected>100</option>
-          <option value="200">200</option>
-          <option value="500">500</option>
-          <option value="1000">1000</option>
-        </select>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-4">
+            On this page, you can practice finding all the factors of a given number. This is usually introduced in grade 4 (but could also be in grade 5 in some places). You can choose the minimum and maximum numbers and the amount of practice problems.
+          </p>
+          <div class="form-group">
+            <label for="numop" style="font-weight: 500">How many practice problems?</label>
+            <select class="custom-select" id="numop">
+              <option value="5" selected>5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="min" style="font-weight: 500">Minimum number:</label>
+            <input type="number" value="5" id="min" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="max" style="font-weight: 500">Maximum number:</label>
+            <select class="custom-select" id="max">
+              <option value="50">50</option>
+              <option value="100" selected>100</option>
+              <option value="200">200</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="find-factors.jpg" class="rounded-lg screenshot" alt="Screenshot of someone finding factors">
+          </p>
+        </div>
       </div>
       <button id="go" class="btn btn-primary">Go!</button>
     </div>

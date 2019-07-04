@@ -134,7 +134,7 @@
             <div class="col-md-6">
               <p>
                 Screenshot:<br />
-                <img src="mystery-picture.jpg" class="shadow-lg rounded-lg" alt="Screenshot of someone doing a round" style="width: 700px; max-width: 100%">
+                <img src="mystery-picture.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
               </p>
             </div>
           </div>

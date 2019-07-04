@@ -128,7 +128,7 @@
             <div class="col-md-6">
               <p>
                 Screenshot:<br />
-                <img src="mystery-picture-integers.jpg" class="shadow-lg rounded-lg" alt="Screenshot of someone doing a round" style="width: 700px; max-width: 100%">
+                <img src="mystery-picture-integers.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
               </p>
             </div>
           </div>

@@ -92,13 +92,13 @@
     </style>
     <meta property="og:title" content="Subtraction Hidden Picture Game">
     <meta property="og:description" content="Solve simple subtraction problems while uncovering a hidden picture in this fun game that children really like!">
-    <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture.jpg">
-    <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture.jpg" />
+    <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture-sub.png">
+    <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture-sub.png" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1026" />
     <meta property="og:image:height" content="720" />
     <meta property="og:image:alt" content="Subtraction Mystery Picture Game" />
-    <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture">
+    <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture-subtraction">
     <meta property="og:site_name" content="Math Mammoth Practice">
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image">
@@ -137,7 +137,7 @@
             <div class="col-md-6">
               <p>
                 Screenshot:<br />
-                <img src="mystery-picture-sub.png" class="shadow-lg rounded-lg" alt="Screenshot of someone doing a round" style="width: 700px; max-width: 100%">
+                <img src="mystery-picture-sub.png" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
               </p>
             </div>
           </div>
