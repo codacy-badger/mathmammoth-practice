@@ -86,6 +86,9 @@
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/rounding">
           Rounding
         </a>
+        <a href="/practice/fractions-decimals" class="list-group-item list-group-item-action" role="listitem">
+          Fractions &amp; Decimals
+        </a>
       </ul>
       <div class="card mt-3 clearfix" style="margin: auto; background-color: #FFFF78; border-radius: 5px; padding: 30px">
         <div class="card-body">

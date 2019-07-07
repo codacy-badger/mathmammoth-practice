@@ -1,4 +1,4 @@
-var CACHE_VERSION = 94;
+var CACHE_VERSION = 95;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 var CACHE_IMAGES_NAME = 'images-v1';
@@ -27,24 +27,9 @@ self.addEventListener('install', function(event) {
         '/practice/mystery-picture-subtraction',
         '/practice/mystery-picture-integers',
         '/practice/division-remainder',
+        '/practice/fractions-decimals',
         '/practice/rounding',
         '/practice/place-value',
-        '/practice/index.php',
-        '/practice/multiply-with-zeros.php',
-        '/practice/exponents.php',
-        '/practice/divide-numbers-ending-in-zeros.php',
-        '/practice/multiplication.php',
-        '/practice/fact-families.php',
-        '/practice/addition-single-digit.php',
-        '/practice/addition-subtraction-two-digit.php',
-        '/practice/factorfind.php',
-        '/practice/division.php',
-        '/practice/rounding.php',
-        '/practice/place-value.php',
-        '/practice/division-remainder.php',
-        '/practice/mystery-picture.php',
-        '/practice/mystery-picture-subtraction.php',
-        '/practice/mystery-picture-integers.php',
         '/practice/app.js',
         '/practice/bootstrap.min.css',
         '/practice/bootstrap.min.js',
@@ -53,6 +38,7 @@ self.addEventListener('install', function(event) {
         '/practice/mystery-picture.jpg',
         '/practice/mystery-picture-sub.png',
         '/practice/mystery-picture-integers.jpg',
+        '/practice/fractions-matching.jpg',
         '/practice/mm.css',
         '/practice/lazyload.min.js',
         '/practice/girl_online_practice.jpg'

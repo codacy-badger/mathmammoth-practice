@@ -12,6 +12,10 @@ h1.text-center {
   margin-bottom: 8px;
 }
 
+li.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .custom-select {
   -webkit-appearance: none;
 }
