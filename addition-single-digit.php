@@ -4,6 +4,19 @@
 <head>
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
+  <meta property="og:title" content="Basic Addition & Subtraction Facts">
+  <meta property="og:description" content="You can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 - 4, 12 - 8).">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/single-digit-addition.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/single-digit-addition.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="560" />
+  <meta property="og:image:height" content="517" />
+  <meta property="og:image:alt" content="Basic Addition & Subtraction Facts" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/addition-single-digit">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Basic Addition & Subtraction Facts">
   <title>Basic Addition &amp; Subtraction Facts &mdash; Online Practice (grades 1-2)</title>
 </head>
 
@@ -16,21 +29,31 @@
         <span style="font-size: 1.5rem">Online practice for grades 1-2</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
-      <p>You can practice addition facts, subtraction facts, and missing addend problems (missing number additions).</p>
-      <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less. Additionally you can select timed or untimed practice and the number of practice problems.</p>
-      <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p><br>
+      <div class="row">
+        <div class="col-md-6">
+          <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>
+          <p>You can practice addition facts, subtraction facts, and missing addend problems (missing number additions).</p>
+          <p>For first grade, choose basic facts where the sum is 10 or less, and for second grade, choose basic facts where the sum is 20 or less. Additionally you can select timed or untimed practice and the number of practice problems.</p>
+          <p class="mb-4">Further options for <i>addition only</i> include: adding with zero, doubles, doubles plus one, nine trick (or adding with 9), and the eight-trick (or adding with 8).</p><br>
+          <div id="tenOrEighteen">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="1018" id="10less">
+              <label class="custom-control-label" for="10less">Basic facts within 10 &mdash; 1st grade (the biggest number is 10 or less)</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="1018" checked id="18less">
+              <label class="custom-control-label" for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
+            </div>
+          </div><br> <!-- 7 lines -->
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="single-digit-addition.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
       <!-- end copied code -->
-      <div id="tenOrEighteen">
-        <div class="custom-control custom-radio">
-          <input class="custom-control-input" type="radio" name="1018" id="10less">
-          <label class="custom-control-label" for="10less">Basic facts within 10 &mdash; 1st grade (the biggest number is 10 or less)</label>
-        </div>
-        <div class="custom-control custom-radio">
-          <input class="custom-control-input" type="radio" name="1018" checked id="18less">
-          <label class="custom-control-label" for="18less">Basic facts within 20 &mdash; 2nd grade (the biggest number is 20 or less)</label>
-        </div>
-      </div><br> <!-- 7 lines -->
       Choose the types of <i>addition</i> problems:<br><br>
       <div id="problemTypes">
         <div class="custom-control custom-checkbox">
@@ -57,7 +80,7 @@
           <input class="custom-control-input" type="checkbox" id="8trick">
           <label class="custom-control-label" for="8trick">8 Trick (or add to 8, e.g. 8 + 7, 1 + 8, 8 + 3)</label><br>
         </div> <!-- 7 lines -->
-        <br>Instead of addition, or in addition to it &#x1F601;, you can also choose to have missing addend and/or subtraction problems:
+        <br>Instead of addition, or in addition to it 😁, you can also choose to have missing addend and/or subtraction problems:
         <br><br>
         <div class="custom-control custom-checkbox">
           <input class="custom-control-input" type="checkbox" id="missingAddend">

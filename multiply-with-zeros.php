@@ -5,6 +5,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Multiply Whole Numbers With Zeros &mdash; Online Practice (grades 4-6)</title>
+  <meta property="og:title" content="Multiply Whole Numbers With Zeros">
+  <meta property="og:description" content="You can practice multiplying numbers with zeros, such as 20 * 300 and 7,000 * 200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/multiply-zeros.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/multiply-zeros.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="456" />
+  <meta property="og:image:height" content="413" />
+  <meta property="og:image:alt" content="Multiply Whole Numbers With Zeros" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/multiply-with-zeros">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Multiply Whole Numbers With Zeros">
 </head>
 
 <body>
@@ -16,22 +29,29 @@
         <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>On this page, you can practice multiplying numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
-
-      <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
-      <p>For example, to solve 20&nbsp;&times;&nbsp;300, first multiply 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
-
-      <p>You can also practice the opposite operation, <a href="/practice/divide-numbers-ending-in-zeros">division of numbers ending in zeros here</a>.</p>
-
-      <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
-      <!-- end copied code -->
-      <label for="level">Level:</label>
-      <select id="level" class="custom-select">
-        <option value="1">1 (the factors have a maximum of four zeros in total)</option>
-        <option value="2" selected>2 (the factors have a maximum of eight zeros in total)</option>
-        <option value="3">3 (the factors have a maximum of 12 zeros in total)</option>
-      </select>
-      <!-- start copied code -->
+      <div class="row">
+        <div class="col-md-6">
+          <p>On this page, you can practice multiplying numbers with zeros, such as 20&nbsp;&times;&nbsp;300 and 7,000&nbsp;&times;&nbsp;200, using mental math. Students usually learn this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
+          <p>The principle for solving such multiplication problems is this: multiply the numbers without the zeros first. Then, tag as many zeros as there are in the factors to the end of the product.</p>
+          <p>For example, to solve 20&nbsp;&times;&nbsp;300, first multiply 2&nbsp;&times;&nbsp;3 = 6. Then, since 20 has one zero and 300 has two, tag <i>three</i> zeros to the end of 6, to get 6,000.</p>
+          <p>You can also practice the opposite operation, <a href="/practice/divide-numbers-ending-in-zeros">division of numbers ending in zeros here</a>.</p>
+          <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
+          <!-- end copied code -->
+          <label for="level">Level:</label>
+          <select id="level" class="custom-select">
+            <option value="1">1 (the factors have a maximum of four zeros in total)</option>
+            <option value="2" selected>2 (the factors have a maximum of eight zeros in total)</option>
+            <option value="3">3 (the factors have a maximum of 12 zeros in total)</option>
+          </select>
+          <!-- start copied code -->
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="multiply-zeros.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
       <br>
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">

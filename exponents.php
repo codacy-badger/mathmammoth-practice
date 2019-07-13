@@ -5,10 +5,23 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Exponents and Powers of Ten &mdash; Online Practice (grades 5-7)</title>
+  <meta property="og:title" content="Exponents and Powers of Ten">
+  <meta property="og:description" content="You can practice with exponents and powers, such as 5 to the 2th power or 10 to the 6th power. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/rounding-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/rounding-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="455" />
+  <meta property="og:image:height" content="349" />
+  <meta property="og:image:alt" content="Exponents and Powers of Ten" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/rounding">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Exponents and Powers of Ten">
 </head>
 
 <body>
-  <?php $page = 'exponents';include 'header.php';?>
+  <?php $page = 'exponents'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
@@ -16,26 +29,32 @@
         <span style="font-size: 1.5rem">Online practice for grades 5-7</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>On this page, you can practice with exponents and powers, such as 5<sup>2</sup> or 10<sup>6</sup>. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.</p>
-
-      <p>An exponent is the little number in this expression: 2<sup>4</sup>. It indicates how many times the <i>base number</i> (in our case 2) is multiplied by itself. So, 2<sup>4</sup> means 2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2 = 16.</p>
-
-      <p>You can choose to practice either simple expressions with exponents, or expressions where we multiply a power of ten by some factor, or both.</p>
-
-      <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
-
-      <label for="mode">Mode:</label>
-      <div class="custom-control custom-radio">
-        <input type="radio" checked name="mode" id="modeReg" value="reg" class="custom-control-input">
-        <label for="modeReg" class="custom-control-label">Evaluate powers (e.g. 2<sup>3</sup> or 6<sup>2</sup>)</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input type="radio" name="mode" id="mode10te" value="10te" class="custom-control-input">
-        <label for="mode10te" class="custom-control-label">Powers of ten multiplied by some factor (e.g. 5 &times; 10<sup>4</sup>)</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input type="radio" name="mode" id="modeBoth" value="both" class="custom-control-input">
-        <label for="modeBoth" class="custom-control-label">Both</label>
+      <div class="row">
+        <div class="col-md-6">
+          <p>On this page, you can practice with exponents and powers, such as 5<sup>2</sup> or 10<sup>6</sup>. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.</p>
+          <p>An exponent is the little number in this expression: 2<sup>4</sup>. It indicates how many times the <i>base number</i> (in our case 2) is multiplied by itself. So, 2<sup>4</sup> means 2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2&nbsp;&times;&nbsp;2 = 16.</p>
+          <p>You can choose to practice either simple expressions with exponents, or expressions where we multiply a power of ten by some factor, or both.</p>
+          <p class="mb-4">You can choose timed or untimed practice and the number of practice problems.</p>
+          <label for="mode">Mode:</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" checked name="mode" id="modeReg" value="reg" class="custom-control-input">
+            <label for="modeReg" class="custom-control-label">Evaluate powers (e.g. 2<sup>3</sup> or 6<sup>2</sup>)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" name="mode" id="mode10te" value="10te" class="custom-control-input">
+            <label for="mode10te" class="custom-control-label">Powers of ten multiplied by some factor (e.g. 5 &times; 10<sup>4</sup>)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" name="mode" id="modeBoth" value="both" class="custom-control-input">
+            <label for="modeBoth" class="custom-control-label">Both</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="exponents-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
       </div>
       <br>
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">

@@ -6,6 +6,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Basic Division Facts &mdash; Online Practice (grades 3-5)</title>
+  <meta property="og:title" content="Basic Division Facts">
+  <meta property="og:description" content="This script allows you to practice any combination of the basic division facts (division tables) — either specific tables, such as division by 3 and by 5, or one of them (such as division by 8), or all of them (divisors up to 12). Very useful for 3rd and 4th grade students. 😃">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/division-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/division-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="619" />
+  <meta property="og:image:height" content="358" />
+  <meta property="og:image:alt" content="Basic Division Facts" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/division">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Basic Division Facts">
 </head>
 
 <body>
@@ -17,8 +30,18 @@
         <span style="font-size: 1.5rem">Online practice for grades 3-5</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>This script allows you to practice any combination of the basic division facts (division tables) &mdash; either specific tables, such as division by 3 and by 5, or one of them (such as division by 8), or all of them (divisors up to 12). Very useful for 3rd and 4th grade students. &#x1F603;</p>
-      <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact division tables you'd like to work on.</p>
+      <div class="row">
+        <div class="col-xl-6">
+          <p>This script allows you to practice any combination of the basic division facts (division tables) &mdash; either specific tables, such as division by 3 and by 5, or one of them (such as division by 8), or all of them (divisors up to 12). Very useful for 3rd and 4th grade students. 😃</p>
+          <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact division tables you'd like to work on.</p>
+        </div>
+        <div class="col-xl-6">
+          <p>
+            Screenshot:<br />
+            <img src="division-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
       <label style="font-weight: 500">
         Basic Division Facts: &nbsp;
       </label>

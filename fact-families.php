@@ -5,6 +5,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Addition &amp; Subtraction Fact Families &mdash; Online Practice (grades 1-2)</title>
+  <meta property="og:title" content="Addition & Subtraction Fact Families">
+  <meta property="og:description" content="Here you can practice the basic addition and subtraction facts using the fact families approach. This approach is used in the Math Mammoth curriculum (grade 1 and grade 2).">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/fact-families-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/fact-families-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="454" />
+  <meta property="og:image:height" content="417" />
+  <meta property="og:image:alt" content="Addition & Subtraction Fact Families" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/fact-families">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Addition & Subtraction Fact Families">
 </head>
 
 <body>
@@ -16,35 +29,44 @@
         <span style="font-size: 1.5rem">Online practice for grades 1-2</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>Here you can practice the basic addition and subtraction facts using the fact families approach. This approach is used in the Math Mammoth curriculum (<a href="/complete/grade_1.php">grade 1</a> and <a href="/complete/grade_2.php">grade 2</a>).</p>
-      <p>For example, if you choose to practice fact families with 6, you will get addition and subtraction facts from various fact families with the sum of 6:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Here you can practice the basic addition and subtraction facts using the fact families approach. This approach is used in the Math Mammoth curriculum (<a href="/complete/grade_1.php">grade 1</a> and <a href="/complete/grade_2.php">grade 2</a>).</p>
+          <p>For example, if you choose to practice fact families with 6, you will get addition and subtraction facts from various fact families with the sum of 6:</p>
 
-      <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
-        0 + 6 = 6<br>
-        6 + 0 = 6<br>
-        6 &minus; 0 = 6<br>
-        6 &minus; 6 = 0
+          <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
+            0 + 6 = 6<br>
+            6 + 0 = 6<br>
+            6 &minus; 0 = 6<br>
+            6 &minus; 6 = 0
+          </div>
+          <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
+            1 + 5 = 6<br>
+            5 + 1 = 6<br>
+            6 &minus; 1 = 5<br>
+            6 &minus; 5 = 1
+          </div>
+          <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
+            2 + 4 = 6<br>
+            4 + 2 = 6<br>
+            6 &minus; 2 = 4<br>
+            6 &minus; 4 = 2
+          </div>
+          <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
+            3 + 3 = 6<br>
+            3 + 3 = 6<br>
+            6 &minus; 3 = 3<br>
+            6 &minus; 3 = 3
+          </div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="fact-families-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone solving fact family problems">
+          </p>
+        </div>
       </div>
-      <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
-        1 + 5 = 6<br>
-        5 + 1 = 6<br>
-        6 &minus; 1 = 5<br>
-        6 &minus; 5 = 1
-      </div>
-      <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
-        2 + 4 = 6<br>
-        4 + 2 = 6<br>
-        6 &minus; 2 = 4<br>
-        6 &minus; 4 = 2
-      </div>
-      <div style="float:left; margin:10px; padding:6px; background-color:#FFFFA0; border-radius: 10px">
-        3 + 3 = 6<br>
-        3 + 3 = 6<br>
-        6 &minus; 3 = 3<br>
-        6 &minus; 3 = 3
-      </div>
-      <div style="clear: both"></div>
-
       <p>You can choose which fact families to practice. The program will give you both addition and subtraction facts from those
       families, including missing number additions and subtractions.</p>
 

@@ -4,6 +4,19 @@
 <head>
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
+  <meta property="og:title" content="Two-Digit Addition & Subtraction with Mental Math">
+  <meta property="og:description" content="Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 - 4, 100 - 28, etc.).">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/two-digit-addition-subtraction.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/two-digit-addition-subtraction.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="560" />
+  <meta property="og:image:height" content="517" />
+  <meta property="og:image:alt" content="Two-Digit Addition & Subtraction with Mental Math" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/addition-subtraction-two-digit">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Two-Digit Addition & Subtraction with Mental Math">
   <title>Two-Digit Addition &amp; Subtraction with Mental Math &mdash; Online Practice (grades 1-3)</title>
 </head>
 
@@ -16,16 +29,26 @@
         <span style="font-size: 1.5rem">Online practice for grades 1-3</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 &minus; 4, 100 &minus; 28, etc.).</p>
-      <p>Here are some grade-level suggestions:</p>
-      <ul class="mb-3">
-        <li class="mb-2">First graders should practice &mdash; and MASTER &mdash; adding a two-digit number and a single-digit number without regrouping (e.g. 24 + 5, 67 + 2), AND adding/subtracting two-digit numbers and multiples of ten (e.g. 45 + 30, 67 &minus; 50).</li>
-        <li class="mb-2">For second grade, I suggest practicing adding a two-digit number and a single-digit number <i>with</i> regrouping (e.g. 47 + 8, 77 + 5), and similarly, subtracting a two digit number and a single-digit number with regrouping (e.g. 82 &minus; 4, 64 &minus; 8). Second graders should  also add and subtract two-digit numbers without regrouping, and subtract a two-digit number from 100. They can also try adding and subtracting two-digit numbers with regrouping.</li>
-        <li class="mb-2">Finally, children in third grade can practice with all the options listed below. <img src="../newsletter/images/smiley-s.png" width=20 height=20 alt=":)"></li>
-      </ul>
-      <br>
-      <!-- end copied code -->
-      <!-- addition opts -->
+      <div class="row">
+        <div class="col-md-6">
+          <p>Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 &minus; 4, 100 &minus; 28, etc.).</p>
+          <p>Here are some grade-level suggestions:</p>
+          <ul class="mb-3">
+            <li class="mb-2">First graders should practice &mdash; and MASTER &mdash; adding a two-digit number and a single-digit number without regrouping (e.g. 24 + 5, 67 + 2), AND adding/subtracting two-digit numbers and multiples of ten (e.g. 45 + 30, 67 &minus; 50).</li>
+            <li class="mb-2">For second grade, I suggest practicing adding a two-digit number and a single-digit number <i>with</i> regrouping (e.g. 47 + 8, 77 + 5), and similarly, subtracting a two digit number and a single-digit number with regrouping (e.g. 82 &minus; 4, 64 &minus; 8). Second graders should  also add and subtract two-digit numbers without regrouping, and subtract a two-digit number from 100. They can also try adding and subtracting two-digit numbers with regrouping.</li>
+            <li class="mb-2">Finally, children in third grade can practice with all the options listed below. 🙂</li>
+          </ul>
+          <br>
+          <!-- end copied code -->
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="two-digit-addition-subtraction.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
+       <!-- addition opts -->
       <div class="custom-control custom-checkbox">
         <input type="checkbox" id="2p1dnr" class="custom-control-input">
         <label for="2p1dnr" class="custom-control-label">2-digit + 1-digit, no regrouping (e.g. 45 + 3, 62 + 7)</label>

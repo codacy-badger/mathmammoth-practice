@@ -5,6 +5,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Divide Whole Numbers Ending in Zeros &mdash; Online Practice (grades 4-6)</title>
+  <meta property="og:title" content="Divide Whole Numbers Ending in Zeros">
+  <meta property="og:description" content="Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350 / 5, 2,400 / 60, or 540,000 / 6,000.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/divide-zeros.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/divide-zeros.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="456" />
+  <meta property="og:image:height" content="350" />
+  <meta property="og:image:alt" content="Divide Whole Numbers Ending in Zeros" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/divide-numbers-ending-in-zeros">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Divide Whole Numbers Ending in Zeros">
 </head>
 
 <body>
@@ -16,19 +29,29 @@
         <span style="font-size: 1.5rem">Online Practice for grades 4-6</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350&nbsp;&divide;&nbsp;5, 2,400&nbsp;&divide;&nbsp;60, or 540,000&nbsp;&divide;&nbsp;6,000.</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Here, we are not dividing anything BY zero, but practicing mental division problems with numbers that end in zeros, such as 350&nbsp;&divide;&nbsp;5, 2,400&nbsp;&divide;&nbsp;60, or 540,000&nbsp;&divide;&nbsp;6,000.</p>
 
-      <p>Students usually start learning this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
+          <p>Students usually start learning this topic in 4th grade, but 5th and 6th grade students usually benefit from practicing it too.</p>
 
-      <p>The main principle for solving these division problems is this. Each division is actually built from a simple division fact, such as 54&nbsp;&divide;&nbsp;6 or 18&nbsp;&divide;&nbsp;3. You will need to solve that problem. </p>
-      <p>Then think how may zeros must be tagged onto the answer, based on multiplication.</p>
+          <p>The main principle for solving these division problems is this. Each division is actually built from a simple division fact, such as 54&nbsp;&divide;&nbsp;6 or 18&nbsp;&divide;&nbsp;3. You will need to solve that problem. </p>
+          <p>Then think how may zeros must be tagged onto the answer, based on multiplication.</p>
 
-      <p>For example, to solve 2,400&nbsp;&divide;&nbsp;30, first divide 24&nbsp;&divide;&nbsp;3 = 8. Then, think whether the answer would be 8, 80, or 800, based on multiplying each of the 8&nbsp;&times;&nbsp;30, 80&nbsp;&times;&nbsp;300, and 800&nbsp;&times;&nbsp;30, and checking which one will give you the dividend, 2,400.</p>
+          <p>For example, to solve 2,400&nbsp;&divide;&nbsp;30, first divide 24&nbsp;&divide;&nbsp;3 = 8. Then, think whether the answer would be 8, 80, or 800, based on multiplying each of the 8&nbsp;&times;&nbsp;30, 80&nbsp;&times;&nbsp;300, and 800&nbsp;&times;&nbsp;30, and checking which one will give you the dividend, 2,400.</p>
 
-      <p>Another principle that helps in solving these is that you can cancel out the same amount of zeros in each of the dividend and divisor in order to get a new, simpler problem with the same answer as the original.</p>
-      <p>You can also practice the opposite operation, <a href="/practice/multiply-with-zeros">multiplication with zeros here</a>.</p>
+          <p>Another principle that helps in solving these is that you can cancel out the same amount of zeros in each of the dividend and divisor in order to get a new, simpler problem with the same answer as the original.</p>
+          <p>You can also practice the opposite operation, <a href="/practice/multiply-with-zeros">multiplication with zeros here</a>.</p>
 
-      <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
+          <p class="mb-4">You can choose the level of difficulty, timed or untimed practice, and the number of practice problems.</p>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Screenshot:<br />
+            <img src="divide-zeros.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
       <!-- end copied code -->
       <label for="level">Level:</label>
       <select id="level" class="custom-select">

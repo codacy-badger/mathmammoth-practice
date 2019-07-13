@@ -4,6 +4,19 @@
 <head>
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
+  <meta property="og:title" content="Rounding Whole Numbers & Decimals">
+  <meta property="og:description" content="You can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6).">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/rounding-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/rounding-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="556" />
+  <meta property="og:image:height" content="381" />
+  <meta property="og:image:alt" content="Rounding Whole Numbers & Decimals" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/rounding">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Rounding Whole Numbers & Decimals">
   <title>Rounding Whole Numbers &amp; Decimals &mdash; Online Practice (grades 1-6)</title>
 </head>
 
@@ -16,20 +29,29 @@
         <span style="font-size: 1.5rem">Online practice for grades 1-6</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>On this page, you can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6). </p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>On this page, you can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6). </p>
 
-      <p>This free, online practice program can also be installed offline as an app in your phone or tablet, depending on your browser and operating system. To install it, click on the "Add to home screen" button at the bottom of the page. On Android Chrome, click on the three dots, and then "Add to home screen". If you don't see the button or the "Add to home screen" option, then you probably cannot install this app in your browser.</p>
+          <p>This free, online practice program can also be installed offline as an app in your phone or tablet, depending on your browser and operating system. To install it, click on the "Add to home screen" button at the bottom of the page. On Android Chrome, click on the three dots, and then "Add to home screen". If you don't see the button or the "Add to home screen" option, then you probably cannot install this app in your browser.</p>
 
-      <p>Use these quick links for some common options for rounding practice for different grade levels.</p>
+          <p>Use these quick links for some common options for rounding practice for different grade levels.</p>
 
-      <p><a href="javascript:location.href='/practice/rounding#number-range=0to100&round-to=ten';location.reload();">1st and 2nd grades: round to the nearest ten, within 0-100</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000&round-to=ten,hundred';location.reload();">3rd grade: round to the nearest ten and nearest hundred, within 0-1,000</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=0to10000&round-to=thousand';location.reload();">3rd grade: round to the nearest thousand, within 0-10,000</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000000&round-to=any-place';location.reload();">4th grade: round to any place, within 0-1,000,000</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000000000&round-to=any-place';location.reload();">5th grade: round to any place, within 0-1,000,000,000</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=decimals&decimal-place=3';location.reload();">5th grade: round decimals (up to 3 decimal digits)</a></p>
-      <p><a href="javascript:location.href='/practice/rounding#number-range=decimals&decimal-place=6';location.reload();">6th grade: round decimals (up to 6 decimal digits)</a></p>
-
+          <p><a href="javascript:location.href='/practice/rounding#number-range=0to100&round-to=ten';location.reload();">1st and 2nd grades: round to the nearest ten, within 0-100</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000&round-to=ten,hundred';location.reload();">3rd grade: round to the nearest ten and nearest hundred, within 0-1,000</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=0to10000&round-to=thousand';location.reload();">3rd grade: round to the nearest thousand, within 0-10,000</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000000&round-to=any-place';location.reload();">4th grade: round to any place, within 0-1,000,000</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=0to1000000000&round-to=any-place';location.reload();">5th grade: round to any place, within 0-1,000,000,000</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=decimals&decimal-place=3';location.reload();">5th grade: round decimals (up to 3 decimal digits)</a></p>
+          <p><a href="javascript:location.href='/practice/rounding#number-range=decimals&decimal-place=6';location.reload();">6th grade: round decimals (up to 6 decimal digits)</a></p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="rounding-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
+      </div>
       <div class="form-group mt-4">
         <label for="number-range">Number range:</label>
         <div id="number-range">

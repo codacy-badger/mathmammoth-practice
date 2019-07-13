@@ -94,9 +94,9 @@
     <meta property="og:description" content="Solve simple subtraction problems while uncovering a hidden picture in this fun game that children really like!">
     <meta property="og:image" content="https://www.mathmammoth.com/practice/mystery-picture-sub.png">
     <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/mystery-picture-sub.png" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1026" />
-    <meta property="og:image:height" content="720" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="859" />
+    <meta property="og:image:height" content="633" />
     <meta property="og:image:alt" content="Subtraction Mystery Picture Game" />
     <meta property="og:url" content="https://www.mathmammoth.com/practice/mystery-picture-subtraction">
     <meta property="og:site_name" content="Math Mammoth Practice">

@@ -5,6 +5,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Multiplication Tables &mdash; Online Practice (grades 3-5)</title>
+  <meta property="og:title" content="Multiplication Tables">
+  <meta property="og:description" content="You can practice any combination of the multiplication tables — very helpful for students in 3rd and 4th grades. You can practice any single times table (such as multiplication by 9), or several tables (such as tables of 2 and 5), or all of them.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/multiplication-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/multiplication-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="619" />
+  <meta property="og:image:height" content="363" />
+  <meta property="og:image:alt" content="Multiplication Tables" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/multiplication">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Multiplication Tables">
 </head>
 
 <body>
@@ -16,78 +29,88 @@
         <span style="font-size: 1.5rem">Online practice for grades 3-5</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>On this page, you can practice any combination of the multiplication tables &mdash; very helpful for students in 3rd and 4th grades. You can practice any single times table (such as multiplication by 9), or several tables (such as tables of 2 and 5), or all of them.</p>
-      <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact times tables you'd like to work on.</p>
-      <label style="font-weight: 500">
-        Tables: &nbsp;
-      </label>
-      <div class="btn-group btn-group-sm">
-        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
-        <button class="btn btn-primary" onclick="$('.tc.in12 input').prop('checked', true); $('#submit').prop('disabled', false);">Check Tables 1-12</button>
-        <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
+      <div class="row">
+        <div class="col-md-6">
+          <p>On this page, you can practice any combination of the multiplication tables &mdash; very helpful for students in 3rd and 4th grades. You can practice any single times table (such as multiplication by 9), or several tables (such as tables of 2 and 5), or all of them.</p>
+          <p class="mb-4">You can choose timed or untimed practice, the number of practice problems, and which exact times tables you'd like to work on.</p>
+          <label style="font-weight: 500">
+            Tables: &nbsp;
+          </label>
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-primary" onclick="$('.tc input').prop('checked', true); $('#submit').prop('disabled', false);">Check All</button>
+            <button class="btn btn-primary" onclick="$('.tc.in12 input').prop('checked', true); $('#submit').prop('disabled', false);">Check Tables 1-12</button>
+            <button class="btn btn-primary" onclick="$('.tc input').prop('checked', false); $('#submit').prop('disabled', true);">Uncheck All</button>
+          </div>
+          <div id="tables" class="multiplication">
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m1">
+              &nbsp;<label class="custom-control-label" for="m1">Table of 1</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m2">
+              &nbsp;<label class="custom-control-label" for="m2">Table of 2</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m3">
+              &nbsp;<label class="custom-control-label" for="m3">Table of 3</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m4">
+              &nbsp;<label class="custom-control-label" for="m4">Table of 4</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m5">
+              &nbsp;<label class="custom-control-label" for="m5">Table of 5</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m6">
+              &nbsp;<label class="custom-control-label" for="m6">Table of 6</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m7">
+              &nbsp;<label class="custom-control-label" for="m7">Table of 7</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m8">
+              &nbsp;<label class="custom-control-label" for="m8">Table of 8</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m9">
+              &nbsp;<label class="custom-control-label" for="m9">Table of 9</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m10">
+              &nbsp;<label class="custom-control-label" for="m10">Table of 10</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m11">
+              &nbsp;<label class="custom-control-label" for="m11">Table of 11</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline in12">
+              <input type="checkbox" class="custom-control-input" id="m12">
+              &nbsp;<label class="custom-control-label" for="m12">Table of 12</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="m13">
+              &nbsp;<label class="custom-control-label" for="m12">Table of 13</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="m14">
+              &nbsp;<label class="custom-control-label" for="m12">Table of 14</label>
+            </div>
+            <div class="tc custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="m15">
+              &nbsp;<label class="custom-control-label" for="m12">Table of 15</label>
+            </div>
+          </div><br>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Screenshot:<br />
+            <img src="multiplication-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
       </div>
-      <div id="tables" class="multiplication">
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m1">
-          &nbsp;<label class="custom-control-label" for="m1">Table of 1</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m2">
-          &nbsp;<label class="custom-control-label" for="m2">Table of 2</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m3">
-          &nbsp;<label class="custom-control-label" for="m3">Table of 3</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m4">
-          &nbsp;<label class="custom-control-label" for="m4">Table of 4</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m5">
-          &nbsp;<label class="custom-control-label" for="m5">Table of 5</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m6">
-          &nbsp;<label class="custom-control-label" for="m6">Table of 6</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m7">
-          &nbsp;<label class="custom-control-label" for="m7">Table of 7</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m8">
-          &nbsp;<label class="custom-control-label" for="m8">Table of 8</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m9">
-          &nbsp;<label class="custom-control-label" for="m9">Table of 9</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m10">
-          &nbsp;<label class="custom-control-label" for="m10">Table of 10</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m11">
-          &nbsp;<label class="custom-control-label" for="m11">Table of 11</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline in12">
-          <input type="checkbox" class="custom-control-input" id="m12">
-          &nbsp;<label class="custom-control-label" for="m12">Table of 12</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="m13">
-          &nbsp;<label class="custom-control-label" for="m12">Table of 13</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="m14">
-          &nbsp;<label class="custom-control-label" for="m12">Table of 14</label>
-        </div>
-        <div class="tc custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="m15">
-          &nbsp;<label class="custom-control-label" for="m12">Table of 15</label>
-        </div>
-      </div><br>
       <div class="tonanoq switch" style="transition: opacity .3s" onclick="$('#checkbox').prop('checked', false); $('.pfst').css('opacity', 0.6); $('.pfst').css('cursor', 'default'); this.style.opacity = 1; this.style.cursor = 'auto';">
         <div class="timed">
           <div class="custom-control custom-radio">
