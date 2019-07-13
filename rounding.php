@@ -21,7 +21,10 @@
 </head>
 
 <body>
-  <?php $page = 'rounding'; include 'header.php'; ?>
+  <?php
+  $page = 'rounding';
+  include 'header.php';
+  ?>
   <div class="container rounding-page">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
@@ -395,28 +398,36 @@
           var zeros = random(1, range[1].toString().match(/0/g).length);
           unit = putCommasInNumber(parseInt('1' + '0'.repeat(zeros)));
         } else {
-          var zeros;
+          var zeros = [];
           var nearestBoxes = document.querySelectorAll('[id*="round-to-"]');
           if (nearestBoxes.length == 0) {
-            zeros = random(1, 6);
+            zeros = [random(1, 6)];
           }
           for (var i = 0; i < nearestBoxes.length; i++) {
             var box = nearestBoxes[i];
             if (box.checked) {
               var name = box.getAttribute('data-val') ? box.getAttribute('data-val').replace('nearest-', '') : 'any-place';
               switch (name) {
-                case 'ten': zeros = 1; break;
-                case 'hundred': zeros = 2; break;
-                case 'thousand': zeros = 3; break;
-                case 'ten-thousand': zeros = 4; break;
-                case 'hundred-thousand': zeros = 5; break;
-                case 'million': zeros = 6; break;
+                case 'ten': zeros.push(1); break;
+                case 'hundred': zeros.push(2); break;
+                case 'thousand': zeros.push(3); break;
+                case 'ten-thousand': zeros.push(4); break;
+                case 'hundred-thousand': zeros.push(5); break;
+                case 'million': zeros.push(6); break;
               }
             }
           }
+          zeros = zeros[Math.floor(Math.random() * zeros.length)];
           unit = putCommasInNumber(parseInt('1' + '0'.repeat(zeros)));
         }
-        number = putCommasInNumber(random(parseInt(range[0]), parseInt(range[1])));
+        if (zeros == 1) {
+          number = random(parseInt(range[0]), parseInt(range[1]));
+          while (number % 10 == 0) {
+            number = random(parseInt(range[0]), parseInt(range[1]));
+          }
+          number = putCommasInNumber(number);
+        }
+        else number = putCommasInNumber(random(parseInt(range[0]), parseInt(range[1])));
       }
       unit = unit.toString().replace(/oneth/g, 'one').replace(/0 decimals/g, 'one');
       var question = 'Round ' + number + ' to ' + (isDecimal && selectVal == 9 ? unit : ('the nearest ' + unit)) + '.';
