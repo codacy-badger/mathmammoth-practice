@@ -5,6 +5,19 @@
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
   <title>Place Value &mdash; Online Practice (grades 1-4)</title>
+  <meta property="og:title" content="Place Value">
+  <meta property="og:description" content="This script makes simple math problems that help students practice place value concepts.">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/place-value-screenshot.jpg">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/place-value-screenshot.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="617" />
+  <meta property="og:image:height" content="301" />
+  <meta property="og:image:alt" content="Place Value" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/place-value">
+  <meta property="og:site_name" content="Math Mammoth Practice">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Place Value">
 </head>
 
 <body>
@@ -16,22 +29,32 @@
         <span style="font-size: 1.5rem">Online practice for grades 1-4</span>
       </h1>
       <div class="sharethis-inline-share-buttons"></div>
-      <p>This script makes simple math problems that help students practice place value concepts.</p>
-      <p>In the first mode, students need to find the missing part of a number, such as 2,594 = 500 + ______ + 4 + 2,000.</p>
-      <p>In the second mode, students are given a number in expanded form and they need to write the number. For example, 500 + 30 + 7,000 + 2 makes the number 7,532.</p>
-      <p>You can choose timed or untimed practice, the number of practice problems, the 'mode', and the maximum number of digits in the number.</p>
-      <div class="form-group mt-4">
-        <label for="max-digits">Max Digits:</label>
-        <select id="max-digits" class="custom-select">
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4" selected>4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
+      <div class="row">
+        <div class="col-12">
+          <p>This script makes simple math problems that help students practice place value concepts.</p>
+          <p>In the first mode, students need to find the missing part of a number, such as 2,594 = 500 + ______ + 4 + 2,000.</p>
+          <p>In the second mode, students are given a number in expanded form and they need to write the number. For example, 500 + 30 + 7,000 + 2 makes the number 7,532.</p>
+          <p>You can choose timed or untimed practice, the number of practice problems, the 'mode', and the maximum number of digits in the number.</p>
+          <div class="form-group mt-4">
+            <label for="max-digits">Max Digits:</label>
+            <select id="max-digits" class="custom-select">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <p>
+            Screenshot:<br />
+            <img src="place-value-screenshot.jpg" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+          </p>
+        </div>
       </div>
       <div class="form-group">
         <label for="mode">Mode:</label>

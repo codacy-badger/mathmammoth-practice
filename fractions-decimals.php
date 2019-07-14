@@ -122,12 +122,17 @@
           <div class="row">
             <div class="col-md-6">
               <p>
-                Practice converting fractions to decimals while also uncovering a hidden picture in this fun matching game!
+                Practice converting fractions to decimals while also uncovering a hidden picture in this fun matching game! 
               </p>
               <p>
                 You can choose from three different difficulty levels and from three different grid sizes (which determines the number of
                 tiles to be matched). For fourth grade, I recommend the easy level, for fifth, the medium level, and for sixth and seventh
                 grades the hard level.
+              </p>
+              <p>
+                The easy level only includes fractions with denominators 2, 4, 5, and 10, which give us decimals with one decimal digit, plus 
+                the decimals 0.25 and 0.75. The medium level uses 20, 25, 50, 100 as denominators, and thus we get decimals with two decimal digits.
+                The hard level uses 1000, 500, 8, 200, 100, 40, 50, 250, 125, which match with decimal numbers with three decimal places.
               </p>
               <p>Here are some quick links to get you started with a particular grade:</p>
               <p><a href="javascript:location.href='/practice/fractions-decimals#level=easy&gridSize=18';location.reload();">4th grade (Easy level)</a></p>

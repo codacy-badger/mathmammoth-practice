@@ -3,6 +3,7 @@ var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 var CACHE_IMAGES_NAME = 'images-v1';
 var CACHE_IMAGES2_NAME = 'images2-v1';
+var CACHE_SCREENSHOTS_NAME = 'screenshots-v1';
 
 self.addEventListener('install', function(event) {
   self.skipWaiting();
@@ -36,10 +37,6 @@ self.addEventListener('install', function(event) {
         '/practice/bootstrap.min.js',
         '/practice/jquery-3.3.1.min.js',
         '/practice/sweetalert.min.js',
-        '/practice/mystery-picture.jpg',
-        '/practice/mystery-picture-sub.png',
-        '/practice/mystery-picture-integers.jpg',
-        '/practice/fractions-matching.jpg',
         '/practice/mm.css',
         '/practice/lazyload.min.js',
         '/practice/girl_online_practice.jpg'
@@ -66,6 +63,28 @@ self.addEventListener('install', function(event) {
       cache.addAll(images);
     })
   );
+  event.waitUntil(
+    caches.open(CACHE_SCREENSHOTS_NAME).then(function(cache) {
+      console.log('[Service Worker] Precaching screenshots');
+      cache.addAll([
+        '/practice/mystery-picture.jpg',
+        '/practice/mystery-picture-sub.png',
+        '/practice/mystery-picture-integers.jpg',
+        '/practice/fractions-matching.jpg',
+        '/practice/division-remainders.jpg',
+        '/practice/divide-zeros.jpg',
+        '/practice/exponents-screenshot.jpg',
+        '/practice/fact-families-screenshot.jpg',
+        '/practice/find-factors.jpg',
+        '/practice/place-value-screenshot.jpg',
+        '/practice/multiplication-screenshot.jpg',
+        '/practice/multiply-zeros.jpg',
+        '/practice/rounding-screenshot.jpg',
+        '/practice/single-digit-addition.jpg',
+        '/practice/two-digit-addition-subtraction.jpg'
+      ]);
+    })
+  );
 });
 
 self.addEventListener('activate', function(event) {
@@ -78,7 +97,8 @@ self.addEventListener('activate', function(event) {
             key != CACHE_STATIC_NAME &&
             key != CACHE_DYNAMIC_NAME &&
             key != CACHE_IMAGES_NAME &&
-            key != CACHE_IMAGES2_NAME
+            key != CACHE_IMAGES2_NAME &&
+            key != CACHE_SCREENSHOTS_NAME
           ) {
             console.log('[Service Worker] Removing old cache...', key);
             return caches.delete(key);
