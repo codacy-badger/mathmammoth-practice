@@ -1,7 +1,8 @@
-var CACHE_VERSION = 96;
+var CACHE_VERSION = 97;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 var CACHE_IMAGES_NAME = 'images-v1';
+var CACHE_IMAGES2_NAME = 'images2-v1';
 
 self.addEventListener('install', function(event) {
   self.skipWaiting();
@@ -55,6 +56,16 @@ self.addEventListener('install', function(event) {
       cache.addAll(images);
     })
   );
+  event.waitUntil(
+    caches.open(CACHE_IMAGES2_NAME).then(function(cache) {
+      console.log('[Service Worker] Precaching mystery picture images 2...');
+      var images = [];
+      for (var i = 0; i < 34; i++) {
+        images.push('/practice/images/' + (i + 1) + '.jpg');
+      }
+      cache.addAll(images);
+    })
+  );
 });
 
 self.addEventListener('activate', function(event) {
@@ -66,7 +77,8 @@ self.addEventListener('activate', function(event) {
           if (
             key != CACHE_STATIC_NAME &&
             key != CACHE_DYNAMIC_NAME &&
-            key != CACHE_IMAGES_NAME
+            key != CACHE_IMAGES_NAME &&
+            key != CACHE_IMAGES2_NAME
           ) {
             console.log('[Service Worker] Removing old cache...', key);
             return caches.delete(key);

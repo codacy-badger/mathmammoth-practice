@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("images/1.jpg");
+        background-image: url("images2/1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -99,8 +99,8 @@
     <meta property="og:image" content="https://www.mathmammoth.com/practice/fractions-matching.jpg">
     <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/fractions-matching.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1156" />
-    <meta property="og:image:height" content="771" />
+    <meta property="og:image:width" content="747" />
+    <meta property="og:image:height" content="502" />
     <meta property="og:image:alt" content="Fractions & Decimals Matching Game" />
     <meta property="og:url" content="https://www.mathmammoth.com/practice/fractions-decimals">
     <meta property="og:site_name" content="Math Mammoth Practice">
@@ -268,7 +268,7 @@
       }
       // </quick-links>
 
-      var numImages = 44;
+      var numImages = 34;
       var questioni;
       var indexes;
       var questions = [];
@@ -421,7 +421,7 @@
           items[i].style.backgroundColor = '#bbb';
           items[i].gotit = false;
         }
-        document.querySelector('.flex-container').style.backgroundImage = 'url(images/' + (Math.floor(Math.random() * numImages) + 1) + '.jpg)';
+        document.querySelector('.flex-container').style.backgroundImage = 'url(images2/' + (Math.floor(Math.random() * numImages) + 1) + '.jpg)';
         newQuestion();
       }
       function buildFlexItems() {
