@@ -1,4 +1,4 @@
-var CACHE_VERSION = 98;
+var CACHE_VERSION = 99;
 var CACHE_STATIC_NAME = 'static-v' + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = 'dynamic-v' + CACHE_VERSION;
 var CACHE_IMAGES_NAME = 'images-v1';
