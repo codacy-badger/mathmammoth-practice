@@ -153,7 +153,7 @@
             </div>
           </div>
         </div>
-        <section class="text-center">
+        <aside class="text-center">
           <p>Here are some quick links to get you started with a particular grade:</p>
           <p><a href="javascript:location.href='/practice/mystery-picture#min=0&max=6';location.reload();">1st grade (Min: 0, Max: 6)</a></p>
           <p><a href="javascript:location.href='/practice/mystery-picture#min=2';location.reload();">2nd grade (Min: 2, Max: 20)</a></p>
@@ -162,7 +162,7 @@
           <p>
             <button class="btn btn-primary btn-sm" data-toggle="modal" data-target=".modal">Generate Quick Link for Specific Options</button>
           </p>
-        </section>
+        </aside>
         <section class="game">
           <div class="question"></div>
           <div class="flex-container">
@@ -285,6 +285,7 @@
           return .5 - Math.random();
         });
         document.querySelector('.go').style.display = 'none';
+        document.querySelector('aside').style.display = 'none';
         document.querySelector('.titledesc').style.display = 'none';
         document.querySelector('.game').style.display = 'block';
         setupRound();
