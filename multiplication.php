@@ -92,15 +92,15 @@
             </div>
             <div class="tc custom-control custom-checkbox custom-control-inline">
               <input type="checkbox" class="custom-control-input" id="m13">
-              &nbsp;<label class="custom-control-label" for="m12">Table of 13</label>
+              &nbsp;<label class="custom-control-label" for="m13">Table of 13</label>
             </div>
             <div class="tc custom-control custom-checkbox custom-control-inline">
               <input type="checkbox" class="custom-control-input" id="m14">
-              &nbsp;<label class="custom-control-label" for="m12">Table of 14</label>
+              &nbsp;<label class="custom-control-label" for="m14">Table of 14</label>
             </div>
             <div class="tc custom-control custom-checkbox custom-control-inline">
               <input type="checkbox" class="custom-control-input" id="m15">
-              &nbsp;<label class="custom-control-label" for="m12">Table of 15</label>
+              &nbsp;<label class="custom-control-label" for="m15">Table of 15</label>
             </div>
           </div><br>
         </div>
