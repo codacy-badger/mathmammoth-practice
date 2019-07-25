@@ -21,6 +21,7 @@
 <link rel="apple-touch-icon" href="icons/180x180.png" sizes="180x180">
 <meta name="msapplication-TileImage" content="icons/144x144.png">
 <meta name="msapplication-TileColor" content="#fff">
+<link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 <meta name="theme-color" content="#5db0f9">
 <link rel="icon" href="favicon.ico" />
 <link rel="shortcut icon" href="favicon.ico" />

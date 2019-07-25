@@ -10,6 +10,10 @@
   font-weight: bold;
 }
 
+.flex-container .item {
+  font-family: inherit;
+}
+
 #practicearea,
 #questionbox {
   position: relative;

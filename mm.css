@@ -32,3 +32,8 @@ li.nav-item.dropdown:hover .dropdown-menu {
   border: 6px solid rgb(32, 143, 253);
   padding: 10px;
 }
+
+body {
+  font-family: Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}

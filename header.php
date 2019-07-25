@@ -19,7 +19,8 @@
         <a class="nav-link dropdown-toggle<?php echo $page ==
           'multiplication' ||
         $page == 'multiply-with-zeros' ||
-        $page == 'exponents'
+        $page == 'exponents' ||
+        $page == 'match-multiply'
           ? ' active'
           : ''; ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
@@ -27,6 +28,10 @@
           'multiplication'
             ? ' active'
             : ''; ?>">Multiplication Tables</a>
+          <a href="/practice/multiplication-matching" class="dropdown-item<?php echo $page ==
+          'match-multiply'
+            ? ' active'
+            : ''; ?>">Multiplication Matching Game</a>
           <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page ==
           'multiply-with-zeros'
             ? ' active'
