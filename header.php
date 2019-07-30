@@ -3,123 +3,85 @@
   <button class="btn btn-primary" title="Install app?" onclick="deferredPrompt.prompt(); document.getElementById('addHomeScreen').style.display = 'none'">Install</button> 
   <button onclick="document.getElementById('addHomeScreen').style.display = 'none'" class="btn btn-danger">Not right now</a>
 </div>
-<nav class="navbar navbar-expand-xl sticky-top navbar-dark" style="z-index: 1000; background-color: #712be2">
-  <a class="navbar-brand" href="https://www.mathmammoth.com"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">Math Mammoth</a>
+<nav class="navbar navbar-expand-xl navbar-dark" style="z-index: 1000; background-color: #712be2">
+  <a class="navbar-brand" href="https://www.mathmammoth.com/practice/"><img src="favicon.ico" alt="MM icon" style="width: 40px; height: 40px" class="rounded mr-2">MM Practice Center</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'home'
-          ? ' active'
-          : ''; ?>" href="/practice/">Practice Center</a>
-      </li> 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page ==
-          'multiplication' ||
-        $page == 'multiply-with-zeros' ||
-        $page == 'exponents' ||
-        $page == 'match-multiply'
-          ? ' active'
-          : ''; ?>" href="javascript:void(0);">Multiplication</a>
+        <a class="nav-link dropdown-toggle<?php 
+        echo (
+          $page == 'multiplication' ||
+          $page == 'multiply-with-zeros' ||
+          $page == 'exponents' ||
+          $page == 'match-multiply'
+            ? ' active'
+            : ''
+        ); ?>" href="javascript:void(0);">Multiplication</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/multiplication" class="dropdown-item<?php echo $page ==
-          'multiplication'
-            ? ' active'
-            : ''; ?>">Multiplication Tables</a>
-          <a href="/practice/multiplication-matching" class="dropdown-item<?php echo $page ==
-          'match-multiply'
-            ? ' active'
-            : ''; ?>">Multiplication Matching Game</a>
-          <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page ==
-          'multiply-with-zeros'
-            ? ' active'
-            : ''; ?>">With Zeros</a>
-          <a href="/practice/exponents" class="dropdown-item<?php echo $page ==
-          'exponents'
-            ? ' active'
-            : ''; ?>">Exponents</a>
+          <a href="/practice/multiplication" class="dropdown-item<?php echo $page == 'multiplication' ? ' active' : ''; ?>">Multiplication Tables</a>
+          <a href="/practice/multiplication-matching" class="dropdown-item<?php echo $page == 'match-multiply' ? ' active' : ''; ?>">Multiplication Matching Game</a>
+          <a href="/practice/multiply-with-zeros" class="dropdown-item<?php echo $page == 'multiply-with-zeros' ? ' active' : ''; ?>">With Zeros</a>
+          <a href="/practice/exponents" class="dropdown-item<?php echo $page == 'exponents' ? ' active' : ''; ?>">Exponents</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle<?php echo $page == 'division' ||
-        $page == 'division-remainders' ||
-        $page == 'divide-numbers-ending-in-zeros'
-          ? ' active'
-          : ''; ?>" href="javascript:void(0);">Division</a>
+        <a class="nav-link dropdown-toggle<?php 
+        echo (
+          $page == 'division' ||
+          $page == 'division-remainders' ||
+          $page == 'divide-numbers-ending-in-zeros' ||
+          $page == 'findfactors'
+            ? ' active'
+            : ''
+        ); ?>" href="javascript:void(0);">Division</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/division" class="dropdown-item<?php echo $page ==
-          'division'
-            ? ' active'
-            : ''; ?>">Division Facts</a>
-          <a href="/practice/division-remainder" class="dropdown-item<?php echo $page ==
-          'division-remainders'
-            ? ' active'
-            : ''; ?>">With Remainders</a>
-          <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page ==
-          'divide-numbers-ending-in-zeros'
-            ? ' active'
-            : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
+          <a href="/practice/division" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
+          <a href="/practice/division-remainder" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
+          <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
+          <a class="dropdown-item<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="/practice/factorfind">Find Factors</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link<?php echo $page == 'findfactors'
-          ? ' active'
-          : ''; ?>" href="/practice/factorfind">Find Factors</a>
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle<?php echo $page ==
-            'addition-single-digit' ||
-          $page == 'factfam-addsub' ||
-          $page == 'addition-two-digit' ||
-          $page == 'place-value' ||
-          $page == 'mystery-picture' ||
-          $page == 'mystery-picture-sub' ||
-          $page == 'mystery-picture-integers'
-            ? ' active'
-            : ''; ?>"
+          class="nav-link dropdown-toggle<?php 
+          echo (
+            $page == 'addition-single-digit' ||
+            $page == 'factfam-addsub' ||
+            $page == 'addition-two-digit' ||
+            $page == 'place-value' ||
+            $page == 'mystery-picture' ||
+            $page == 'mystery-picture-sub' ||
+            $page == 'mystery-picture-integers'
+              ? ' active'
+              : ''
+          ); ?>"
           href="javascript:void(0);">Add &amp; Subtract</a>
         <div class="dropdown-menu" style="margin-top: -1px">
-          <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page ==
-          'addition-single-digit'
-            ? ' active'
-            : ''; ?>">Single-Digit</a>
-          <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page ==
-          'addition-two-digit'
-            ? ' active'
-            : ''; ?>">Two-Digit (Mental Math)</a>
-          <a href="/practice/fact-families" class="dropdown-item<?php echo $page ==
-          'factfam-addsub'
-            ? ' active'
-            : ''; ?>">Fact Families</a>
-          <a href="/practice/place-value" class="dropdown-item<?php echo $page ==
-          'place-value'
-            ? ' active'
-            : ''; ?>">Place Value</a>
-          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page ==
-          'mystery-picture'
-            ? ' active'
-            : ''; ?>">Addition Hidden Picture Game</a>
-          <a href="/practice/mystery-picture-subtraction" class="dropdown-item<?php echo $page ==
-          'mystery-picture-sub'
-            ? ' active'
-            : ''; ?>">Subtraction Hidden Picture Game</a>
-          <a href="/practice/mystery-picture-integers" class="dropdown-item<?php echo $page ==
-          'mystery-picture-integers'
-            ? ' active'
-            : ''; ?>">Integers Hidden Picture Game</a>
+          <a href="/practice/addition-single-digit" class="dropdown-item<?php echo $page == 'addition-single-digit' ? ' active' : ''; ?>">Single-Digit</a>
+          <a href="/practice/addition-subtraction-two-digit" class="dropdown-item<?php echo $page == 'addition-two-digit' ? ' active' : ''; ?>">Two-Digit (Mental Math)</a>
+          <a href="/practice/fact-families" class="dropdown-item<?php echo $page == 'factfam-addsub' ? ' active' : ''; ?>">Fact Families</a>
+          <a href="/practice/mystery-picture" class="dropdown-item<?php echo $page == 'mystery-picture' ? ' active' : ''; ?>">Addition Hidden Picture Game</a>
+          <a href="/practice/mystery-picture-subtraction" class="dropdown-item<?php echo $page == 'mystery-picture-sub' ? ' active' : ''; ?>">Subtraction Hidden Picture Game</a>
+          <a href="/practice/mystery-picture-integers" class="dropdown-item<?php echo $page == 'mystery-picture-integers' ? ' active' : ''; ?>">Integers Hidden Picture Game</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle<?php echo $page == 'fractions-decimals' || $page == 'place-value' ? ' active' : ''; ?>"
+          href="javascript:void(0);">Place Value</a>
+        <div class="dropdown-menu" style="margin-top: -1px">
+          <a href="/practice/rounding" class="dropdown-item<?php echo $page == 'rounding' ? ' active' : ''; ?>">Rounding</a>
+          <a href="/practice/place-value" class="dropdown-item<?php echo $page == 'place-value' ? ' active' : ''; ?>">Place Value</a>
         </div>
       </li>
       <li class="nav-item">
-        <a href="/practice/rounding" class="nav-link<?php echo $page ==
-        'rounding'
-          ? ' active'
-          : ''; ?>">Rounding</a>
+        <a href="/practice/fractions-decimals" class="nav-link<?php echo $page == 'fractions-decimals' ? ' active ' : ''; ?>">Fractions &amp; Decimals</a>
       </li>
       <li class="nav-item">
-        <a href="/practice/fractions-decimals" class="nav-link<?php echo $page == 'fractions-decimals' ? ' active ' : ''; ?>">Fractions &amp; Decimals</a>
+        <a href="/practice/angles-matching" class="nav-link<?php echo $page == 'angles-matching' ? ' active ' : ''; ?>">Angles</a>
       </li>
     </ul>
   </div>
