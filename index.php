@@ -92,6 +92,9 @@
         <a href="/practice/fractions-decimals" class="list-group-item list-group-item-action" role="listitem">
           Fractions &amp; Decimals
         </a>
+        <a href="/practice/angles-matching" class="list-group-item list-group-item-action" role="listitem">
+          Angles and Their Measures Matching Game
+        </a>
       </ul>
       <div class="card mt-3 clearfix" style="margin: auto; background-color: #FFFF78; border-radius: 5px; padding: 30px">
         <div class="card-body">
