@@ -28,7 +28,7 @@
         Exponents and Powers of Ten<br>
         <span style="font-size: 1.5rem">Online practice for grades 5-7</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p>On this page, you can practice with exponents and powers, such as 5<sup>2</sup> or 10<sup>6</sup>. Students usually learn about exponents in 5th or 6th grade, but 7th grade students can benefit from practicing them too.</p>
