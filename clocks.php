@@ -9,8 +9,8 @@
   <meta property="og:image" content="https://www.mathmammoth.com/practice/elapsed-time.png">
   <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/elapsed-time.png" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="560" />
-  <meta property="og:image:height" content="517" />
+  <meta property="og:image:width" content="683" />
+  <meta property="og:image:height" content="694" />
   <meta property="og:image:alt" content="Elapsed Time 🕢" />
   <meta property="og:url" content="https://www.mathmammoth.com/practice/clocks">
   <meta property="og:site_name" content="Math Mammoth Practice">

@@ -95,7 +95,7 @@
         <a href="/practice/angles-matching" class="list-group-item list-group-item-action" role="listitem">
           Angles and Their Measures Matching Game
         </a>
-        <a href="/practice/elapsed-time" class="list-group-item list-group-item-action" role="listitem">
+        <a href="/practice/clocks" class="list-group-item list-group-item-action" role="listitem">
           Elapsed Time
         </a>
       </ul>
