@@ -32,6 +32,9 @@ self.addEventListener("install", function(event) {
         "/practice/fractions-decimals",
         "/practice/rounding",
         "/practice/place-value",
+        "/practice/multiplication-matching",
+        "/practice/angles-matching",
+        "/practice/clocks",
         "/practice/app.js",
         "/practice/bootstrap.min.css",
         "/practice/bootstrap.min.js",
@@ -81,7 +84,9 @@ self.addEventListener("install", function(event) {
         "/practice/multiply-zeros.jpg",
         "/practice/rounding-screenshot.jpg",
         "/practice/single-digit-addition.jpg",
-        "/practice/two-digit-addition-subtraction.jpg"
+        "/practice/two-digit-addition-subtraction.jpg",
+        "/practice/match-angles.png",
+        "/practice/match-multiply.png"
       ]);
     })
   );

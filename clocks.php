@@ -4,20 +4,20 @@
 <head>
   <?php include 'header-head.php'; ?>
   <link rel="stylesheet" href="practice.css">
-  <meta property="og:title" content="Difference between 2 clocks 🕢">
-  <meta property="og:description" content="Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 - 4, 100 - 28, etc.).">
-  <meta property="og:image" content="https://www.mathmammoth.com/practice/two-digit-addition-subtraction.jpg">
-  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/two-digit-addition-subtraction.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:title" content="Elapsed Time 🕢">
+  <meta property="og:description" content="Find how much time passes between two different given times (the times are given with analog clocks). You can choose from many options below, such as whether to include AM/PM or not and limiting the times to full hours, full and half hours, quarter hours, and so on. 🕢">
+  <meta property="og:image" content="https://www.mathmammoth.com/practice/elapsed-time.png">
+  <meta property="og:image:secure_url" content="https://www.mathmammoth.com/practice/elapsed-time.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="560" />
   <meta property="og:image:height" content="517" />
-  <meta property="og:image:alt" content="Difference between 2 clocks 🕢" />
-  <meta property="og:url" content="https://www.mathmammoth.com/practice/addition-subtraction-two-digit">
+  <meta property="og:image:alt" content="Elapsed Time 🕢" />
+  <meta property="og:url" content="https://www.mathmammoth.com/practice/clocks">
   <meta property="og:site_name" content="Math Mammoth Practice">
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Difference between 2 clocks 🕢">
-  <title>Difference between 2 clocks 🕢 &mdash; Online Practice (grades 1-3)</title>
+  <meta name="twitter:image:alt" content="Elapsed Time 🕢">
+  <title>Elapsed Time 🕢 &mdash; Online Practice (grades 1-5)</title>
   <style>
     .clock {
       width: 200px;
@@ -83,37 +83,40 @@
       align-items: space-around;
       min-height: 100px;
       flex-flow: row wrap;
-      max-width: 500px;
+      max-width: 520px;
       margin: auto;
     }
 
     .responses .response {
       display: flex;
-      min-width: 150px;
+      min-width: 160px;
       flex-flow: row nowrap;
       justify-content: space-around;
       align-items: center;
     }
 
     .responses .response input {
-      max-width: 100px;
+      max-width: 90px;
     }
   </style>
 </head>
 
 <body>
-  <?php $page = 'addition-two-digit'; include 'header.php'; ?>
+  <?php $page = 'elapsed-time'; include 'header.php'; ?>
   <div class="container">
     <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
-        Difference between 2 clocks 🕢<br>
-        <span style="font-size: 1.5rem">Online practice for grades 1-3</span>
+        Elapsed Time 🕢<br>
+        <span style="font-size: 1.5rem">Online practice for grades 1-5</span>
       </h1>
       <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
-        <div class="col-md-6">
-          <p>Here you can practice elapsed time. 🕢</p>
-          <div class="form-group">
+        <div class="col-lg-6">
+          <p>Find how much time passes between two different given times (elapsed time or time intervals). The times are given with analog clocks. You can choose from many options below, such as whether to include AM/PM or not and limiting the times to full hours, full and half hours, quarter hours, and so on. 🕢</p>
+
+          <p>This practice is most useful for students in grades 2, 3, and 4, but older and younger students can benefit from it, too.</p>
+
+          <div class="form-group mt-4">
             <div class="custom-control custom-radio">
               <input type="radio" name="ampm" id="ampm-none" class="custom-control-input" checked>
               <label for="ampm-none" class="custom-control-label">No AM/PM</label>
@@ -127,7 +130,7 @@
               <label for="ampm-hard" class="custom-control-label">AM/PM hard mode (the time difference may be 12 hours or more)</label>
             </div>
           </div>
-          <label for="time-opts" class="mt-3 font-weight-bold">The times given can be:</label>
+          <label for="time-opts" class="mt-3 font-weight-bold">The times given are:</label>
           <div id="time-opts">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-whole-hours" id="time-whole-hours" class="custom-control-input">
@@ -143,11 +146,11 @@
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-5-mins" id="time-5-mins" class="custom-control-input">
-              <label for="time-5-mins" class="custom-control-label">Five minute difference intervals (e.g. 1:0<b>5</b>, 12:3<b>5</b>, 5:5<b>5</b>)</label>
+              <label for="time-5-mins" class="custom-control-label">To the nearest five minutes (e.g. 1:0<b>5</b>, 12:3<b>5</b>, 5:5<b>5</b>)</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-10-mins" id="time-10-mins" class="custom-control-input">
-              <label for="time-10-mins" class="custom-control-label">10 minute difference intervals (e.g. 10:1<b>0</b>, 3:4<b>0</b>, 2:2<b>0</b>)</label>
+              <label for="time-10-mins" class="custom-control-label">To the nearest 10 minutes (e.g. 10:1<b>0</b>, 3:4<b>0</b>, 2:2<b>0</b>)</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-1-min" id="time-1-min" class="custom-control-input">
@@ -155,10 +158,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <p>
             Screenshot:<br />
-            <img src="place-value-screenshot.png" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
+            <img src="elapsed-time.png" class="rounded-lg screenshot" alt="Screenshot of someone doing a round">
           </p>
         </div>
       </div>
@@ -359,13 +362,15 @@
       var maxhours = AMPM ? 24 : 12;
 
       // generate two random times
-      var hour1, hour2;
+      var hour1, hour2, diff;
 
       if (easyAMPM) {
         do {
           hour1 = rand(1, maxhours);
           hour2 = rand(1, maxhours);
-        } while (Math.abs(hour1 - hour2) > 11);
+          diff = hour2 - hour1;
+          if (diff < 0) diff = 24 - Math.abs(diff);
+        } while (diff > 11);
       } else {
         hour1 = rand(1, maxhours);
         hour2 = rand(1, maxhours);

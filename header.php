@@ -80,8 +80,14 @@
       <li class="nav-item">
         <a href="/practice/fractions-decimals" class="nav-link<?php echo $page == 'fractions-decimals' ? ' active ' : ''; ?>">Fractions &amp; Decimals</a>
       </li>
-      <li class="nav-item">
-        <a href="/practice/angles-matching" class="nav-link<?php echo $page == 'angles-matching' ? ' active ' : ''; ?>">Angles</a>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle<?php echo $page == 'elapsed-time' || $page == 'angles-matching' ? ' active' : ''; ?>"
+          href="javascript:void(0);">Measurement</a>
+        <div class="dropdown-menu" style="margin-top: -1px">
+          <a href="/practice/angles-matching" class="dropdown-item<?php echo $page == 'angles-matching' ? ' active ' : ''; ?>">Angles</a>
+          <a href="/practice/clocks" class="dropdown-item<?php echo $page == 'elapsed-time' ? ' active ' : ''; ?>">Elapsed Time</a>
+        </div>
       </li>
     </ul>
   </div>
