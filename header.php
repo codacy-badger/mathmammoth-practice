@@ -82,11 +82,12 @@
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle<?php echo $page == 'elapsed-time' || $page == 'angles-matching' ? ' active' : ''; ?>"
+          class="nav-link dropdown-toggle<?php echo $page == 'elapsed-time' || $page == 'angles-matching' || $page == 'telling-time' ? ' active' : ''; ?>"
           href="javascript:void(0);">Measurement</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="/practice/angles-matching" class="dropdown-item<?php echo $page == 'angles-matching' ? ' active ' : ''; ?>">Angles</a>
           <a href="/practice/clocks" class="dropdown-item<?php echo $page == 'elapsed-time' ? ' active ' : ''; ?>">Elapsed Time</a>
+          <a href="/practice/tell-time" class="dropdown-item<?php echo $page == 'telling-time' ? ' active ' : ''; ?>">Telling Time</a>
         </div>
       </li>
     </ul>

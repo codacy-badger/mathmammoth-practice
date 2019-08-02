@@ -98,6 +98,9 @@
         <a href="/practice/clocks" class="list-group-item list-group-item-action" role="listitem">
           Elapsed Time
         </a>
+        <a href="/practice/tell-time" class="list-group-item list-group-item-action" role="listitem">
+          Telling Time
+        </a>
       </ul>
       <div class="card mt-3 clearfix" style="margin: auto; background-color: #FFFF78; border-radius: 5px; padding: 30px">
         <div class="card-body">

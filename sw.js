@@ -1,4 +1,4 @@
-var CACHE_VERSION = 107;
+var CACHE_VERSION = 108;
 var CACHE_STATIC_NAME = "static-v" + CACHE_VERSION;
 var CACHE_DYNAMIC_NAME = "dynamic-v" + CACHE_VERSION;
 var CACHE_IMAGES_NAME = "images-v1";
@@ -34,6 +34,7 @@ self.addEventListener("install", function(event) {
         "/practice/place-value",
         "/practice/multiplication-matching",
         "/practice/angles-matching",
+        "/practice/tell-time",
         "/practice/clocks",
         "/practice/app.js",
         "/practice/bootstrap.min.css",
@@ -86,7 +87,8 @@ self.addEventListener("install", function(event) {
         "/practice/single-digit-addition.jpg",
         "/practice/two-digit-addition-subtraction.jpg",
         "/practice/match-angles.png",
-        "/practice/match-multiply.png"
+        "/practice/match-multiply.png",
+        "/practice/telling-time.png"
       ]);
     })
   );
