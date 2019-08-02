@@ -31,7 +31,7 @@
         Rounding Whole Numbers &amp; Decimals<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-6</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p>On this page, you can practice rounding whole numbers to the nearest ten, nearest hundred, nearest thousand, and so on. You can use this online practice for all elementary grades (grades 1-6). </p>

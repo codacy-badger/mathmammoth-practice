@@ -29,7 +29,7 @@
   <div class="container">
     <div class="jumbotron" style="background-color: #60cfff">
       <h1 class="text-center">Math Mammoth Online Practice 💻</h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <p>This area of MathMammoth.com focuses on providing online practice of various math topics. Choose a topic from the list below or from the main menu. 😉</p>
       <p>
         These free, online practice programs can also be installed offline as an app in your phone or tablet, depending on your browser and operating system. To install it, click on the "Add to home screen" button at the bottom of the page. On Android Chrome, click on the three dots, and then "Add to home screen". 📱 If you don't see the button or the "Add to home screen" option, then you probably cannot install this app in your browser. 🙁

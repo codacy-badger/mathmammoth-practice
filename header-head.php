@@ -25,4 +25,3 @@
 <meta name="theme-color" content="#5db0f9">
 <link rel="icon" href="favicon.ico" />
 <link rel="shortcut icon" href="favicon.ico" />
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5d0e38320e548d0012f3def5&product=inline-share-buttons' async='async'></script>

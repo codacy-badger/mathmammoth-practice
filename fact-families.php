@@ -28,7 +28,7 @@
         Addition &amp; Subtraction Fact Families<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-2</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p>Here you can practice the basic addition and subtraction facts using the fact families approach. This approach is used in the Math Mammoth curriculum (<a href="/complete/grade_1.php">grade 1</a> and <a href="/complete/grade_2.php">grade 2</a>).</p>

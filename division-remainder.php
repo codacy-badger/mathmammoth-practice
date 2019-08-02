@@ -29,7 +29,7 @@
         Division With Remainders (Mental Math)<br>
         <span style="font-size: 1.5rem">Online practice for grades 3-4</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-12">
           <p class="mb-4">This script allows you to practice division with remainders, using mental math. In other words, the division problems are based on basic division facts (or on multiplication tables), such as 53 &divide; 8 = 6 R5 or 23 &divide; 4 = 5 R3. You can choose timed or untimed practice, the number of practice problems, and the divisors you'd like to include.</p>

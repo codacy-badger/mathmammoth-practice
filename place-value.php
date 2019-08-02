@@ -28,7 +28,7 @@
         Place Value<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-4</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-xl-6">
           <p>This script makes simple math problems that help students practice place value concepts.</p>

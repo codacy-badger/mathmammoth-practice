@@ -72,16 +72,19 @@
       align-items: center;
     }
 
-    .clocks .clock-container div:first-child {
+    .clocks .clock-container div:first-child,
+    .am-or-pm {
       font-size: 1.6rem;
     }
 
     .responses {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: space-around;
       min-height: 100px;
       flex-flow: row wrap;
+      max-width: 500px;
+      margin: auto;
     }
 
     .responses .response {
@@ -101,18 +104,28 @@
 <body>
   <?php $page = 'addition-two-digit'; include 'header.php'; ?>
   <div class="container">
-    <div class="jumbotron d-none" id="form" style="background-color: #a5eaff">
+    <div class="jumbotron" id="form" style="background-color: #a5eaff">
       <h1 class="text-center">
         Difference between 2 clocks 🕢<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-3</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
-          <p>Here you can practice difference of times of clocks. 🕢</p>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="ampm" id="ampm" class="custom-control-input">
-            <label for="ampm" class="custom-control-label">Include times with AM/PM</label>
+          <p>Here you can practice elapsed time. 🕢</p>
+          <div class="form-group">
+            <div class="custom-control custom-radio">
+              <input type="radio" name="ampm" id="ampm-none" class="custom-control-input" checked>
+              <label for="ampm-none" class="custom-control-label">No AM/PM</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" name="ampm" id="ampm-easy" class="custom-control-input">
+              <label for="ampm-easy" class="custom-control-label">AM/PM easy mode (the time difference is less than 12 hours)</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" name="ampm" id="ampm-hard" class="custom-control-input">
+              <label for="ampm-hard" class="custom-control-label">AM/PM hard mode (the time difference may be 12 hours or more)</label>
+            </div>
           </div>
           <label for="time-opts" class="mt-3 font-weight-bold">The times given can be:</label>
           <div id="time-opts">
@@ -122,7 +135,7 @@
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-half-hours" id="time-half-hours" class="custom-control-input">
-              <label for="time-half-hours" class="custom-control-label">Half hours (e.g. 7:<b>30</b>)</label>
+              <label for="time-half-hours" class="custom-control-label">Whole hours and half hours (e.g. 7:<b>30</b>)</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" name="time-quarter-hours" id="time-quarter-hours" class="custom-control-input">
@@ -198,35 +211,37 @@
       </div><br>
       <button class="btn btn-primary" onclick="onSubmit()" id="submit">Go!</button>
     </div>
-    <div class="jumbotron" id="questionbox" style="background-color: #a5eaff; text-align: center;">
+    <div class="jumbotron d-none" id="questionbox" style="background-color: #a5eaff; text-align: center;">
       <div id="correctawrong" style="top: 8px; right: 8px">Correct: <span id="correct">0</span> &nbsp; Wrong: <span id="wrong">0</span></div>
       <div id="questionon" style="top: 8px; left: 8px"><span id="qon">1</span>/<span id="numoq"></span></div>
       <div id="numq" class="text-center" style="font-weight: bold">How much time passes?</div>
       <div class="clocks">
         <div class="clock-container">
           <div>from:</div>
-          <div class="clock">
+          <div class="clock clock1">
             <div class="hour-hand"></div>
             <div class="minute-hand"></div>
           </div>
+          <div class="am-or-pm"></div>
         </div>
         <div class="clock-container">
           <div>to:</div>
-          <div class="clock">
+          <div class="clock clock2">
             <div class="hour-hand"></div>
             <div class="minute-hand"></div>
           </div>
+          <div class="am-or-pm"></div>
         </div>
       </div>
       <br>
       <div class="responses">
         <div class="response form-inline">
           <input type="number" id="res-hours" class="form-control" value="0">
-          <span>hrs</span>
+          <span>hours</span>
         </div>
         <div class="response form-inline">
           <input type="number" id="res-mins" class="form-control" value="0">
-          <span>mins</span>
+          <span>minutes</span>
         </div>
       </div>
       <br>
@@ -278,8 +293,8 @@
 
     function onSubmit() {
       /* end copied code */ var anyChecked = false;
-      for (var key in options) {
-        if (options[key].prop('checked')) anyChecked = true;
+      for (var key in timeOpts) {
+        if (timeOpts[key].checked) anyChecked = true;
       }
       if (!anyChecked) {
         alert('Please select some options.');
@@ -313,117 +328,138 @@
           isTimed = $(el).data('val') == 'yes';
         }
       });
+      window.AMPM = document.querySelector("#ampm-hard").checked || document.querySelector("#ampm-easy").checked;
       questionMode();
       newQuestion();
     }
 
-    function random(min, max) {
+    function rand(min, max) {
       return Math.floor(Math.random() * (max - (min - 1))) + min;
     }
 
     function questionGenerator() {
-      var possibleProblems = [];
-      if (options['2p1dnr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(1, 9);
-        while(hasRegrouping(num1, num2) || num1 + num2 >= 100) {
-          num1 = random(10, 99);
-          num2 = random(1, 9);
-        }
-        var way = Math.round(Math.random());
-        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      // find elapsed time
+      // user options
+
+      var easyAMPM = document.querySelector("#ampm-easy").checked;
+
+      // modes
+      // mode 0 = whole hours
+      // mode 1 = whole and half hours
+      // mode 2 - quarter hours
+      // mode 3 - five minute intervals
+      // mode 4 - to the minute
+      // mode 5 - ten minute intervals
+
+      var mode = Object.keys(timeOpts).filter(function(k) {
+        return timeOpts[k].checked;
+      }).map(function(k) {
+        return k == 'timeWholeHours' ? 0 : k == 'timeHalfHours' ? 1 : k == 'timeQuarterHours' ? 2 : k == 'time5Mins' ? 3 : k == 'time1Min' ? 4 : 5;
+      });
+      var maxhours = AMPM ? 24 : 12;
+
+      // generate two random times
+      var hour1, hour2;
+
+      if (easyAMPM) {
+        do {
+          hour1 = rand(1, maxhours);
+          hour2 = rand(1, maxhours);
+        } while (Math.abs(hour1 - hour2) > 11);
+      } else {
+        hour1 = rand(1, maxhours);
+        hour2 = rand(1, maxhours);
       }
-      if (options['2p1dwr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(1, 9);
-        while(!hasRegrouping(num1, num2) || num1 + num2 >= 100) {
-          num1 = random(10, 99);
-          num2 = random(1, 9);
-        }
-        var way = Math.round(Math.random());
-        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      
+      var modePicked = mode[Math.floor(Math.random() * mode.length)];
+
+      if (modePicked == 0) {
+        do {
+          hour2 = rand(1, 12);
+        } while (hour1 === hour2);
       }
-      if (options['2dpmo10'].prop('checked')) {
-        var num1 = random(10, 89);
-        var num2 = random(1, 9) * 10;
-        var way = Math.round(Math.random());
-        while(num1 + num2 >= 100) {
-          num1 = random(10, 99);
-          num2 = random(1, 9) * 10;
-        }
-        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+
+      // switch hour1 and hour2 if hour 2 < hour 1
+
+      if (hour2 < hour1 && !AMPM) {
+        var temp = hour1;
+        hour1 = hour2;
+        hour2 = temp;
       }
-      if (options['2p2dnr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(10, 99);
-        while(hasRegrouping(num1, num2) || num1 + num2 >= 100) {
-          num1 = random(10, 99);
-          num2 = random(10, 99);
-        }
-        var way = Math.round(Math.random());
-        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+
+      var minute1, minute2;
+
+      switch (modePicked) {
+        case 0:
+          minute1 = 0;
+          minute2 = 0;
+          break;
+        case 1:
+          minute1 = rand(0, 1) == 1 ? 30 : 0;
+          minute2 = rand(0, 1) == 1 ? 30 : 0;
+          break;
+        case 2:
+          minute1 = rand(0, 3) * 15;
+          minute2 = rand(0, 3) * 15;
+          break;
+        case 3:
+          minute1 = rand(0, 11) * 5;
+          minute2 = rand(0, 11) * 5;
+          break;
+        case 4:
+          minute1 = rand(0, 59);
+          minute2 = rand(0, 59);
+          break;
+        case 5:
+          minute1 = rand(0, 11) * 10;
+          minute2 = rand(0, 11) * 10;
+          break;
+        default:
+          minute1 = 0;
+          minute2 = 0;
+          break;
       }
-      if (options['2p2dwr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(10, 99);
-        while(!hasRegrouping(num1, num2) || num1 + num2 >= 100) {
-          num1 = random(10, 99);
-          num2 = random(10, 99);
-        }
-        var way = Math.round(Math.random());
-        possibleProblems.push(way ? (num1 + ' + ' + num2) : (num2 + ' + ' + num1));
+      // if the hours are the same, then check that minute1 is less than minute2
+
+      if (hour1 == hour2 && minute1 > minute2) {
+        var temp = minute1;
+        minute1 = minute2;
+        minute2 = temp;
       }
-      if (options['2m1dnr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(1, 9);
-        while(hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
-          num1 = random(10, 99);
-          num2 = random(1, 9);
-        }
-        possibleProblems.push(num1 + ' &minus; ' + num2);
-      } // 3 lines
-      if(options['2m1dwr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(1, 9);
-        while(!hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
-          num1 = random(10, 99);
-          num2 = random(1, 9);
-        }
-        possibleProblems.push(num1 + ' &minus; ' + num2);
-      } // 0 lines
-      if(options['2dmmo10'].prop('checked')) {
-        var num1 = random(10, 89);
-        var num2 = random(1, 9) * 10;
-        var way = Math.round(Math.random());
-        while(num1 - num2 < 0) {
-          num1 = random(10, 99);
-          num2 = random(1, 9) * 10;
-        }
-        possibleProblems.push(num1 + ' &minus; ' + num2);
-      } // 1 line
-      if(options['2m2dnr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(10, 99);
-        while(hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
-          num1 = random(10, 99);
-          num2 = random(10, 99);
-        }
-        possibleProblems.push(num1 + ' &minus; ' + num2);
-      } // 1 line
-      if(options['2m2dwr'].prop('checked')) {
-        var num1 = random(10, 99);
-        var num2 = random(10, 99);
-        while(!hasRegroupingSub(num1, num2) || num1 - num2 < 0) {
-          num1 = random(10, 99);
-          num2 = random(10, 99);
-        }
-        possibleProblems.push(num1 + ' &minus; ' + num2);
-      } // 0 lines
-      if(options['100m2d'].prop('checked')) {
-        possibleProblems.push('100 &minus; ' + random(10, 100));
-      } // 0 lines
-      var quest = possibleProblems[Math.floor(Math.random() * possibleProblems.length)];
-      eval('var answer = ' + quest.replace('&minus;', '-') + ';');
+
+      // calculate the elapsed time
+
+      var fulltime1 = hour1 * 60 + minute1;
+      var fulltime2 = hour2 * 60 + minute2;
+
+      var elapsedfulltime = fulltime2 - fulltime1;
+
+      if (elapsedfulltime < 0) {
+        elapsedfulltime = 1440 - Math.abs(elapsedfulltime);
+      }
+
+      var elapsedhours = Math.floor(elapsedfulltime / 60);
+      var elapsedminutes = elapsedfulltime % 60;
+
+      // calculate the rotation angles for the clock hands (in degrees).
+
+      var minutehand1 = minute1 * 6;
+      var minutehand2 = minute2 * 6;
+
+      var hourhand1 = hour1 > 12 ? (hour1 - 12) * 30 + minute1 / 2 : hour1 * 30 + minute1 / 2;
+      var hourhand2 = hour2 > 12 ? (hour2 - 12) * 30 + minute2 / 2 : hour2 * 30 + minute2 / 2;
+
+      var quest = {
+        q: [
+          { mins: minute1, hrs: hour1, isPM: hour1 >= 12 && hour1 < 24 },
+          { mins: minute2, hrs: hour2, isPM: hour2 >= 12 && hour2 < 24 }
+        ],
+        degs: [
+          { mins: minutehand1, hrs: hourhand1 },
+          { mins: minutehand2, hrs: hourhand2 }
+        ]
+      };
+      var answer = { minutes: elapsedminutes, hours: elapsedhours };
       // start copied code
       return [quest, answer];
     }
@@ -475,11 +511,10 @@
     }
 
     function newQuestion() {
-      check.prop('disabled', true);
       $('#numq').css('color', 'black');
-      $('#response').prop('disabled', false);
+      $('.responses input').prop('disabled', false);
       response.val('');
-      response.focus();
+      $('.responses input:first').focus();
       $('#message').empty();
       if (isTimed) timeoutSet();
       if (questionOn == parseInt(questions.val()) && mode == 'timeq') {
@@ -489,7 +524,16 @@
       $('#check').text('Check');
       $('#qon').text(questionOn);
       window.question = questionGenerator();
-      $('#numq').html(question[0]);
+      $('.clock1 .hour-hand').css('transform', 'rotate(' + question[0].degs[0].hrs + 'deg)');
+      $('.clock2 .hour-hand').css('transform', 'rotate(' + question[0].degs[1].hrs + 'deg)');
+
+      $('.clock1 .minute-hand').css('transform', 'rotate(' + question[0].degs[0].mins + 'deg)');
+      $('.clock2 .minute-hand').css('transform', 'rotate(' + question[0].degs[1].mins + 'deg)');
+
+      if (AMPM) {
+        $('.clocks .clock-container:first .am-or-pm').text(question[0].q[0].isPM ? 'PM' : 'AM');
+        $('.clocks .clock-container:last .am-or-pm').text(question[0].q[1].isPM ? 'PM' : 'AM');
+      }
     }
 
     function checkAns() {
@@ -499,17 +543,16 @@
       }
       $('#response').prop('disabled', true);
       $('#numq').css('color', '#888686');
-      var isCorrect = arguments[0] ? false : parseInt(response.val()) == question[1];
+      var isCorrect = arguments[0] ? false : (+$("#res-hours").val() == question[1].hours && +$("#res-mins").val() == question[1].minutes);
       if (isCorrect) {
         correct++;
         message.css('color', 'green').text('Correct');
       } else {
         wrong++;
-        message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1]);
+        message.css('color', 'red').text('Sorry, that is not correct. The correct answer is: ' + question[1].hours + ' hour' + (question[1].hours == 1 ? '' : 's') + ' ' + question[1].minutes + ' minute' + (question[1].minutes == 1 ? '' : 's'));
       }
       $('input').blur();
       questionsAnswered.push({
-        studentAnswered: parseInt(response.val()),
         correctAnswer: question[1],
         question: question[0],
         isCorrect: isCorrect
@@ -527,7 +570,7 @@
     $(document).ready(function() {
       window.progressbar = $('#progressbar');
       window.questions = $('#noq');
-      window.response = $('#response');
+      window.response = $('.responses input');
       window.timed = $('[name="timed"]');
       window.check = $('#check');
       window.message = $('#message');

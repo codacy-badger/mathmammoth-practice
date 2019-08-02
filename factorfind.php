@@ -213,7 +213,7 @@
         Find the Factors<br>
         <span style="font-size: 1.5rem">Online practice for grades 4-6</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p class="mb-4">

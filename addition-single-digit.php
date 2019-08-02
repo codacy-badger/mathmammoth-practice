@@ -28,7 +28,7 @@
         Basic Addition &amp; Subtraction Facts<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-2</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p>On this page, you can practice the basic addition and subtraction facts with single-digit addends (such as 4 + 5, 9 + 7, 9 &minus; 4, 12 &minus; 8).</p>

@@ -29,7 +29,7 @@
         Basic Division Facts<br>
         <span style="font-size: 1.5rem">Online practice for grades 3-5</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-xl-6">
           <p>This script allows you to practice any combination of the basic division facts (division tables) &mdash; either specific tables, such as division by 3 and by 5, or one of them (such as division by 8), or all of them (divisors up to 12). Very useful for 3rd and 4th grade students. 😃</p>

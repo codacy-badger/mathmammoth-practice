@@ -28,7 +28,7 @@
         Two-Digit Addition &amp; Subtraction with Mental Math<br>
         <span style="font-size: 1.5rem">Online practice for grades 1-3</span>
       </h1>
-      <div class="sharethis-inline-share-buttons"></div>
+      <div class="addthis_inline_share_toolbox"></div>
       <div class="row">
         <div class="col-md-6">
           <p>Here you can practice adding and subtracting two-digit numbers using mental math (such as 78 + 6, 40 + 15, 54 + 22, 29 + 37, 59 &minus; 4, 100 &minus; 28, etc.).</p>
