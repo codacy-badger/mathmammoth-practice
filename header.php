@@ -31,6 +31,7 @@
         <a class="nav-link dropdown-toggle<?php 
         echo (
           $page == 'division' ||
+          $page == 'division-matching' ||
           $page == 'division-remainders' ||
           $page == 'divide-numbers-ending-in-zeros' ||
           $page == 'findfactors'
@@ -39,6 +40,7 @@
         ); ?>" href="javascript:void(0);">Division</a>
         <div class="dropdown-menu" style="margin-top: -1px">
           <a href="/practice/division" class="dropdown-item<?php echo $page == 'division' ? ' active' : ''; ?>">Division Facts</a>
+          <a href="/practice/division-matching" class="dropdown-item<?php echo $page == 'division-matching' ? ' active' : ''; ?>">Division Facts Matching Game</a>
           <a href="/practice/division-remainder" class="dropdown-item<?php echo $page == 'division-remainders' ? ' active' : ''; ?>">With Remainders</a>
           <a href="/practice/divide-numbers-ending-in-zeros" class="dropdown-item<?php echo $page == 'divide-numbers-ending-in-zeros' ? ' active' : ''; ?>">Divide Whole Numbers Ending in Zeros</a>
           <a class="dropdown-item<?php echo $page == 'findfactors' ? ' active' : ''; ?>" href="/practice/factorfind">Find Factors</a>

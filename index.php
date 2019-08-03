@@ -47,6 +47,9 @@
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/multiplication">
           Multiplication Matching Game 
         </a>
+        <a class="list-group-item list-group-item-action" role="listitem" href="/practice/division-matching">
+          Division Facts Matching Hidden Picture Game 
+        </a>
         <a class="list-group-item list-group-item-action" role="listitem" href="/practice/multiply-with-zeros">
           Multiply with Zeros
         </a>

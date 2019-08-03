@@ -41,4 +41,5 @@ body {
 
 .dropdown-menu {
   box-shadow: 0 7px 14px #aaa;
+  border: none !important;
 }
